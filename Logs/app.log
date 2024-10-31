@@ -1,0 +1,195 @@
+2024-10-31 14:16:31,249 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 14:16:31,249 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 14:16:31,250 - INFO -  * Restarting with stat
+2024-10-31 14:16:32,656 - WARNING -  * Debugger is active!
+2024-10-31 14:16:32,663 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:17:27,631 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:17:27,709 - INFO -  * Restarting with stat
+2024-10-31 14:17:29,156 - WARNING -  * Debugger is active!
+2024-10-31 14:17:29,163 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:18:23,008 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:18:23,084 - INFO -  * Restarting with stat
+2024-10-31 14:18:24,502 - WARNING -  * Debugger is active!
+2024-10-31 14:18:24,508 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:25:19,300 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:25:19,377 - INFO -  * Restarting with stat
+2024-10-31 14:25:20,878 - WARNING -  * Debugger is active!
+2024-10-31 14:25:20,885 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:25:44,029 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:25:44,112 - INFO -  * Restarting with stat
+2024-10-31 14:25:45,564 - WARNING -  * Debugger is active!
+2024-10-31 14:25:45,570 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:27:59,547 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:27:59,625 - INFO -  * Restarting with stat
+2024-10-31 14:28:01,037 - WARNING -  * Debugger is active!
+2024-10-31 14:28:01,043 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:28:46,167 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:28:46,250 - INFO -  * Restarting with stat
+2024-10-31 14:28:47,725 - WARNING -  * Debugger is active!
+2024-10-31 14:28:47,732 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 14:29:58,903 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 14:29:58,982 - INFO -  * Restarting with stat
+2024-10-31 14:30:00,437 - WARNING -  * Debugger is active!
+2024-10-31 14:30:00,443 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:35:30,865 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:35:30,943 - INFO -  * Restarting with stat
+2024-10-31 15:35:32,450 - WARNING -  * Debugger is active!
+2024-10-31 15:35:32,457 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:35:35,862 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:35:35,948 - INFO -  * Restarting with stat
+2024-10-31 15:35:37,430 - WARNING -  * Debugger is active!
+2024-10-31 15:35:37,436 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:39:11,194 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:39:11,275 - INFO -  * Restarting with stat
+2024-10-31 15:39:12,802 - WARNING -  * Debugger is active!
+2024-10-31 15:39:12,808 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:40:17,890 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:40:17,964 - INFO -  * Restarting with stat
+2024-10-31 15:40:19,403 - WARNING -  * Debugger is active!
+2024-10-31 15:40:19,410 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:40:50,313 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:40:50,404 - INFO -  * Restarting with stat
+2024-10-31 15:40:51,963 - WARNING -  * Debugger is active!
+2024-10-31 15:40:51,971 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:43:30,547 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:43:30,627 - INFO -  * Restarting with stat
+2024-10-31 15:43:32,131 - WARNING -  * Debugger is active!
+2024-10-31 15:43:32,138 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:43:46,594 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:43:46,681 - INFO -  * Restarting with stat
+2024-10-31 15:43:48,184 - WARNING -  * Debugger is active!
+2024-10-31 15:43:48,191 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:46:06,297 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:46:06,377 - INFO -  * Restarting with stat
+2024-10-31 15:46:07,865 - WARNING -  * Debugger is active!
+2024-10-31 15:46:07,872 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:46:36,583 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:46:36,667 - INFO -  * Restarting with stat
+2024-10-31 15:46:38,144 - WARNING -  * Debugger is active!
+2024-10-31 15:46:38,150 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:47:01,401 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\DBM\\DBM_Backup.py', reloading
+2024-10-31 15:47:01,483 - INFO -  * Restarting with stat
+2024-10-31 15:47:03,036 - WARNING -  * Debugger is active!
+2024-10-31 15:47:03,043 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:53:14,099 - INFO - Flask application is shutting down.
+2024-10-31 15:53:14,180 - INFO - Flask application is shutting down.
+2024-10-31 15:53:38,464 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 15:53:38,464 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:53:38,465 - INFO -  * Restarting with stat
+2024-10-31 15:53:39,912 - WARNING -  * Debugger is active!
+2024-10-31 15:53:39,919 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:53:48,156 - INFO - 127.0.0.1 - - [31/Oct/2024 15:53:48] "GET / HTTP/1.1" 200 -
+2024-10-31 15:53:55,776 - INFO - Data range selected: 2024-01-31 to 2024-10-31 with filter: both
+2024-10-31 15:53:56,775 - INFO - 127.0.0.1 - - [31/Oct/2024 15:53:56] "POST / HTTP/1.1" 200 -
+2024-10-31 15:53:56,832 - INFO - 127.0.0.1 - - [31/Oct/2024 15:53:56] "GET /Results/map.html HTTP/1.1" 200 -
+2024-10-31 15:55:57,475 - INFO - Flask application is shutting down.
+2024-10-31 15:55:57,573 - INFO - Flask application is shutting down.
+2024-10-31 15:56:00,346 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 15:56:00,346 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:56:00,348 - INFO -  * Restarting with stat
+2024-10-31 15:56:01,767 - WARNING -  * Debugger is active!
+2024-10-31 15:56:01,775 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:56:17,027 - INFO - Data range selected: 2024-01-31 to 2024-10-31 with filter: both
+2024-10-31 15:56:18,051 - INFO - 127.0.0.1 - - [31/Oct/2024 15:56:18] "POST / HTTP/1.1" 200 -
+2024-10-31 15:56:18,119 - INFO - 127.0.0.1 - - [31/Oct/2024 15:56:18] "GET /Results/map.html HTTP/1.1" 200 -
+2024-10-31 15:56:18,435 - INFO - 127.0.0.1 - - [31/Oct/2024 15:56:18] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-10-31 15:56:46,732 - INFO - Flask application is shutting down.
+2024-10-31 15:56:46,835 - INFO - Flask application is shutting down.
+2024-10-31 15:56:50,012 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.12.13:5000
+2024-10-31 15:56:50,012 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:56:50,013 - INFO -  * Restarting with stat
+2024-10-31 15:56:51,457 - WARNING -  * Debugger is active!
+2024-10-31 15:56:51,465 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:57:42,114 - INFO - Flask application is shutting down.
+2024-10-31 15:57:42,192 - INFO - Flask application is shutting down.
+2024-10-31 15:57:45,385 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.12.13:5000
+2024-10-31 15:57:45,385 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:57:45,386 - INFO -  * Restarting with stat
+2024-10-31 15:57:46,934 - WARNING -  * Debugger is active!
+2024-10-31 15:57:46,941 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 15:58:05,587 - INFO - 127.0.0.1 - - [31/Oct/2024 15:58:05] "GET / HTTP/1.1" 200 -
+2024-10-31 15:58:05,723 - INFO - 127.0.0.1 - - [31/Oct/2024 15:58:05] "GET /static/favicon.ico HTTP/1.1" 200 -
+2024-10-31 15:58:13,832 - INFO - Data range selected: 2024-10-01 to 2024-10-31 with filter: both
+2024-10-31 15:58:14,000 - INFO - 127.0.0.1 - - [31/Oct/2024 15:58:14] "POST / HTTP/1.1" 200 -
+2024-10-31 15:58:14,058 - INFO - 127.0.0.1 - - [31/Oct/2024 15:58:14] "GET /Results/map.html HTTP/1.1" 200 -
+2024-10-31 15:58:33,504 - INFO - Flask application is shutting down.
+2024-10-31 15:58:33,590 - INFO - Flask application is shutting down.
+2024-10-31 15:58:35,289 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 15:58:35,289 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:58:35,290 - INFO -  * Restarting with stat
+2024-10-31 15:58:36,710 - WARNING -  * Debugger is active!
+2024-10-31 15:58:36,717 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:12:45,372 - INFO - 127.0.0.1 - - [31/Oct/2024 16:12:45] "GET / HTTP/1.1" 200 -
+2024-10-31 16:12:45,557 - INFO - 127.0.0.1 - - [31/Oct/2024 16:12:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-10-31 16:12:50,448 - INFO - Data range selected: 2024-10-02 to 2024-10-17 with filter: both
+2024-10-31 16:12:50,614 - INFO - 127.0.0.1 - - [31/Oct/2024 16:12:50] "POST / HTTP/1.1" 200 -
+2024-10-31 16:12:50,674 - INFO - 127.0.0.1 - - [31/Oct/2024 16:12:50] "GET /Results/map.html HTTP/1.1" 200 -
+2024-10-31 16:26:43,764 - INFO - Flask application is shutting down.
+2024-10-31 16:26:43,844 - INFO - Flask application is shutting down.
+2024-10-31 16:27:10,969 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 16:27:10,969 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:27:10,970 - INFO -  * Restarting with stat
+2024-10-31 16:27:12,402 - WARNING -  * Debugger is active!
+2024-10-31 16:27:12,408 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:35:21,106 - INFO - Flask application is shutting down.
+2024-10-31 16:35:21,186 - INFO - Flask application is shutting down.
+2024-10-31 16:38:50,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 16:38:50,896 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:38:50,897 - INFO -  * Restarting with stat
+2024-10-31 16:38:52,328 - WARNING -  * Debugger is active!
+2024-10-31 16:38:52,335 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:38:55,887 - INFO - Data range selected: 2024-10-02 to 2024-10-17 with filter: both
+2024-10-31 16:38:56,054 - INFO - 127.0.0.1 - - [31/Oct/2024 16:38:56] "POST / HTTP/1.1" 200 -
+2024-10-31 16:38:56,121 - INFO - 127.0.0.1 - - [31/Oct/2024 16:38:56] "GET /Results/map.html HTTP/1.1" 200 -
+2024-10-31 16:38:56,357 - INFO - 127.0.0.1 - - [31/Oct/2024 16:38:56] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-10-31 16:44:00,031 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\main.py', reloading
+2024-10-31 16:44:00,148 - INFO -  * Restarting with stat
+2024-10-31 16:44:01,435 - WARNING -  * Debugger is active!
+2024-10-31 16:44:01,441 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:44:36,717 - INFO -  * Detected change in 'E:\\ZURA KOPADZE\\mapping_stca\\main.py', reloading
+2024-10-31 16:44:36,793 - INFO -  * Restarting with stat
+2024-10-31 16:45:03,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 16:45:03,807 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:45:03,808 - INFO -  * Restarting with stat
+2024-10-31 16:45:05,194 - WARNING -  * Debugger is active!
+2024-10-31 16:45:05,201 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:46:56,123 - INFO - Flask application is shutting down.
+2024-10-31 16:46:56,199 - INFO - Flask application is shutting down.
+2024-10-31 16:46:59,225 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-10-31 16:46:59,225 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:46:59,227 - INFO -  * Restarting with stat
+2024-10-31 16:47:00,705 - WARNING -  * Debugger is active!
+2024-10-31 16:47:00,711 - INFO -  * Debugger PIN: 633-039-140
+2024-10-31 16:47:03,954 - INFO - Data range selected: 2024-10-02 to 2024-10-17 with filter: both
+2024-10-31 16:47:04,126 - INFO - 127.0.0.1 - - [31/Oct/2024 16:47:04] "POST / HTTP/1.1" 200 -
+2024-10-31 16:47:04,164 - INFO - 127.0.0.1 - - [31/Oct/2024 16:47:04] "GET /Results/map.html HTTP/1.1" 200 -

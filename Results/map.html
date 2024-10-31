@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ee6c1ac07e3d47d690c026e1382820e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ee6c1ac07e3d47d690c026e1382820e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ee6c1ac07e3d47d690c026e1382820e = L.map(
+                "map_0ee6c1ac07e3d47d690c026e1382820e",
+                {
+                    center: [41.60307974683545, 43.85563924050633],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07910e02efa074aaa75d5d399b60fcce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_07910e02efa074aaa75d5d399b60fcce.addTo(map_0ee6c1ac07e3d47d690c026e1382820e);
+        
+    
+            var feature_group_8a5804861e95adfd023f50f580d9514f = L.featureGroup(
+                {}
+            );
+        
+    
+            var heat_map_82e36191ebc4364211795ba620250f6b = L.heatLayer(
+                [[41.4898, 44.5924], [41.5564, 41.8476], [41.5556, 44.4515], [41.5718, 41.6951], [41.6019, 43.2137], [41.7107, 44.8281], [41.6384, 42.4531], [41.7412, 41.7527], [41.4966, 45.2031], [41.5745, 44.1947], [41.5779, 44.1492], [41.4818, 44.2447], [41.4356, 44.3503], [41.212, 46.7935], [41.5121, 44.0802], [41.5249, 43.7852], [42.1442, 44.2215], [41.6902, 42.3899], [41.5385, 44.6688], [41.4056, 44.7299], [41.7919, 40.7978], [41.7388, 41.7933], [41.5661, 44.3161], [41.4615, 45.5431], [41.4006, 45.9938], [41.5331, 44.1641], [41.7956, 40.7262], [41.5062, 44.3358], [41.6751, 42.8232], [41.5356, 43.9609], [41.4776, 45.4351], [42.1931, 44.3274], [42.1937, 44.3297], [41.3645, 44.9881], [42.1998, 44.558], [41.3076, 46.6716], [41.6647, 42.4131], [41.5708, 41.6876], [41.6778, 42.7666], [41.7438, 41.7169], [41.4918, 44.1805], [42.2243, 44.7103], [41.6766, 44.9459], [41.6929, 42.5616], [41.7433, 41.7134], [41.8085, 40.4592], [41.4058, 43.7308], [41.537, 44.7015], [41.679, 42.7532], [41.5574, 44.4244], [41.4681, 45.5157], [41.4681, 44.3543], [41.4863, 44.2148], [40.9482, 46.4065], [41.6257, 42.2896], [41.6703, 42.8775], [41.6446, 42.526], [41.564, 44.2044], [41.515, 44.3264], [41.4844, 44.2243], [42.1862, 44.4806], [42.1697, 44.3722], [41.3985, 44.2389], [41.4258, 44.6258], [41.6873, 42.6347], [41.5226, 44.2974], [41.304, 46.7076], [41.2104, 46.788], [41.4902, 44.5527], [41.6986, 42.4681], [41.7997, 40.2822], [41.4015, 44.7443], [41.4965, 43.9057], [41.4673, 44.7603], [41.5678, 44.2819], [41.5358, 44.0837], [41.4708, 45.4626], [41.7456, 41.6798], [41.5161, 44.1151]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 10}
+            );
+        
+    
+            heat_map_82e36191ebc4364211795ba620250f6b.addTo(feature_group_8a5804861e95adfd023f50f580d9514f);
+        
+    
+            feature_group_8a5804861e95adfd023f50f580d9514f.addTo(map_0ee6c1ac07e3d47d690c026e1382820e);
+        
+    
+            var feature_group_7b101b064727df64e204205b1c736448 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0c9f674d9f25eef8b15bb2c19ca7a10a = L.marker(
+                [41.4898, 44.5924],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_c78210461bfe7f437bd0f4af214f2fef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c9f674d9f25eef8b15bb2c19ca7a10a.setIcon(icon_c78210461bfe7f437bd0f4af214f2fef);
+        
+    
+        var popup_e2f978bd2055f708c6250adce959703e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_569f0312ebacb86c2f6d8529a6caf57d = $(`<div id="html_569f0312ebacb86c2f6d8529a6caf57d" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> VIR300 / 0155<br><strong>Date:</strong> 2024-10-09<br><strong>Time:</strong> 23:48:07<br><strong>STCA-ID:</strong> STCA-003<br></div>`)[0];
+                popup_e2f978bd2055f708c6250adce959703e.setContent(html_569f0312ebacb86c2f6d8529a6caf57d);
+            
+        
+
+        marker_0c9f674d9f25eef8b15bb2c19ca7a10a.bindPopup(popup_e2f978bd2055f708c6250adce959703e)
+        ;
+
+        
+    
+    
+            var marker_a77024eec881d08619e4374d1827197f = L.marker(
+                [41.5564, 41.8476],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_a24b40c16ea2a58445b6bab402a5bcc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a77024eec881d08619e4374d1827197f.setIcon(icon_a24b40c16ea2a58445b6bab402a5bcc7);
+        
+    
+        var popup_73db1093897c2fd82567fc2212f4b8d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5f80e9441794ae14d4a72e4fd4405de = $(`<div id="html_f5f80e9441794ae14d4a72e4fd4405de" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CPA233 / 6777<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 02:02:42<br><strong>STCA-ID:</strong> STCA-013<br></div>`)[0];
+                popup_73db1093897c2fd82567fc2212f4b8d5.setContent(html_f5f80e9441794ae14d4a72e4fd4405de);
+            
+        
+
+        marker_a77024eec881d08619e4374d1827197f.bindPopup(popup_73db1093897c2fd82567fc2212f4b8d5)
+        ;
+
+        
+    
+    
+            var marker_1ba19f19fceaa453692523adc61ec451 = L.marker(
+                [41.5556, 44.4515],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_132769d785ca333fa3826039fa8972b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ba19f19fceaa453692523adc61ec451.setIcon(icon_132769d785ca333fa3826039fa8972b4);
+        
+    
+        var popup_6ee89450832a6c42c8260be21cfb044b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1355ae27d2a65f26fb8a239bcce2abd1 = $(`<div id="html_1355ae27d2a65f26fb8a239bcce2abd1" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THY371 / 2057<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 00:19:31<br><strong>STCA-ID:</strong> STCA-020<br></div>`)[0];
+                popup_6ee89450832a6c42c8260be21cfb044b.setContent(html_1355ae27d2a65f26fb8a239bcce2abd1);
+            
+        
+
+        marker_1ba19f19fceaa453692523adc61ec451.bindPopup(popup_6ee89450832a6c42c8260be21cfb044b)
+        ;
+
+        
+    
+    
+            var marker_87015d8bd2da405ff931e2b99eb5ca4d = L.marker(
+                [41.5718, 41.6951],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_d5a42bd94e608577a32ddc9768be62bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87015d8bd2da405ff931e2b99eb5ca4d.setIcon(icon_d5a42bd94e608577a32ddc9768be62bf);
+        
+    
+        var popup_9d9d9cb6358198489bee5b2bf3c85db8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1376daeade073ae821fc5ca631d2cb3b = $(`<div id="html_1376daeade073ae821fc5ca631d2cb3b" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AAR793 / 7623<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 01:39:06<br><strong>STCA-ID:</strong> STCA-040<br></div>`)[0];
+                popup_9d9d9cb6358198489bee5b2bf3c85db8.setContent(html_1376daeade073ae821fc5ca631d2cb3b);
+            
+        
+
+        marker_87015d8bd2da405ff931e2b99eb5ca4d.bindPopup(popup_9d9d9cb6358198489bee5b2bf3c85db8)
+        ;
+
+        
+    
+    
+            var marker_08a0b0e401c0349ec8f4963dbf0c05dc = L.marker(
+                [41.6019, 43.2137],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_9a8e4cb26be1c8d07a92087ffb7feff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08a0b0e401c0349ec8f4963dbf0c05dc.setIcon(icon_9a8e4cb26be1c8d07a92087ffb7feff4);
+        
+    
+        var popup_4177a96292c2c9afd2a5d5d23e73e8d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c13777ef28f3899675efc216b5685a58 = $(`<div id="html_c13777ef28f3899675efc216b5685a58" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> VTI027 / AHY072<br><strong>Date:</strong> 2024-10-11<br><strong>Time:</strong> 12:15:44<br><strong>STCA-ID:</strong> STCA-040<br></div>`)[0];
+                popup_4177a96292c2c9afd2a5d5d23e73e8d9.setContent(html_c13777ef28f3899675efc216b5685a58);
+            
+        
+
+        marker_08a0b0e401c0349ec8f4963dbf0c05dc.bindPopup(popup_4177a96292c2c9afd2a5d5d23e73e8d9)
+        ;
+
+        
+    
+    
+            var marker_ed6ebc2d1832f4c51f4aa89f2f1b37e9 = L.marker(
+                [41.7107, 44.8281],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_98370516ec9d229b244a9cde4fd9d98e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed6ebc2d1832f4c51f4aa89f2f1b37e9.setIcon(icon_98370516ec9d229b244a9cde4fd9d98e);
+        
+    
+        var popup_ff893930d4ad0e236ed707db8f3accef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0dee5748f5ef58247f8114eb5e8f1a1e = $(`<div id="html_0dee5748f5ef58247f8114eb5e8f1a1e" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> 7057 / 5003<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 05:29:20<br><strong>STCA-ID:</strong> STCA-042<br></div>`)[0];
+                popup_ff893930d4ad0e236ed707db8f3accef.setContent(html_0dee5748f5ef58247f8114eb5e8f1a1e);
+            
+        
+
+        marker_ed6ebc2d1832f4c51f4aa89f2f1b37e9.bindPopup(popup_ff893930d4ad0e236ed707db8f3accef)
+        ;
+
+        
+    
+    
+            var marker_704a6180878216ed46ecbebc267b2c9d = L.marker(
+                [41.6384, 42.4531],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_8a61128a285875a2c25a955cfffd4272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_704a6180878216ed46ecbebc267b2c9d.setIcon(icon_8a61128a285875a2c25a955cfffd4272);
+        
+    
+        var popup_6c0b99744aa045ba5c2e4fd1afc57ddd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a9b5d260338795b00ae8d0804a5ceec = $(`<div id="html_3a9b5d260338795b00ae8d0804a5ceec" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KAL961 / 0534<br><strong>Date:</strong> 2024-10-12<br><strong>Time:</strong> 13:47:21<br><strong>STCA-ID:</strong> STCA-054<br></div>`)[0];
+                popup_6c0b99744aa045ba5c2e4fd1afc57ddd.setContent(html_3a9b5d260338795b00ae8d0804a5ceec);
+            
+        
+
+        marker_704a6180878216ed46ecbebc267b2c9d.bindPopup(popup_6c0b99744aa045ba5c2e4fd1afc57ddd)
+        ;
+
+        
+    
+    
+            var marker_bf2cec10014f4470b0346cb223e3544c = L.marker(
+                [41.7412, 41.7527],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_bb07e8f452f569ce2bbee078ba7581d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf2cec10014f4470b0346cb223e3544c.setIcon(icon_bb07e8f452f569ce2bbee078ba7581d1);
+        
+    
+        var popup_4c58b7fe09b8e6c4bf8db498b1a04524 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c87c192d8bc2c19b67337b5f94a8dc4 = $(`<div id="html_7c87c192d8bc2c19b67337b5f94a8dc4" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KLM887 / 7465<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 23:27:30<br><strong>STCA-ID:</strong> STCA-071<br></div>`)[0];
+                popup_4c58b7fe09b8e6c4bf8db498b1a04524.setContent(html_7c87c192d8bc2c19b67337b5f94a8dc4);
+            
+        
+
+        marker_bf2cec10014f4470b0346cb223e3544c.bindPopup(popup_4c58b7fe09b8e6c4bf8db498b1a04524)
+        ;
+
+        
+    
+    
+            var marker_05ea2176c465f8f5bd1079ffe9a4244f = L.marker(
+                [41.4966, 45.2031],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_fe9c7fc5b1214b01e43d9059255702e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_05ea2176c465f8f5bd1079ffe9a4244f.setIcon(icon_fe9c7fc5b1214b01e43d9059255702e5);
+        
+    
+        var popup_88b3c6357986492dd6499c827525b30f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_68d8df5d1bc47378e5fad6e5e8a5ade5 = $(`<div id="html_68d8df5d1bc47378e5fad6e5e8a5ade5" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THA910 / ********<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 01:14:54<br><strong>STCA-ID:</strong> STCA-074<br></div>`)[0];
+                popup_88b3c6357986492dd6499c827525b30f.setContent(html_68d8df5d1bc47378e5fad6e5e8a5ade5);
+            
+        
+
+        marker_05ea2176c465f8f5bd1079ffe9a4244f.bindPopup(popup_88b3c6357986492dd6499c827525b30f)
+        ;
+
+        
+    
+    
+            var marker_87757f31ba2c29be3468b6ae95e4861a = L.marker(
+                [41.5745, 44.1947],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_b17eca365fcb648dd46a8118a0c58be3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87757f31ba2c29be3468b6ae95e4861a.setIcon(icon_b17eca365fcb648dd46a8118a0c58be3);
+        
+    
+        var popup_b50daf724827208e594a200d089ae2ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_305e1720eb8fb95e8083236e2d814531 = $(`<div id="html_305e1720eb8fb95e8083236e2d814531" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AAR775 / 4200<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 01:22:36<br><strong>STCA-ID:</strong> STCA-080<br></div>`)[0];
+                popup_b50daf724827208e594a200d089ae2ab.setContent(html_305e1720eb8fb95e8083236e2d814531);
+            
+        
+
+        marker_87757f31ba2c29be3468b6ae95e4861a.bindPopup(popup_b50daf724827208e594a200d089ae2ab)
+        ;
+
+        
+    
+    
+            var marker_58e70cfe481cb25aa92c66c5f063999b = L.marker(
+                [41.5779, 44.1492],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_59ee3d7510f9eedcfeb2cda7f9877443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58e70cfe481cb25aa92c66c5f063999b.setIcon(icon_59ee3d7510f9eedcfeb2cda7f9877443);
+        
+    
+        var popup_4f78361b278543199895179591eb4052 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d84e5f3c253c34c9eb412ceaaecfd76 = $(`<div id="html_8d84e5f3c253c34c9eb412ceaaecfd76" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AAR775 / 4200<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 01:22:52<br><strong>STCA-ID:</strong> STCA-080<br></div>`)[0];
+                popup_4f78361b278543199895179591eb4052.setContent(html_8d84e5f3c253c34c9eb412ceaaecfd76);
+            
+        
+
+        marker_58e70cfe481cb25aa92c66c5f063999b.bindPopup(popup_4f78361b278543199895179591eb4052)
+        ;
+
+        
+    
+    
+            var marker_cb04b880c385b4afcd5742ec261b91bf = L.marker(
+                [41.4818, 44.2447],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_9231db23194aba1701613b6a9ec8508f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb04b880c385b4afcd5742ec261b91bf.setIcon(icon_9231db23194aba1701613b6a9ec8508f);
+        
+    
+        var popup_c1350f31dffb8ec6bc45be8b58da91a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02c3ec6b5e58aa56cf39a83f7f6540ee = $(`<div id="html_02c3ec6b5e58aa56cf39a83f7f6540ee" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BAW7 / 4600<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 12:29:00<br><strong>STCA-ID:</strong> STCA-080<br></div>`)[0];
+                popup_c1350f31dffb8ec6bc45be8b58da91a9.setContent(html_02c3ec6b5e58aa56cf39a83f7f6540ee);
+            
+        
+
+        marker_cb04b880c385b4afcd5742ec261b91bf.bindPopup(popup_c1350f31dffb8ec6bc45be8b58da91a9)
+        ;
+
+        
+    
+    
+            var marker_00dd3a8084a455d01eb083b570fc4229 = L.marker(
+                [41.4356, 44.3503],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_93de319bca82d086145c4f0fc61c3cf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00dd3a8084a455d01eb083b570fc4229.setIcon(icon_93de319bca82d086145c4f0fc61c3cf8);
+        
+    
+        var popup_e1bc048454ee51193fef40c361eade5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61b7c896f86f7d4ecb1f573b7df57424 = $(`<div id="html_61b7c896f86f7d4ecb1f573b7df57424" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THA951 / 4504<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 16:08:01<br><strong>STCA-ID:</strong> STCA-084<br></div>`)[0];
+                popup_e1bc048454ee51193fef40c361eade5d.setContent(html_61b7c896f86f7d4ecb1f573b7df57424);
+            
+        
+
+        marker_00dd3a8084a455d01eb083b570fc4229.bindPopup(popup_e1bc048454ee51193fef40c361eade5d)
+        ;
+
+        
+    
+    
+            var marker_d099c069046382584df2edb7b8695fe3 = L.marker(
+                [41.212, 46.7935],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_0ee11bc654d227aee0c92a10be317702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d099c069046382584df2edb7b8695fe3.setIcon(icon_0ee11bc654d227aee0c92a10be317702);
+        
+    
+        var popup_1256ccfa895bf3206d04be58818e95fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28921d79ccc78cd60ccc3d3633e8862f = $(`<div id="html_28921d79ccc78cd60ccc3d3633e8862f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THY73 / 5122<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 23:51:54<br><strong>STCA-ID:</strong> STCA-088<br></div>`)[0];
+                popup_1256ccfa895bf3206d04be58818e95fd.setContent(html_28921d79ccc78cd60ccc3d3633e8862f);
+            
+        
+
+        marker_d099c069046382584df2edb7b8695fe3.bindPopup(popup_1256ccfa895bf3206d04be58818e95fd)
+        ;
+
+        
+    
+    
+            var marker_a5c184698fc9d629e40ca94140aada47 = L.marker(
+                [41.5121, 44.0802],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_68056fb9dfa0e71d5c79868a6f212696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5c184698fc9d629e40ca94140aada47.setIcon(icon_68056fb9dfa0e71d5c79868a6f212696);
+        
+    
+        var popup_8c758fb60dd923f1fe13aeb6dd78f92a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7568bcab714b1f3e0bb56b01bbc658c5 = $(`<div id="html_7568bcab714b1f3e0bb56b01bbc658c5" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AHY008 / 2234<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 01:56:03<br><strong>STCA-ID:</strong> STCA-094<br></div>`)[0];
+                popup_8c758fb60dd923f1fe13aeb6dd78f92a.setContent(html_7568bcab714b1f3e0bb56b01bbc658c5);
+            
+        
+
+        marker_a5c184698fc9d629e40ca94140aada47.bindPopup(popup_8c758fb60dd923f1fe13aeb6dd78f92a)
+        ;
+
+        
+    
+    
+            var marker_2844389336b4ceefce6a5b520adbefbc = L.marker(
+                [41.5249, 43.7852],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_9ef2508aa8c98465750cc064c94b89e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2844389336b4ceefce6a5b520adbefbc.setIcon(icon_9ef2508aa8c98465750cc064c94b89e6);
+        
+    
+        var popup_0a8ed5540dafed20cb4105fa27ab25c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_022e5aaac55dee9e417665352386eae7 = $(`<div id="html_022e5aaac55dee9e417665352386eae7" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> EVA088 / 1106<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 13:19:50<br><strong>STCA-ID:</strong> STCA-096<br></div>`)[0];
+                popup_0a8ed5540dafed20cb4105fa27ab25c3.setContent(html_022e5aaac55dee9e417665352386eae7);
+            
+        
+
+        marker_2844389336b4ceefce6a5b520adbefbc.bindPopup(popup_0a8ed5540dafed20cb4105fa27ab25c3)
+        ;
+
+        
+    
+    
+            var marker_929e5083d8cb7e7aa91ba3c8f36de9b9 = L.marker(
+                [42.1442, 44.2215],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_99c98760450de63cbcbed4c1b0887867 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_929e5083d8cb7e7aa91ba3c8f36de9b9.setIcon(icon_99c98760450de63cbcbed4c1b0887867);
+        
+    
+        var popup_27d5c1bc2035ffc305656c9143239622 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37da9bb416605d25e13ad017e37d6e8d = $(`<div id="html_37da9bb416605d25e13ad017e37d6e8d" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZV864 / 1327<br><strong>Date:</strong> 2024-10-09<br><strong>Time:</strong> 12:10:43<br><strong>STCA-ID:</strong> STCA-096<br></div>`)[0];
+                popup_27d5c1bc2035ffc305656c9143239622.setContent(html_37da9bb416605d25e13ad017e37d6e8d);
+            
+        
+
+        marker_929e5083d8cb7e7aa91ba3c8f36de9b9.bindPopup(popup_27d5c1bc2035ffc305656c9143239622)
+        ;
+
+        
+    
+    
+            var marker_ac51594b9fd38bd15153e28eb128bde3 = L.marker(
+                [41.6902, 42.3899],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_0fd55c0986f33958af6ca02031b3fb5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac51594b9fd38bd15153e28eb128bde3.setIcon(icon_0fd55c0986f33958af6ca02031b3fb5f);
+        
+    
+        var popup_be6525f8159f997480e27d9d03b03b8b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61b6fad26a135c30099bc629d5c88050 = $(`<div id="html_61b6fad26a135c30099bc629d5c88050" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BAW261 / 0000<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 22:26:09<br><strong>STCA-ID:</strong> STCA-098<br></div>`)[0];
+                popup_be6525f8159f997480e27d9d03b03b8b.setContent(html_61b6fad26a135c30099bc629d5c88050);
+            
+        
+
+        marker_ac51594b9fd38bd15153e28eb128bde3.bindPopup(popup_be6525f8159f997480e27d9d03b03b8b)
+        ;
+
+        
+    
+    
+            var marker_4a8ae9212e42ff79b4e5c48351ca6356 = L.marker(
+                [41.5385, 44.6688],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_bee7fb7c96f1ddc29d932bfa1a9b778a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a8ae9212e42ff79b4e5c48351ca6356.setIcon(icon_bee7fb7c96f1ddc29d932bfa1a9b778a);
+        
+    
+        var popup_337fbd64c186648ef40dcb5d97642b44 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88b60e6c58f64787f2eaa28f82541c7c = $(`<div id="html_88b60e6c58f64787f2eaa28f82541c7c" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KLM888 / 0155<br><strong>Date:</strong> 2024-10-09<br><strong>Time:</strong> 23:47:43<br><strong>STCA-ID:</strong> STCA-101<br></div>`)[0];
+                popup_337fbd64c186648ef40dcb5d97642b44.setContent(html_88b60e6c58f64787f2eaa28f82541c7c);
+            
+        
+
+        marker_4a8ae9212e42ff79b4e5c48351ca6356.bindPopup(popup_337fbd64c186648ef40dcb5d97642b44)
+        ;
+
+        
+    
+    
+            var marker_f68498ce03224118021dfce24d2a575d = L.marker(
+                [41.4056, 44.7299],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_ac0f53f97d0e4ed1030e6ddc7953c202 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f68498ce03224118021dfce24d2a575d.setIcon(icon_ac0f53f97d0e4ed1030e6ddc7953c202);
+        
+    
+        var popup_cbf27a9f095579554b89d3e5bc73141a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10a0459eabf1323316763983ee58f84a = $(`<div id="html_10a0459eabf1323316763983ee58f84a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BOX618 / 7714<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 23:31:10<br><strong>STCA-ID:</strong> STCA-107<br></div>`)[0];
+                popup_cbf27a9f095579554b89d3e5bc73141a.setContent(html_10a0459eabf1323316763983ee58f84a);
+            
+        
+
+        marker_f68498ce03224118021dfce24d2a575d.bindPopup(popup_cbf27a9f095579554b89d3e5bc73141a)
+        ;
+
+        
+    
+    
+            var marker_3322aa25434a28e3ca838e2e0e01b1c4 = L.marker(
+                [41.7919, 40.7978],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_828a7ed3ba5286dd1e057557051de6b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3322aa25434a28e3ca838e2e0e01b1c4.setIcon(icon_828a7ed3ba5286dd1e057557051de6b7);
+        
+    
+        var popup_fd9ab88b14c8f0d97c5dfabbd7af8d7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ee505869d15a571f912c130dd66dcdd = $(`<div id="html_8ee505869d15a571f912c130dd66dcdd" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CPA257 / CKS9701<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 09:47:57<br><strong>STCA-ID:</strong> STCA-109<br></div>`)[0];
+                popup_fd9ab88b14c8f0d97c5dfabbd7af8d7e.setContent(html_8ee505869d15a571f912c130dd66dcdd);
+            
+        
+
+        marker_3322aa25434a28e3ca838e2e0e01b1c4.bindPopup(popup_fd9ab88b14c8f0d97c5dfabbd7af8d7e)
+        ;
+
+        
+    
+    
+            var marker_e787b238679e8b284eff0cc3fd84ceae = L.marker(
+                [41.7388, 41.7933],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_dc0cfeac57b06f7288f91f81d368a1c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e787b238679e8b284eff0cc3fd84ceae.setIcon(icon_dc0cfeac57b06f7288f91f81d368a1c2);
+        
+    
+        var popup_dacceffb84beddc872350414d15110b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6dcc71b3753b95a4d27dd0c56f902c3 = $(`<div id="html_f6dcc71b3753b95a4d27dd0c56f902c3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA303 / 1436<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 14:05:06<br><strong>STCA-ID:</strong> STCA-127<br></div>`)[0];
+                popup_dacceffb84beddc872350414d15110b2.setContent(html_f6dcc71b3753b95a4d27dd0c56f902c3);
+            
+        
+
+        marker_e787b238679e8b284eff0cc3fd84ceae.bindPopup(popup_dacceffb84beddc872350414d15110b2)
+        ;
+
+        
+    
+    
+            var marker_563424e47008cd667913643d2346252b = L.marker(
+                [41.5661, 44.3161],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_ec5bf9af4ab47853949bb27d01eb1a9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_563424e47008cd667913643d2346252b.setIcon(icon_ec5bf9af4ab47853949bb27d01eb1a9e);
+        
+    
+        var popup_436c2ba41fe9096f57f7a792c0193e65 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_140fc633ba1723af20da3a635dafc56f = $(`<div id="html_140fc633ba1723af20da3a635dafc56f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THA910 / ********<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 01:20:06<br><strong>STCA-ID:</strong> STCA-128<br></div>`)[0];
+                popup_436c2ba41fe9096f57f7a792c0193e65.setContent(html_140fc633ba1723af20da3a635dafc56f);
+            
+        
+
+        marker_563424e47008cd667913643d2346252b.bindPopup(popup_436c2ba41fe9096f57f7a792c0193e65)
+        ;
+
+        
+    
+    
+            var marker_8a0bdad77694358bb4a0fab4013f4f65 = L.marker(
+                [41.4615, 45.5431],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_67071cb5b435f85d1116df2d78f4cce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a0bdad77694358bb4a0fab4013f4f65.setIcon(icon_67071cb5b435f85d1116df2d78f4cce4);
+        
+    
+        var popup_9fb78327b897b49bc3f0095328a50b98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e366e0bda440e52e125c73d6d4e389ff = $(`<div id="html_e366e0bda440e52e125c73d6d4e389ff" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA352 / 0233<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 01:08:09<br><strong>STCA-ID:</strong> STCA-133<br></div>`)[0];
+                popup_9fb78327b897b49bc3f0095328a50b98.setContent(html_e366e0bda440e52e125c73d6d4e389ff);
+            
+        
+
+        marker_8a0bdad77694358bb4a0fab4013f4f65.bindPopup(popup_9fb78327b897b49bc3f0095328a50b98)
+        ;
+
+        
+    
+    
+            var marker_d60c78800be89bfaa3e724a848461c28 = L.marker(
+                [41.4006, 45.9938],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_b2d02a05800036f5eddbcd590c3a8713 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d60c78800be89bfaa3e724a848461c28.setIcon(icon_b2d02a05800036f5eddbcd590c3a8713);
+        
+    
+        var popup_fbe45f299ed1ef3860edb5501d9626be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21f48e211d41fd777025bdd52df26f11 = $(`<div id="html_21f48e211d41fd777025bdd52df26f11" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THY6485 / 3032<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 11:16:19<br><strong>STCA-ID:</strong> STCA-143<br></div>`)[0];
+                popup_fbe45f299ed1ef3860edb5501d9626be.setContent(html_21f48e211d41fd777025bdd52df26f11);
+            
+        
+
+        marker_d60c78800be89bfaa3e724a848461c28.bindPopup(popup_fbe45f299ed1ef3860edb5501d9626be)
+        ;
+
+        
+    
+    
+            var marker_55c7a7b9085f978de02e1c153e786058 = L.marker(
+                [41.5331, 44.1641],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_886e56202858e7938795c111e2da8736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55c7a7b9085f978de02e1c153e786058.setIcon(icon_886e56202858e7938795c111e2da8736);
+        
+    
+        var popup_ab02b7c15ce4ab4383984c10d5891729 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f480904a2ab0b4065bf235794fe69a16 = $(`<div id="html_f480904a2ab0b4065bf235794fe69a16" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AAR511 / 4600<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 12:29:00<br><strong>STCA-ID:</strong> STCA-148<br></div>`)[0];
+                popup_ab02b7c15ce4ab4383984c10d5891729.setContent(html_f480904a2ab0b4065bf235794fe69a16);
+            
+        
+
+        marker_55c7a7b9085f978de02e1c153e786058.bindPopup(popup_ab02b7c15ce4ab4383984c10d5891729)
+        ;
+
+        
+    
+    
+            var marker_62c2713fab89bed3a69e5bb35798dcdc = L.marker(
+                [41.7956, 40.7262],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_86c83da51e24213fd745d5c48e248afd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62c2713fab89bed3a69e5bb35798dcdc.setIcon(icon_86c83da51e24213fd745d5c48e248afd);
+        
+    
+        var popup_a0ef1419acf3b63968a022b3c45ed133 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75db558c8849fc39b276daa2e84a2777 = $(`<div id="html_75db558c8849fc39b276daa2e84a2777" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AFR258 / 0603<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 15:49:20<br><strong>STCA-ID:</strong> STCA-159<br></div>`)[0];
+                popup_a0ef1419acf3b63968a022b3c45ed133.setContent(html_75db558c8849fc39b276daa2e84a2777);
+            
+        
+
+        marker_62c2713fab89bed3a69e5bb35798dcdc.bindPopup(popup_a0ef1419acf3b63968a022b3c45ed133)
+        ;
+
+        
+    
+    
+            var marker_8bdd9a9787465349f5e2ecc7eb4871c8 = L.marker(
+                [41.5062, 44.3358],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_16d607a189092576125a4cb4a49ca247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bdd9a9787465349f5e2ecc7eb4871c8.setIcon(icon_16d607a189092576125a4cb4a49ca247);
+        
+    
+        var popup_1641f51278e6a9ceff84415377527263 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19d4539290f569c6342dd7fd3b50c0fd = $(`<div id="html_19d4539290f569c6342dd7fd3b50c0fd" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> 6567 / AIC146<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 00:01:16<br><strong>STCA-ID:</strong> STCA-183<br></div>`)[0];
+                popup_1641f51278e6a9ceff84415377527263.setContent(html_19d4539290f569c6342dd7fd3b50c0fd);
+            
+        
+
+        marker_8bdd9a9787465349f5e2ecc7eb4871c8.bindPopup(popup_1641f51278e6a9ceff84415377527263)
+        ;
+
+        
+    
+    
+            var marker_cc2fb845721f1cf284e4828afc1deca3 = L.marker(
+                [41.6751, 42.8232],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_cccadc808af99c60836865e276584c58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc2fb845721f1cf284e4828afc1deca3.setIcon(icon_cccadc808af99c60836865e276584c58);
+        
+    
+        var popup_cc02baf601b384f0c7121fb216e86ab1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_680f9b5b08089fb5f39c4988f669ee2f = $(`<div id="html_680f9b5b08089fb5f39c4988f669ee2f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> DLH714 / 4371<br><strong>Date:</strong> 2024-10-04<br><strong>Time:</strong> 14:10:20<br><strong>STCA-ID:</strong> STCA-184<br></div>`)[0];
+                popup_cc02baf601b384f0c7121fb216e86ab1.setContent(html_680f9b5b08089fb5f39c4988f669ee2f);
+            
+        
+
+        marker_cc2fb845721f1cf284e4828afc1deca3.bindPopup(popup_cc02baf601b384f0c7121fb216e86ab1)
+        ;
+
+        
+    
+    
+            var marker_22c15427372b436e0078914ea1ccb93f = L.marker(
+                [41.5356, 43.9609],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_0a2f5ba13b76ff5126a8126811ac9fe2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22c15427372b436e0078914ea1ccb93f.setIcon(icon_0a2f5ba13b76ff5126a8126811ac9fe2);
+        
+    
+        var popup_6f53b1e9d572864341df085734a53166 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_005f1c1666522ab436189e663aa8ebe6 = $(`<div id="html_005f1c1666522ab436189e663aa8ebe6" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AHY611 / SRR2125<br><strong>Date:</strong> 2024-10-11<br><strong>Time:</strong> 08:06:51<br><strong>STCA-ID:</strong> STCA-186<br></div>`)[0];
+                popup_6f53b1e9d572864341df085734a53166.setContent(html_005f1c1666522ab436189e663aa8ebe6);
+            
+        
+
+        marker_22c15427372b436e0078914ea1ccb93f.bindPopup(popup_6f53b1e9d572864341df085734a53166)
+        ;
+
+        
+    
+    
+            var marker_4c9064a3103f4b233554a772f230f5ae = L.marker(
+                [41.4776, 45.4351],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_c931fd6e0ffd6127f229d6716ef3a09b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c9064a3103f4b233554a772f230f5ae.setIcon(icon_c931fd6e0ffd6127f229d6716ef3a09b);
+        
+    
+        var popup_6be0b9fec2fa8f12eee55719e5e1f896 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57766b19b14afee85787d714110a881e = $(`<div id="html_57766b19b14afee85787d714110a881e" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> VIR301 / 4545<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 10:42:12<br><strong>STCA-ID:</strong> STCA-187<br></div>`)[0];
+                popup_6be0b9fec2fa8f12eee55719e5e1f896.setContent(html_57766b19b14afee85787d714110a881e);
+            
+        
+
+        marker_4c9064a3103f4b233554a772f230f5ae.bindPopup(popup_6be0b9fec2fa8f12eee55719e5e1f896)
+        ;
+
+        
+    
+    
+            var marker_e4597106380c09da574e31897bb024e5 = L.marker(
+                [42.1931, 44.3274],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_bf73573828bf7b861b5095ad814477de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4597106380c09da574e31897bb024e5.setIcon(icon_bf73573828bf7b861b5095ad814477de);
+        
+    
+        var popup_f1539defaecd446db6ddaacdd1ec032b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_703abeea82ac85fab600d41561a95841 = $(`<div id="html_703abeea82ac85fab600d41561a95841" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZV841 / RWZ3030<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 01:08:27<br><strong>STCA-ID:</strong> STCA-192<br></div>`)[0];
+                popup_f1539defaecd446db6ddaacdd1ec032b.setContent(html_703abeea82ac85fab600d41561a95841);
+            
+        
+
+        marker_e4597106380c09da574e31897bb024e5.bindPopup(popup_f1539defaecd446db6ddaacdd1ec032b)
+        ;
+
+        
+    
+    
+            var marker_7ebafce7d0ee0990b38e820265ecf336 = L.marker(
+                [42.1937, 44.3297],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_1676c468630e9b9c7f9af9d5449dd0df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ebafce7d0ee0990b38e820265ecf336.setIcon(icon_1676c468630e9b9c7f9af9d5449dd0df);
+        
+    
+        var popup_19552ac2b2ac4c57b5b3553f50b2d31e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a68ba9c02f4bbdecdb273649d5c89818 = $(`<div id="html_a68ba9c02f4bbdecdb273649d5c89818" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZV841 / RWZ3030<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 01:08:41<br><strong>STCA-ID:</strong> STCA-192<br></div>`)[0];
+                popup_19552ac2b2ac4c57b5b3553f50b2d31e.setContent(html_a68ba9c02f4bbdecdb273649d5c89818);
+            
+        
+
+        marker_7ebafce7d0ee0990b38e820265ecf336.bindPopup(popup_19552ac2b2ac4c57b5b3553f50b2d31e)
+        ;
+
+        
+    
+    
+            var marker_d8212488fd7c479493b3b93ba0e0b38f = L.marker(
+                [41.3645, 44.9881],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_4ecb5f472dcbb710e372e4f31704dd58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8212488fd7c479493b3b93ba0e0b38f.setIcon(icon_4ecb5f472dcbb710e372e4f31704dd58);
+        
+    
+        var popup_ea0feffc7f498074942e14a0380768d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a823ac0fd53ff190bc6187a8a9078d49 = $(`<div id="html_a823ac0fd53ff190bc6187a8a9078d49" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZG1219 / 1176<br><strong>Date:</strong> 2024-10-09<br><strong>Time:</strong> 07:52:54<br><strong>STCA-ID:</strong> STCA-197<br></div>`)[0];
+                popup_ea0feffc7f498074942e14a0380768d9.setContent(html_a823ac0fd53ff190bc6187a8a9078d49);
+            
+        
+
+        marker_d8212488fd7c479493b3b93ba0e0b38f.bindPopup(popup_ea0feffc7f498074942e14a0380768d9)
+        ;
+
+        
+    
+    
+            var marker_afdfdd6d467cd4a6de170cc74e2c96c2 = L.marker(
+                [42.1998, 44.558],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_1e5b4e1f3ae029a4b2b729fd178a2058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afdfdd6d467cd4a6de170cc74e2c96c2.setIcon(icon_1e5b4e1f3ae029a4b2b729fd178a2058);
+        
+    
+        var popup_3aea768875cff13eb7de63b289e55385 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de36c9f006f99beb3978df51da4f0803 = $(`<div id="html_de36c9f006f99beb3978df51da4f0803" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZV863 / 1041<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 23:50:09<br><strong>STCA-ID:</strong> STCA-201<br></div>`)[0];
+                popup_3aea768875cff13eb7de63b289e55385.setContent(html_de36c9f006f99beb3978df51da4f0803);
+            
+        
+
+        marker_afdfdd6d467cd4a6de170cc74e2c96c2.bindPopup(popup_3aea768875cff13eb7de63b289e55385)
+        ;
+
+        
+    
+    
+            var marker_12753562849b08dafddeaf1041d7e082 = L.marker(
+                [41.3076, 46.6716],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_8606b8f60a398a54eca0b8be66040267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12753562849b08dafddeaf1041d7e082.setIcon(icon_8606b8f60a398a54eca0b8be66040267);
+        
+    
+        var popup_966fd861af0dbadd6563431427e122a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcd2ffa928cc283d476054240fad8820 = $(`<div id="html_dcd2ffa928cc283d476054240fad8820" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> FDX5030 / 3126<br><strong>Date:</strong> 2024-10-09<br><strong>Time:</strong> 06:07:48<br><strong>STCA-ID:</strong> STCA-202<br></div>`)[0];
+                popup_966fd861af0dbadd6563431427e122a3.setContent(html_dcd2ffa928cc283d476054240fad8820);
+            
+        
+
+        marker_12753562849b08dafddeaf1041d7e082.bindPopup(popup_966fd861af0dbadd6563431427e122a3)
+        ;
+
+        
+    
+    
+            var marker_1b379498b2f1bc235ff0f74b71d0200c = L.marker(
+                [41.6647, 42.4131],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_b7c8849603c118972c927649ab9b980b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b379498b2f1bc235ff0f74b71d0200c.setIcon(icon_b7c8849603c118972c927649ab9b980b);
+        
+    
+        var popup_c888e66f6c5e26393c145bd0261c0e76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca4b8772c6a112206688e8d4a35a283a = $(`<div id="html_ca4b8772c6a112206688e8d4a35a283a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> 0000 / FIN42<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 22:26:09<br><strong>STCA-ID:</strong> STCA-207<br></div>`)[0];
+                popup_c888e66f6c5e26393c145bd0261c0e76.setContent(html_ca4b8772c6a112206688e8d4a35a283a);
+            
+        
+
+        marker_1b379498b2f1bc235ff0f74b71d0200c.bindPopup(popup_c888e66f6c5e26393c145bd0261c0e76)
+        ;
+
+        
+    
+    
+            var marker_e8f4b40f3e10144b69b08ecdf6623c43 = L.marker(
+                [41.5708, 41.6876],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_d3e45f2a3b2bd23ef552f4aaeeb7f5b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8f4b40f3e10144b69b08ecdf6623c43.setIcon(icon_d3e45f2a3b2bd23ef552f4aaeeb7f5b3);
+        
+    
+        var popup_3388f70a59ea9b372b724f070891f04e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de0a890819889571daccf6bb35e56c1d = $(`<div id="html_de0a890819889571daccf6bb35e56c1d" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THA950 / 7623<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 01:39:06<br><strong>STCA-ID:</strong> STCA-213<br></div>`)[0];
+                popup_3388f70a59ea9b372b724f070891f04e.setContent(html_de0a890819889571daccf6bb35e56c1d);
+            
+        
+
+        marker_e8f4b40f3e10144b69b08ecdf6623c43.bindPopup(popup_3388f70a59ea9b372b724f070891f04e)
+        ;
+
+        
+    
+    
+            var marker_eb1f9a5a5a3ca93d8be2d8c9b5b05e25 = L.marker(
+                [41.6778, 42.7666],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_8ecc63a72b268fa1f86ac7660a22fe80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb1f9a5a5a3ca93d8be2d8c9b5b05e25.setIcon(icon_8ecc63a72b268fa1f86ac7660a22fe80);
+        
+    
+        var popup_bf2e299c939717b60511d828418f5c9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b27dc91fb7b6ed8c104571f35bdb5c6c = $(`<div id="html_b27dc91fb7b6ed8c104571f35bdb5c6c" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BAW7 / 2700<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 12:21:22<br><strong>STCA-ID:</strong> STCA-219<br></div>`)[0];
+                popup_bf2e299c939717b60511d828418f5c9a.setContent(html_b27dc91fb7b6ed8c104571f35bdb5c6c);
+            
+        
+
+        marker_eb1f9a5a5a3ca93d8be2d8c9b5b05e25.bindPopup(popup_bf2e299c939717b60511d828418f5c9a)
+        ;
+
+        
+    
+    
+            var marker_96e1727b97a5caadd0939254a8e5fa4d = L.marker(
+                [41.7438, 41.7169],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_63f54a1c8dab8649c63d03619b78503a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96e1727b97a5caadd0939254a8e5fa4d.setIcon(icon_63f54a1c8dab8649c63d03619b78503a);
+        
+    
+        var popup_7146b474c6cf843ac1307d4d862f4666 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5fc3a13f43afb3657e32010125f152de = $(`<div id="html_5fc3a13f43afb3657e32010125f152de" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> FIN141 / 6501<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 15:38:01<br><strong>STCA-ID:</strong> STCA-220<br></div>`)[0];
+                popup_7146b474c6cf843ac1307d4d862f4666.setContent(html_5fc3a13f43afb3657e32010125f152de);
+            
+        
+
+        marker_96e1727b97a5caadd0939254a8e5fa4d.bindPopup(popup_7146b474c6cf843ac1307d4d862f4666)
+        ;
+
+        
+    
+    
+            var marker_2c48e488499ed0d65ab4041e3a6b5dac = L.marker(
+                [41.4918, 44.1805],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_b94040c062ff31b10f7460a9e311b943 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c48e488499ed0d65ab4041e3a6b5dac.setIcon(icon_b94040c062ff31b10f7460a9e311b943);
+        
+    
+        var popup_15f00aff507cecfc8cd1b6711d90913e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_50645b9e2fecf5e6daaec17832aef537 = $(`<div id="html_50645b9e2fecf5e6daaec17832aef537" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AFR226 / 0272<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 12:39:19<br><strong>STCA-ID:</strong> STCA-224<br></div>`)[0];
+                popup_15f00aff507cecfc8cd1b6711d90913e.setContent(html_50645b9e2fecf5e6daaec17832aef537);
+            
+        
+
+        marker_2c48e488499ed0d65ab4041e3a6b5dac.bindPopup(popup_15f00aff507cecfc8cd1b6711d90913e)
+        ;
+
+        
+    
+    
+            var marker_059d367205a55aafdc6792ec35f976ac = L.marker(
+                [42.2243, 44.7103],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_cf53d5ee823e543c59de381e0d5407f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_059d367205a55aafdc6792ec35f976ac.setIcon(icon_cf53d5ee823e543c59de381e0d5407f5);
+        
+    
+        var popup_59e5d26cff919618cd7c70ba74e93b67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0076c6390ece030ad1d2729d54c7c43 = $(`<div id="html_b0076c6390ece030ad1d2729d54c7c43" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AZV863 / 1041<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 23:49:17<br><strong>STCA-ID:</strong> STCA-234<br></div>`)[0];
+                popup_59e5d26cff919618cd7c70ba74e93b67.setContent(html_b0076c6390ece030ad1d2729d54c7c43);
+            
+        
+
+        marker_059d367205a55aafdc6792ec35f976ac.bindPopup(popup_59e5d26cff919618cd7c70ba74e93b67)
+        ;
+
+        
+    
+    
+            var marker_534a13f0e8eeb6355d2b03b4e572accd = L.marker(
+                [41.6766, 44.9459],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_63545f19c1f6f14c991e0448b1741371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_534a13f0e8eeb6355d2b03b4e572accd.setIcon(icon_63545f19c1f6f14c991e0448b1741371);
+        
+    
+        var popup_b5cf01de77ce4d8a20775c29387b3ea4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f5aee61886920961000e0d8da1d0ecc = $(`<div id="html_2f5aee61886920961000e0d8da1d0ecc" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> 2247 / ISR898<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 21:11:36<br><strong>STCA-ID:</strong> STCA-238<br></div>`)[0];
+                popup_b5cf01de77ce4d8a20775c29387b3ea4.setContent(html_2f5aee61886920961000e0d8da1d0ecc);
+            
+        
+
+        marker_534a13f0e8eeb6355d2b03b4e572accd.bindPopup(popup_b5cf01de77ce4d8a20775c29387b3ea4)
+        ;
+
+        
+    
+    
+            var marker_51545eff24aec717dfa69d12b362d62c = L.marker(
+                [41.6929, 42.5616],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_54d43d7cc3b05ba0c3d87843da9835c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51545eff24aec717dfa69d12b362d62c.setIcon(icon_54d43d7cc3b05ba0c3d87843da9835c8);
+        
+    
+        var popup_a7cffdd8d256ad7e758ae1970b744f9d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a256edcef5b2db2d71baf411a118f7b1 = $(`<div id="html_a256edcef5b2db2d71baf411a118f7b1" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BAW257 / 4730<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 22:01:11<br><strong>STCA-ID:</strong> STCA-240<br></div>`)[0];
+                popup_a7cffdd8d256ad7e758ae1970b744f9d.setContent(html_a256edcef5b2db2d71baf411a118f7b1);
+            
+        
+
+        marker_51545eff24aec717dfa69d12b362d62c.bindPopup(popup_a7cffdd8d256ad7e758ae1970b744f9d)
+        ;
+
+        
+    
+    
+            var marker_bfb8633504974f23c5402ba621e9f4ad = L.marker(
+                [41.7433, 41.7134],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_1f11f3bcb62e39b155661323dfce0a4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bfb8633504974f23c5402ba621e9f4ad.setIcon(icon_1f11f3bcb62e39b155661323dfce0a4a);
+        
+    
+        var popup_63dff634be46cc22c0e56dd50b237f18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9dbb4f93f0436090d5228e1a01c8b8a3 = $(`<div id="html_9dbb4f93f0436090d5228e1a01c8b8a3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> TWB406 / 7465<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 23:27:30<br><strong>STCA-ID:</strong> STCA-241<br></div>`)[0];
+                popup_63dff634be46cc22c0e56dd50b237f18.setContent(html_9dbb4f93f0436090d5228e1a01c8b8a3);
+            
+        
+
+        marker_bfb8633504974f23c5402ba621e9f4ad.bindPopup(popup_63dff634be46cc22c0e56dd50b237f18)
+        ;
+
+        
+    
+    
+            var marker_175acbb2d706472f186dec649da63a1e = L.marker(
+                [41.8085, 40.4592],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_466cd46ee92ec8ad5fe9b4ffb2a9521b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_175acbb2d706472f186dec649da63a1e.setIcon(icon_466cd46ee92ec8ad5fe9b4ffb2a9521b);
+        
+    
+        var popup_6e6a649de7ae55407d12586e876d6be9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36adcbc493b11ca7269fb044e782cd69 = $(`<div id="html_36adcbc493b11ca7269fb044e782cd69" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AIC120 / ********<br><strong>Date:</strong> 2024-10-15<br><strong>Time:</strong> 22:18:27<br><strong>STCA-ID:</strong> STCA-244<br></div>`)[0];
+                popup_6e6a649de7ae55407d12586e876d6be9.setContent(html_36adcbc493b11ca7269fb044e782cd69);
+            
+        
+
+        marker_175acbb2d706472f186dec649da63a1e.bindPopup(popup_6e6a649de7ae55407d12586e876d6be9)
+        ;
+
+        
+    
+    
+            var marker_7d2d2853187fc67b746d8841a5e43b42 = L.marker(
+                [41.4058, 43.7308],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_e57f0614610baa70a53950f90eb7bcdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d2d2853187fc67b746d8841a5e43b42.setIcon(icon_e57f0614610baa70a53950f90eb7bcdb);
+        
+    
+        var popup_a5085f63ba10efba6cbf49eb94ce48b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2c84387be1bcbe87a9e6d758cac5837 = $(`<div id="html_f2c84387be1bcbe87a9e6d758cac5837" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CHH7970 / 1330<br><strong>Date:</strong> 2024-10-12<br><strong>Time:</strong> 11:34:20<br><strong>STCA-ID:</strong> STCA-257<br></div>`)[0];
+                popup_a5085f63ba10efba6cbf49eb94ce48b5.setContent(html_f2c84387be1bcbe87a9e6d758cac5837);
+            
+        
+
+        marker_7d2d2853187fc67b746d8841a5e43b42.bindPopup(popup_a5085f63ba10efba6cbf49eb94ce48b5)
+        ;
+
+        
+    
+    
+            var marker_9a62444cbea0fa79fa929cd7a56bce80 = L.marker(
+                [41.537, 44.7015],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_fd59f1ba752df037fa84f2d5d2968b2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a62444cbea0fa79fa929cd7a56bce80.setIcon(icon_fd59f1ba752df037fa84f2d5d2968b2b);
+        
+    
+        var popup_a6ff10ebabb2a5161932056c94138b8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1532c40130f4cb379b7131fa18eb40a = $(`<div id="html_c1532c40130f4cb379b7131fa18eb40a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CAL081 / 3674<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 10:41:10<br><strong>STCA-ID:</strong> STCA-258<br></div>`)[0];
+                popup_a6ff10ebabb2a5161932056c94138b8c.setContent(html_c1532c40130f4cb379b7131fa18eb40a);
+            
+        
+
+        marker_9a62444cbea0fa79fa929cd7a56bce80.bindPopup(popup_a6ff10ebabb2a5161932056c94138b8c)
+        ;
+
+        
+    
+    
+            var marker_c8330f3c42fc6acf7c908497c066d15e = L.marker(
+                [41.679, 42.7532],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_6190aa4dcf78fa9f3c440174d983919f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8330f3c42fc6acf7c908497c066d15e.setIcon(icon_6190aa4dcf78fa9f3c440174d983919f);
+        
+    
+        var popup_5a2e1f32548783fcd053f2c08d8b2c7f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_599f7b67118154609d53665a2f6c6e23 = $(`<div id="html_599f7b67118154609d53665a2f6c6e23" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA355 / 2407<br><strong>Date:</strong> 2024-10-15<br><strong>Time:</strong> 13:56:05<br><strong>STCA-ID:</strong> STCA-258<br></div>`)[0];
+                popup_5a2e1f32548783fcd053f2c08d8b2c7f.setContent(html_599f7b67118154609d53665a2f6c6e23);
+            
+        
+
+        marker_c8330f3c42fc6acf7c908497c066d15e.bindPopup(popup_5a2e1f32548783fcd053f2c08d8b2c7f)
+        ;
+
+        
+    
+    
+            var marker_ac60de21586667481ea473ff122a6f0d = L.marker(
+                [41.5574, 44.4244],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_5759c54b5c3b08651a92febb6d833e77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac60de21586667481ea473ff122a6f0d.setIcon(icon_5759c54b5c3b08651a92febb6d833e77);
+        
+    
+        var popup_8dc6cf19b39d8c8fc3076dde82520d16 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b1ee6f806e53e697656dfcb843d178c9 = $(`<div id="html_b1ee6f806e53e697656dfcb843d178c9" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> MFX7677 / 3435<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 00:19:27<br><strong>STCA-ID:</strong> STCA-264<br></div>`)[0];
+                popup_8dc6cf19b39d8c8fc3076dde82520d16.setContent(html_b1ee6f806e53e697656dfcb843d178c9);
+            
+        
+
+        marker_ac60de21586667481ea473ff122a6f0d.bindPopup(popup_8dc6cf19b39d8c8fc3076dde82520d16)
+        ;
+
+        
+    
+    
+            var marker_7d395b307cc4978ff2cdfd6d89498faa = L.marker(
+                [41.4681, 45.5157],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_bcfbf3000c5ede933843377c51a4fee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d395b307cc4978ff2cdfd6d89498faa.setIcon(icon_bcfbf3000c5ede933843377c51a4fee6);
+        
+    
+        var popup_85f3f28aeb44b45479ecb3b66e2335f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79f4eca41d61f509c47f85113a99752a = $(`<div id="html_79f4eca41d61f509c47f85113a99752a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> APZ5245 / 4545<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 10:42:12<br><strong>STCA-ID:</strong> STCA-285<br></div>`)[0];
+                popup_85f3f28aeb44b45479ecb3b66e2335f6.setContent(html_79f4eca41d61f509c47f85113a99752a);
+            
+        
+
+        marker_7d395b307cc4978ff2cdfd6d89498faa.bindPopup(popup_85f3f28aeb44b45479ecb3b66e2335f6)
+        ;
+
+        
+    
+    
+            var marker_f3457729b50731713d3e50130e9a3d34 = L.marker(
+                [41.4681, 44.3543],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_4b340ed70092c7c8c127181826154d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3457729b50731713d3e50130e9a3d34.setIcon(icon_4b340ed70092c7c8c127181826154d57);
+        
+    
+        var popup_99b1e8e83cf03bbd074aace322052045 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94d380588da75afa45b07169c2ea5d03 = $(`<div id="html_94d380588da75afa45b07169c2ea5d03" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> DLH721 / 4503<br><strong>Date:</strong> 2024-10-05<br><strong>Time:</strong> 12:24:24<br><strong>STCA-ID:</strong> STCA-297<br></div>`)[0];
+                popup_99b1e8e83cf03bbd074aace322052045.setContent(html_94d380588da75afa45b07169c2ea5d03);
+            
+        
+
+        marker_f3457729b50731713d3e50130e9a3d34.bindPopup(popup_99b1e8e83cf03bbd074aace322052045)
+        ;
+
+        
+    
+    
+            var marker_81313149ef0f384b1fcad87e9481f916 = L.marker(
+                [41.4863, 44.2148],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_74cf2bc89b41dd2ad516460dea85aae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81313149ef0f384b1fcad87e9481f916.setIcon(icon_74cf2bc89b41dd2ad516460dea85aae1);
+        
+    
+        var popup_a7349a4dba5f3a65cf32b5ad184a886b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdf303e96592b4c660e9a8215a8747e3 = $(`<div id="html_fdf303e96592b4c660e9a8215a8747e3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KAL530 / 6036<br><strong>Date:</strong> 2024-10-05<br><strong>Time:</strong> 22:19:09<br><strong>STCA-ID:</strong> STCA-303<br></div>`)[0];
+                popup_a7349a4dba5f3a65cf32b5ad184a886b.setContent(html_fdf303e96592b4c660e9a8215a8747e3);
+            
+        
+
+        marker_81313149ef0f384b1fcad87e9481f916.bindPopup(popup_a7349a4dba5f3a65cf32b5ad184a886b)
+        ;
+
+        
+    
+    
+            var marker_b8544ad8a23a0a2d08d5e3d32e4b16e5 = L.marker(
+                [40.9482, 46.4065],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_63f3b69b8f31d94115719292636a9b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8544ad8a23a0a2d08d5e3d32e4b16e5.setIcon(icon_63f3b69b8f31d94115719292636a9b2e);
+        
+    
+        var popup_6062763a03305029f35479a6f85896b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e7eb375523d1e15f25f629e0257d28b = $(`<div id="html_0e7eb375523d1e15f25f629e0257d28b" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> TGW720 / 5164<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 00:52:14<br><strong>STCA-ID:</strong> STCA-313<br></div>`)[0];
+                popup_6062763a03305029f35479a6f85896b4.setContent(html_0e7eb375523d1e15f25f629e0257d28b);
+            
+        
+
+        marker_b8544ad8a23a0a2d08d5e3d32e4b16e5.bindPopup(popup_6062763a03305029f35479a6f85896b4)
+        ;
+
+        
+    
+    
+            var marker_0214ead18bc58b335ce6b7f6f24a7bd0 = L.marker(
+                [41.6257, 42.2896],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_5d09c132caa1a0b75cf841e2197978a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0214ead18bc58b335ce6b7f6f24a7bd0.setIcon(icon_5d09c132caa1a0b75cf841e2197978a6);
+        
+    
+        var popup_f662ef1f25fd87dd9691cd69ac69c8ef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4338f3d37e948dd70c2976d134b6b937 = $(`<div id="html_4338f3d37e948dd70c2976d134b6b937" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CCA859 / 0010<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 02:12:57<br><strong>STCA-ID:</strong> STCA-313<br></div>`)[0];
+                popup_f662ef1f25fd87dd9691cd69ac69c8ef.setContent(html_4338f3d37e948dd70c2976d134b6b937);
+            
+        
+
+        marker_0214ead18bc58b335ce6b7f6f24a7bd0.bindPopup(popup_f662ef1f25fd87dd9691cd69ac69c8ef)
+        ;
+
+        
+    
+    
+            var marker_0347d6c518bae0763d8b9f1e16c69e1b = L.marker(
+                [41.6703, 42.8775],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_a759760b4c1f12b92b0a056e36cf64bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0347d6c518bae0763d8b9f1e16c69e1b.setIcon(icon_a759760b4c1f12b92b0a056e36cf64bb);
+        
+    
+        var popup_e12bc21fc1edd25d018386aa4dade9dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dbde3ef42fd42014cae0c6af59bb4752 = $(`<div id="html_dbde3ef42fd42014cae0c6af59bb4752" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> JAL44 / 4330<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 22:25:13<br><strong>STCA-ID:</strong> STCA-325<br></div>`)[0];
+                popup_e12bc21fc1edd25d018386aa4dade9dd.setContent(html_dbde3ef42fd42014cae0c6af59bb4752);
+            
+        
+
+        marker_0347d6c518bae0763d8b9f1e16c69e1b.bindPopup(popup_e12bc21fc1edd25d018386aa4dade9dd)
+        ;
+
+        
+    
+    
+            var marker_93209e459031b2e4c0aa5fa077188865 = L.marker(
+                [41.6446, 42.526],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_228ffa10832953f52253bb5bfbd54d6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93209e459031b2e4c0aa5fa077188865.setIcon(icon_228ffa10832953f52253bb5bfbd54d6e);
+        
+    
+        var popup_3011c7cd12a0e487d06a72435d5ba737 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_163f59b04a658dbbad3e9ccb961da208 = $(`<div id="html_163f59b04a658dbbad3e9ccb961da208" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KAL591 / 1365<br><strong>Date:</strong> 2024-10-04<br><strong>Time:</strong> 01:42:06<br><strong>STCA-ID:</strong> STCA-336<br></div>`)[0];
+                popup_3011c7cd12a0e487d06a72435d5ba737.setContent(html_163f59b04a658dbbad3e9ccb961da208);
+            
+        
+
+        marker_93209e459031b2e4c0aa5fa077188865.bindPopup(popup_3011c7cd12a0e487d06a72435d5ba737)
+        ;
+
+        
+    
+    
+            var marker_2122d69cab49b2e582a62bae4a4fcce2 = L.marker(
+                [41.564, 44.2044],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_3701306e79110bb366a79eee6efbb4b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2122d69cab49b2e582a62bae4a4fcce2.setIcon(icon_3701306e79110bb366a79eee6efbb4b7);
+        
+    
+        var popup_7aea14b4d19a86f7bbe568b9ee0b21b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b849e357fd8695ce1589d7485057619f = $(`<div id="html_b849e357fd8695ce1589d7485057619f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CSN679 / 3024<br><strong>Date:</strong> 2024-10-08<br><strong>Time:</strong> 00:24:54<br><strong>STCA-ID:</strong> STCA-346<br></div>`)[0];
+                popup_7aea14b4d19a86f7bbe568b9ee0b21b2.setContent(html_b849e357fd8695ce1589d7485057619f);
+            
+        
+
+        marker_2122d69cab49b2e582a62bae4a4fcce2.bindPopup(popup_7aea14b4d19a86f7bbe568b9ee0b21b2)
+        ;
+
+        
+    
+    
+            var marker_5d1905eb6898e5365995fc2ff25df64c = L.marker(
+                [41.515, 44.3264],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_0fde978a211860a1ee6d46a1dfcb6f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d1905eb6898e5365995fc2ff25df64c.setIcon(icon_0fde978a211860a1ee6d46a1dfcb6f59);
+        
+    
+        var popup_6024e715b79a3622a1025188bf9dcbdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de7726297d96928a43e0d9942623b6f2 = $(`<div id="html_de7726297d96928a43e0d9942623b6f2" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> LOT79 / 3024<br><strong>Date:</strong> 2024-10-08<br><strong>Time:</strong> 00:24:54<br><strong>STCA-ID:</strong> STCA-353<br></div>`)[0];
+                popup_6024e715b79a3622a1025188bf9dcbdb.setContent(html_de7726297d96928a43e0d9942623b6f2);
+            
+        
+
+        marker_5d1905eb6898e5365995fc2ff25df64c.bindPopup(popup_6024e715b79a3622a1025188bf9dcbdb)
+        ;
+
+        
+    
+    
+            var marker_1905bc325225872c2abaa580d62b08c2 = L.marker(
+                [41.4844, 44.2243],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_ff818404ae10b36f283511e23c48d112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1905bc325225872c2abaa580d62b08c2.setIcon(icon_ff818404ae10b36f283511e23c48d112);
+        
+    
+        var popup_72f447ca3284cfc507799b10d0a856e5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e14a23a5f5aaf645370e857214b2b5dd = $(`<div id="html_e14a23a5f5aaf645370e857214b2b5dd" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA325 / 0646<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 23:16:45<br><strong>STCA-ID:</strong> STCA-357<br></div>`)[0];
+                popup_72f447ca3284cfc507799b10d0a856e5.setContent(html_e14a23a5f5aaf645370e857214b2b5dd);
+            
+        
+
+        marker_1905bc325225872c2abaa580d62b08c2.bindPopup(popup_72f447ca3284cfc507799b10d0a856e5)
+        ;
+
+        
+    
+    
+            var marker_9cde481779c08edcb233adb19d5ee16c = L.marker(
+                [42.1862, 44.4806],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_f1b2842332db26d453a21424661f2951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cde481779c08edcb233adb19d5ee16c.setIcon(icon_f1b2842332db26d453a21424661f2951);
+        
+    
+        var popup_8d453e594a1798fbb26ac0ed30adda1a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0524fa4aa0df8bff78adc5513973dbd = $(`<div id="html_f0524fa4aa0df8bff78adc5513973dbd" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> STW1168 / 3126<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 00:13:19<br><strong>STCA-ID:</strong> STCA-369<br></div>`)[0];
+                popup_8d453e594a1798fbb26ac0ed30adda1a.setContent(html_f0524fa4aa0df8bff78adc5513973dbd);
+            
+        
+
+        marker_9cde481779c08edcb233adb19d5ee16c.bindPopup(popup_8d453e594a1798fbb26ac0ed30adda1a)
+        ;
+
+        
+    
+    
+            var marker_7238ab3733644da5cdfdde602b960913 = L.marker(
+                [42.1697, 44.3722],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_20070948aadf2bf76e5c19c55742da10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7238ab3733644da5cdfdde602b960913.setIcon(icon_20070948aadf2bf76e5c19c55742da10);
+        
+    
+        var popup_91c085b8d0d3daed7df9c18a248b089f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cfabd46072be0bc3f7c4e172dead1da = $(`<div id="html_8cfabd46072be0bc3f7c4e172dead1da" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> STW1168 / 3126<br><strong>Date:</strong> 2024-10-02<br><strong>Time:</strong> 00:14:27<br><strong>STCA-ID:</strong> STCA-369<br></div>`)[0];
+                popup_91c085b8d0d3daed7df9c18a248b089f.setContent(html_8cfabd46072be0bc3f7c4e172dead1da);
+            
+        
+
+        marker_7238ab3733644da5cdfdde602b960913.bindPopup(popup_91c085b8d0d3daed7df9c18a248b089f)
+        ;
+
+        
+    
+    
+            var marker_d5940e1d72b86bdcbea49cf0a2fb05c4 = L.marker(
+                [41.3985, 44.2389],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_f2a8fb18aadcc70d83a71a71ff2aae29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5940e1d72b86bdcbea49cf0a2fb05c4.setIcon(icon_f2a8fb18aadcc70d83a71a71ff2aae29);
+        
+    
+        var popup_3cd4d5419cdff86bcff49f2e6b16124c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_929a2a0461d40a804096e05cb027f794 = $(`<div id="html_929a2a0461d40a804096e05cb027f794" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> GTR1948 / 2237<br><strong>Date:</strong> 2024-10-04<br><strong>Time:</strong> 05:52:19<br><strong>STCA-ID:</strong> STCA-376<br></div>`)[0];
+                popup_3cd4d5419cdff86bcff49f2e6b16124c.setContent(html_929a2a0461d40a804096e05cb027f794);
+            
+        
+
+        marker_d5940e1d72b86bdcbea49cf0a2fb05c4.bindPopup(popup_3cd4d5419cdff86bcff49f2e6b16124c)
+        ;
+
+        
+    
+    
+            var marker_7c8f325db7c8adfc02b5ca78eaf2b7b5 = L.marker(
+                [41.4258, 44.6258],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_33ccdc403416ccce8a8823200706b6f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c8f325db7c8adfc02b5ca78eaf2b7b5.setIcon(icon_33ccdc403416ccce8a8823200706b6f4);
+        
+    
+        var popup_d925bbbf2292e6d50a1dfc3f797cb79d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94e62b32f133d5f2ac657b4869992ae4 = $(`<div id="html_94e62b32f133d5f2ac657b4869992ae4" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA325 / 7652<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 23:19:07<br><strong>STCA-ID:</strong> STCA-377<br></div>`)[0];
+                popup_d925bbbf2292e6d50a1dfc3f797cb79d.setContent(html_94e62b32f133d5f2ac657b4869992ae4);
+            
+        
+
+        marker_7c8f325db7c8adfc02b5ca78eaf2b7b5.bindPopup(popup_d925bbbf2292e6d50a1dfc3f797cb79d)
+        ;
+
+        
+    
+    
+            var marker_6d14d98f99f9784bfe910a90f38d0513 = L.marker(
+                [41.6873, 42.6347],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_8984ebcb90d1b056f9a7e225cdba29d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d14d98f99f9784bfe910a90f38d0513.setIcon(icon_8984ebcb90d1b056f9a7e225cdba29d0);
+        
+    
+        var popup_394ab239e8d7366b6441d1038d17b01a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73b2942d3731e9e9ecfc0fd118d209c2 = $(`<div id="html_73b2942d3731e9e9ecfc0fd118d209c2" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> VIR300 / 3401<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 23:08:59<br><strong>STCA-ID:</strong> STCA-393<br></div>`)[0];
+                popup_394ab239e8d7366b6441d1038d17b01a.setContent(html_73b2942d3731e9e9ecfc0fd118d209c2);
+            
+        
+
+        marker_6d14d98f99f9784bfe910a90f38d0513.bindPopup(popup_394ab239e8d7366b6441d1038d17b01a)
+        ;
+
+        
+    
+    
+            var marker_724569153c7e744a4c07202386e652ff = L.marker(
+                [41.5226, 44.2974],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_cf5a15a21b74fa03314faebcb9d3acaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_724569153c7e744a4c07202386e652ff.setIcon(icon_cf5a15a21b74fa03314faebcb9d3acaa);
+        
+    
+        var popup_83b0a029bb8f49694bab2fd0fa04acef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_747ee3b3e1c820b025390a3efa928f24 = $(`<div id="html_747ee3b3e1c820b025390a3efa928f24" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> CES751 / 4600<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 12:29:00<br><strong>STCA-ID:</strong> STCA-404<br></div>`)[0];
+                popup_83b0a029bb8f49694bab2fd0fa04acef.setContent(html_747ee3b3e1c820b025390a3efa928f24);
+            
+        
+
+        marker_724569153c7e744a4c07202386e652ff.bindPopup(popup_83b0a029bb8f49694bab2fd0fa04acef)
+        ;
+
+        
+    
+    
+            var marker_d8e1d4c53c969e9d1c70dea8cf2a39d9 = L.marker(
+                [41.304, 46.7076],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_7b10fd5ffd1d4e7521c752165896949b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8e1d4c53c969e9d1c70dea8cf2a39d9.setIcon(icon_7b10fd5ffd1d4e7521c752165896949b);
+        
+    
+        var popup_9c4ddaac0ad2a53d098b4838cb6e5f41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1b2dac7b76a61ac6b74598aa7c75671 = $(`<div id="html_f1b2dac7b76a61ac6b74598aa7c75671" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> SIA356 / 0544<br><strong>Date:</strong> 2024-10-15<br><strong>Time:</strong> 00:24:24<br><strong>STCA-ID:</strong> STCA-428<br></div>`)[0];
+                popup_9c4ddaac0ad2a53d098b4838cb6e5f41.setContent(html_f1b2dac7b76a61ac6b74598aa7c75671);
+            
+        
+
+        marker_d8e1d4c53c969e9d1c70dea8cf2a39d9.bindPopup(popup_9c4ddaac0ad2a53d098b4838cb6e5f41)
+        ;
+
+        
+    
+    
+            var marker_94dc7e8a8d859c408faa5ce2525a13a4 = L.marker(
+                [41.2104, 46.788],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_1185e1f622a062a044e186290c3a9103 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94dc7e8a8d859c408faa5ce2525a13a4.setIcon(icon_1185e1f622a062a044e186290c3a9103);
+        
+    
+        var popup_ca3f29d89c9bd2d96dc75c2be4b23835 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7ba87cb9e007f1d688478db4ee6aa0f = $(`<div id="html_d7ba87cb9e007f1d688478db4ee6aa0f" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> ICV38QW / 5122<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 23:51:42<br><strong>STCA-ID:</strong> STCA-433<br></div>`)[0];
+                popup_ca3f29d89c9bd2d96dc75c2be4b23835.setContent(html_d7ba87cb9e007f1d688478db4ee6aa0f);
+            
+        
+
+        marker_94dc7e8a8d859c408faa5ce2525a13a4.bindPopup(popup_ca3f29d89c9bd2d96dc75c2be4b23835)
+        ;
+
+        
+    
+    
+            var marker_a51fc220d39cce4997becb3581f53c57 = L.marker(
+                [41.4902, 44.5527],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_2cda09b719fe23e1182c41f90d26689a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a51fc220d39cce4997becb3581f53c57.setIcon(icon_2cda09b719fe23e1182c41f90d26689a);
+        
+    
+        var popup_170bae1ec3508fe44e8ef569cd9c0b58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7935d5629fa78273e7c055bc7b161807 = $(`<div id="html_7935d5629fa78273e7c055bc7b161807" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THY25 / 7652<br><strong>Date:</strong> 2024-10-06<br><strong>Time:</strong> 23:19:07<br><strong>STCA-ID:</strong> STCA-444<br></div>`)[0];
+                popup_170bae1ec3508fe44e8ef569cd9c0b58.setContent(html_7935d5629fa78273e7c055bc7b161807);
+            
+        
+
+        marker_a51fc220d39cce4997becb3581f53c57.bindPopup(popup_170bae1ec3508fe44e8ef569cd9c0b58)
+        ;
+
+        
+    
+    
+            var marker_c53702e26fff66dcda6257caf3fd3bbd = L.marker(
+                [41.6986, 42.4681],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_5fc51b8781fb6c84a13fa157f4ecee2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c53702e26fff66dcda6257caf3fd3bbd.setIcon(icon_5fc51b8781fb6c84a13fa157f4ecee2a);
+        
+    
+        var popup_7701e2684017b095a7db4c44d8e66f18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7aa8ef83b120150b21dfb4ba4f7422a = $(`<div id="html_c7aa8ef83b120150b21dfb4ba4f7422a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> DLH716 / 7310<br><strong>Date:</strong> 2024-10-05<br><strong>Time:</strong> 15:54:08<br><strong>STCA-ID:</strong> STCA-446<br></div>`)[0];
+                popup_7701e2684017b095a7db4c44d8e66f18.setContent(html_c7aa8ef83b120150b21dfb4ba4f7422a);
+            
+        
+
+        marker_c53702e26fff66dcda6257caf3fd3bbd.bindPopup(popup_7701e2684017b095a7db4c44d8e66f18)
+        ;
+
+        
+    
+    
+            var marker_54d5557a21ff293fe0839338d05a3221 = L.marker(
+                [41.7997, 40.2822],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_62f7e8db8252057ffdac918713117895 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54d5557a21ff293fe0839338d05a3221.setIcon(icon_62f7e8db8252057ffdac918713117895);
+        
+    
+        var popup_7a850545305d572082d904add1faec27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aaee5ba38597e4f3b6ecd31a0b991ddc = $(`<div id="html_aaee5ba38597e4f3b6ecd31a0b991ddc" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> BTI724 / KAL928<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 23:41:15<br><strong>STCA-ID:</strong> STCA-449<br></div>`)[0];
+                popup_7a850545305d572082d904add1faec27.setContent(html_aaee5ba38597e4f3b6ecd31a0b991ddc);
+            
+        
+
+        marker_54d5557a21ff293fe0839338d05a3221.bindPopup(popup_7a850545305d572082d904add1faec27)
+        ;
+
+        
+    
+    
+            var marker_9da2e4a5fb1631068a3d61a8a61b01dc = L.marker(
+                [41.4015, 44.7443],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_62dbc60092c3e87e921a4768610d9e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9da2e4a5fb1631068a3d61a8a61b01dc.setIcon(icon_62dbc60092c3e87e921a4768610d9e0a);
+        
+    
+        var popup_b030a9c4a874f1cc8066dbfed8018b66 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99f64200e6f033545c9168f39ef3904c = $(`<div id="html_99f64200e6f033545c9168f39ef3904c" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> DLH726 / 7714<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 23:31:10<br><strong>STCA-ID:</strong> STCA-454<br></div>`)[0];
+                popup_b030a9c4a874f1cc8066dbfed8018b66.setContent(html_99f64200e6f033545c9168f39ef3904c);
+            
+        
+
+        marker_9da2e4a5fb1631068a3d61a8a61b01dc.bindPopup(popup_b030a9c4a874f1cc8066dbfed8018b66)
+        ;
+
+        
+    
+    
+            var marker_0a2d44f3689cf701f0f1f59fcd5a38a8 = L.marker(
+                [41.4965, 43.9057],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_e0441029dd0c7abdb71dc81b576a77b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a2d44f3689cf701f0f1f59fcd5a38a8.setIcon(icon_e0441029dd0c7abdb71dc81b576a77b5);
+        
+    
+        var popup_c48e0f65510b53a866531ba66355d985 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f9e6a583dc196fa3c6f1acee71f4bf6 = $(`<div id="html_9f9e6a583dc196fa3c6f1acee71f4bf6" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KLM855 / 0576<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 23:47:04<br><strong>STCA-ID:</strong> STCA-464<br></div>`)[0];
+                popup_c48e0f65510b53a866531ba66355d985.setContent(html_9f9e6a583dc196fa3c6f1acee71f4bf6);
+            
+        
+
+        marker_0a2d44f3689cf701f0f1f59fcd5a38a8.bindPopup(popup_c48e0f65510b53a866531ba66355d985)
+        ;
+
+        
+    
+    
+            var marker_428625ac08e029abd83556589c64d0a9 = L.marker(
+                [41.4673, 44.7603],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_54926837b1f1f47fedd51a72f647656c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_428625ac08e029abd83556589c64d0a9.setIcon(icon_54926837b1f1f47fedd51a72f647656c);
+        
+    
+        var popup_fe169a973d9e80bd31ebe08bc0edbed7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4db7268f242dadf2c5510415786f590 = $(`<div id="html_a4db7268f242dadf2c5510415786f590" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> AFR111 / 7714<br><strong>Date:</strong> 2024-10-07<br><strong>Time:</strong> 23:31:10<br><strong>STCA-ID:</strong> STCA-465<br></div>`)[0];
+                popup_fe169a973d9e80bd31ebe08bc0edbed7.setContent(html_a4db7268f242dadf2c5510415786f590);
+            
+        
+
+        marker_428625ac08e029abd83556589c64d0a9.bindPopup(popup_fe169a973d9e80bd31ebe08bc0edbed7)
+        ;
+
+        
+    
+    
+            var marker_c6e632a0ac38ea2a49a8aa3b956c8605 = L.marker(
+                [41.5678, 44.2819],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_12995a422da66ba66d3b2b7b08c82814 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6e632a0ac38ea2a49a8aa3b956c8605.setIcon(icon_12995a422da66ba66d3b2b7b08c82814);
+        
+    
+        var popup_9bdb4e6d2a7f381f833f6a69d1a7f2bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_54022e92d2e8845212c35eb99d802596 = $(`<div id="html_54022e92d2e8845212c35eb99d802596" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THA954 / 6121<br><strong>Date:</strong> 2024-10-10<br><strong>Time:</strong> 01:09:01<br><strong>STCA-ID:</strong> STCA-467<br></div>`)[0];
+                popup_9bdb4e6d2a7f381f833f6a69d1a7f2bd.setContent(html_54022e92d2e8845212c35eb99d802596);
+            
+        
+
+        marker_c6e632a0ac38ea2a49a8aa3b956c8605.bindPopup(popup_9bdb4e6d2a7f381f833f6a69d1a7f2bd)
+        ;
+
+        
+    
+    
+            var marker_ea1c35f35d10f2120b8b350dcdd03b5c = L.marker(
+                [41.5358, 44.0837],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_854038cb4c78527eb1ee1070eee3cfac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea1c35f35d10f2120b8b350dcdd03b5c.setIcon(icon_854038cb4c78527eb1ee1070eee3cfac);
+        
+    
+        var popup_a292843a0eec0b72c9c5600e720ef0fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cbeca49e8d44d5a26f06e21f74bc3578 = $(`<div id="html_cbeca49e8d44d5a26f06e21f74bc3578" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> LOT192 / 2040<br><strong>Date:</strong> 2024-10-05<br><strong>Time:</strong> 01:18:36<br><strong>STCA-ID:</strong> STCA-478<br></div>`)[0];
+                popup_a292843a0eec0b72c9c5600e720ef0fd.setContent(html_cbeca49e8d44d5a26f06e21f74bc3578);
+            
+        
+
+        marker_ea1c35f35d10f2120b8b350dcdd03b5c.bindPopup(popup_a292843a0eec0b72c9c5600e720ef0fd)
+        ;
+
+        
+    
+    
+            var marker_e788f5501948539f5de35e9ea40ef80c = L.marker(
+                [41.4708, 45.4626],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_75fef50258a24ab83720cb57b49af4ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e788f5501948539f5de35e9ea40ef80c.setIcon(icon_75fef50258a24ab83720cb57b49af4ec);
+        
+    
+        var popup_67a3c2941c957f9df46318220c9df1a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbc5df4e8be46bb55074babecec44086 = $(`<div id="html_bbc5df4e8be46bb55074babecec44086" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> THY6485 / 3032<br><strong>Date:</strong> 2024-10-03<br><strong>Time:</strong> 11:19:45<br><strong>STCA-ID:</strong> STCA-496<br></div>`)[0];
+                popup_67a3c2941c957f9df46318220c9df1a2.setContent(html_bbc5df4e8be46bb55074babecec44086);
+            
+        
+
+        marker_e788f5501948539f5de35e9ea40ef80c.bindPopup(popup_67a3c2941c957f9df46318220c9df1a2)
+        ;
+
+        
+    
+    
+            var marker_e46f6757613560f76e6ecd5dea66e6a4 = L.marker(
+                [41.7456, 41.6798],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_bdd98c59a4b5d36c44fe6318a1ab94ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e46f6757613560f76e6ecd5dea66e6a4.setIcon(icon_bdd98c59a4b5d36c44fe6318a1ab94ff);
+        
+    
+        var popup_6e133855575604d247d8bb8e8c45471c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cf1ee95bd43e5ee7fc7980b3bbb37c3 = $(`<div id="html_0cf1ee95bd43e5ee7fc7980b3bbb37c3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> VIR250 / 6501<br><strong>Date:</strong> 2024-10-13<br><strong>Time:</strong> 15:38:01<br><strong>STCA-ID:</strong> STCA-497<br></div>`)[0];
+                popup_6e133855575604d247d8bb8e8c45471c.setContent(html_0cf1ee95bd43e5ee7fc7980b3bbb37c3);
+            
+        
+
+        marker_e46f6757613560f76e6ecd5dea66e6a4.bindPopup(popup_6e133855575604d247d8bb8e8c45471c)
+        ;
+
+        
+    
+    
+            var marker_4e521f5fca251e3b60e5f90da020164f = L.marker(
+                [41.5161, 44.1151],
+                {}
+            ).addTo(feature_group_7b101b064727df64e204205b1c736448);
+        
+    
+            var icon_1d7b29672867777d44c41b21a72984fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e521f5fca251e3b60e5f90da020164f.setIcon(icon_1d7b29672867777d44c41b21a72984fa);
+        
+    
+        var popup_df361803c14c0d3603b62ca31930f048 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1689510fcebf661740a206eaec4257a0 = $(`<div id="html_1689510fcebf661740a206eaec4257a0" style="width: 100.0%; height: 100.0%;"><div style='font-size: 18px;'><strong>Callsign:</strong> KMF9910 / 2040<br><strong>Date:</strong> 2024-10-05<br><strong>Time:</strong> 01:18:36<br><strong>STCA-ID:</strong> STCA-499<br></div>`)[0];
+                popup_df361803c14c0d3603b62ca31930f048.setContent(html_1689510fcebf661740a206eaec4257a0);
+            
+        
+
+        marker_4e521f5fca251e3b60e5f90da020164f.bindPopup(popup_df361803c14c0d3603b62ca31930f048)
+        ;
+
+        
+    
+    
+            feature_group_7b101b064727df64e204205b1c736448.addTo(map_0ee6c1ac07e3d47d690c026e1382820e);
+        
+    
+            var layer_control_0913b8498ad97f7c17850ee265c3cce1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_07910e02efa074aaa75d5d399b60fcce,
+                },
+                overlays :  {
+                    "Heatmap" : feature_group_8a5804861e95adfd023f50f580d9514f,
+                    "Markers" : feature_group_7b101b064727df64e204205b1c736448,
+                },
+            };
+            let layer_control_0913b8498ad97f7c17850ee265c3cce1 = L.control.layers(
+                layer_control_0913b8498ad97f7c17850ee265c3cce1_layers.base_layers,
+                layer_control_0913b8498ad97f7c17850ee265c3cce1_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0ee6c1ac07e3d47d690c026e1382820e);
+
+        
+</script>
+</html>

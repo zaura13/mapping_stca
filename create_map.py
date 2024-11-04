@@ -3,7 +3,7 @@ import folium
 from folium.plugins import HeatMap
 from DBM.Connect_to_DBM import fetch_data_from_db
 import os
-
+fetch_data_from_db()
 
 def convert_lat_lon(lat_str, lon_str):
     try:

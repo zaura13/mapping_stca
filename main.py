@@ -25,7 +25,7 @@ pymysql.install_as_MySQLdb()
 # Create Flask application
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Strong random secret key
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/stca'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/users'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy
@@ -47,6 +47,8 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+
+fetch_data_from_db()
 @login_manager.user_loader
 def load_user(user_id):
     return db.session.get(User, int(user_id))

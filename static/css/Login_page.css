@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/background.jpg'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Main container styling for the login form */
+.maindiv {
+  background: rgba(255, 255, 255, 0.8);  /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading styling */
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+/* Styling for the form inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling for the submit button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the flash messages (optional) */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  color: #f44336; /* Red for error messages */
+  margin-top: 10px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .maindiv {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button {
+    font-size: 14px;
+  }
+}

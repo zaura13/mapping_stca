@@ -73,30 +73,9 @@ def login():
 @app.route('/logout')
 @login_required
 def logout():
-    logout_user()
-    return redirect(url_for('login'))
+    logout_user()  # Log out the current user
+    return redirect(url_for('login'))  # Redirect the user to the login page
 
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-
-        # Check if the username already exists
-        if User.query.filter_by(username=username).first():
-            flash('Username already exists.')
-            return redirect(url_for('register'))
-
-        # Create a new user with the plain text password
-        new_user = User(username=username, password=password)
-        db.session.add(new_user)
-        db.session.commit()
-
-        flash('User created successfully. Please log in.')
-        logging.info(f"User '{username}' registered successfully.")
-        return redirect(url_for('login'))
-
-    return render_template('register.html')
 
 
 
@@ -131,6 +110,45 @@ def index():
                            real_percentage=real_percentage,
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
+
+
+@app.route('/upload', methods=['POST'])
+@login_required
+def upload_file():
+    if 'file' not in request.files:
+        print('No file part')
+        return redirect(request.url)
+
+    file = request.files['file']
+
+    if file.filename == '':
+        print('No selected file')
+        return redirect(request.url)
+
+    if file and file.filename.endswith('.xlsx'):
+        try:
+            # Save the file to a directory (optional)
+            file_path = os.path.join('DBM', file.filename)
+            file.save(file_path)
+
+            # Process the Excel file using pandas
+            data = pd.read_excel(file_path)
+
+            # Do something with the data, e.g., save to the database or process further
+            # Example: print the first few rows
+            print(data.head())
+
+            print('File uploaded and processed successfully!')
+            logging.info(f"File '{file.filename}' uploaded successfully.")
+            return redirect(url_for('index'))
+        except Exception as e:
+            print('Error processing file: ' + str(e))
+            logging.error(f"Error processing file '{file.filename}': {e}")
+            return redirect(request.url)
+
+    print('Invalid file type. Please upload an Excel file.')
+    return redirect(request.url)
+
 
 
 def shutdown_handler(signal, frame):

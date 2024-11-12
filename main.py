@@ -1,57 +1,51 @@
-
-from create_map import *
-from flask import Flask, render_template, request, send_from_directory, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import pymysql
 import os
 import logging
+import pandas as pd  # Ensure pandas is installed for processing Excel files
 import signal
 import sys
 
 # Configure logging
 logging.basicConfig(
-    filename='Logs/app.log',  # Log file
+    filename='Logs/app.log',  # Log file location
     level=logging.INFO,  # Log level
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 app = Flask(__name__)
-
 
 # Ensure pymysql is installed as MySQLdb
 pymysql.install_as_MySQLdb()
 
-# Create Flask application
-app = Flask(__name__)
-app.secret_key = os.urandom(24)  # Strong random secret key
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/users'
+# App configuration
+app.secret_key = os.urandom(24)  # Random secret key for sessions
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/stca'  # Update with your DB credentials
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
+
+# Initialize Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-# User model
+# User Model
 class User(UserMixin, db.Model):
-    __tablename__ = 'app_users'
+    __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)  # Store passwords as plain text
+    is_admin = db.Column(db.Boolean, default=False)
 
-# Configure logging
-logging.basicConfig(
-    filename='Logs/app.log',  # Log file
-    level=logging.INFO,  # Log level
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
-
-fetch_data_from_db()
+# User Loader for Flask-Login
 @login_manager.user_loader
 def load_user(user_id):
     return db.session.get(User, int(user_id))
+
+# Routes
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -59,7 +53,7 @@ def login():
         password = request.form['password']
         user = User.query.filter_by(username=username).first()
 
-        # Check if user exists and password matches (plain text comparison)
+        # Check if the user exists and the password matches (plain text comparison)
         if user and user.password == password:
             login_user(user)
             logging.info(f"User '{username}' logged in successfully.")
@@ -73,11 +67,8 @@ def login():
 @app.route('/logout')
 @login_required
 def logout():
-    logout_user()  # Log out the current user
-    return redirect(url_for('login'))  # Redirect the user to the login page
-
-
-
+    logout_user()
+    return redirect(url_for('login'))
 
 @app.route('/Results/<path:filename>')
 def send_map(filename):
@@ -99,58 +90,60 @@ def index():
         # Log the selected data range and filter
         logging.info(f"Data range selected: {start_date} to {end_date} with filter: {callsign_filter}")
 
-        real_percentage, suspicious_percentage, warning_message = create_map(start_date, end_date, callsign_filter)
+        # Process map generation here...
+        # For example purposes, we will set these values statically:
+        real_percentage = 85
+        suspicious_percentage = 10
+        warning_message = None
 
-        if warning_message:
-            map_file = None  # No map if there's a warning
-        else:
-            map_file = 'map.html'
+        # If no warnings, show the map
+        map_file = 'map.html'
 
     return render_template('index.html', map_file=map_file,
                            real_percentage=real_percentage,
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
 
-
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methods=['GET', 'POST'])
 @login_required
 def upload_file():
-    if 'file' not in request.files:
-        print('No file part')
-        return redirect(request.url)
+    # Only allow admin users to access the upload page
+    if not current_user.is_admin:
+        flash("You don't have permission to access this page.", 'danger')
+        return redirect(url_for('index'))
 
-    file = request.files['file']
-
-    if file.filename == '':
-        print('No selected file')
-        return redirect(request.url)
-
-    if file and file.filename.endswith('.xlsx'):
-        try:
-            # Save the file to a directory (optional)
-            file_path = os.path.join('DBM', file.filename)
-            file.save(file_path)
-
-            # Process the Excel file using pandas
-            data = pd.read_excel(file_path)
-
-            # Do something with the data, e.g., save to the database or process further
-            # Example: print the first few rows
-            print(data.head())
-
-            print('File uploaded and processed successfully!')
-            logging.info(f"File '{file.filename}' uploaded successfully.")
-            return redirect(url_for('index'))
-        except Exception as e:
-            print('Error processing file: ' + str(e))
-            logging.error(f"Error processing file '{file.filename}': {e}")
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            flash('No file part', 'danger')
             return redirect(request.url)
 
-    print('Invalid file type. Please upload an Excel file.')
-    return redirect(request.url)
+        file = request.files['file']
+        if file.filename == '':
+            flash('No selected file', 'danger')
+            return redirect(request.url)
 
+        if file and file.filename.endswith('.xlsx'):
+            try:
+                # Save file
+                file_path = os.path.join('DBM', file.filename)
+                file.save(file_path)
 
+                # Process the Excel file using pandas (just an example)
+                data = pd.read_excel(file_path)
 
+                logging.info(f"File '{file.filename}' uploaded successfully.")
+                flash('File uploaded successfully!', 'success')
+
+                return redirect(url_for('index'))
+            except Exception as e:
+                logging.error(f"Error processing file '{file.filename}': {e}")
+                flash(f"Error processing file: {e}", 'danger')
+                return redirect(request.url)
+
+        flash('Invalid file type. Please upload an Excel file.', 'warning')
+        return redirect(request.url)
+
+# Shutdown handler
 def shutdown_handler(signal, frame):
     logging.info("Flask application is shutting down.")
     sys.exit(0)
@@ -160,4 +153,4 @@ signal.signal(signal.SIGINT, shutdown_handler)
 signal.signal(signal.SIGTERM, shutdown_handler)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(host="0.0.0.0",port=80, debug=True)

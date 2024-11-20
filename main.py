@@ -2,18 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for, flash, sen
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import pymysql
-import os
 import logging
-import pandas as pd  # Ensure pandas is installed for processing Excel files
 import signal
 import sys
 from flask import Flask, render_template, request, send_from_directory
+from DBM.Connect_to_DBM import fetch_data_from_db
 import pandas as pd
 import folium
 from folium.plugins import HeatMap
-from DBM.Connect_to_DBM import fetch_data_from_db
 import os
-
 
 
 # Configure logging
@@ -79,20 +76,8 @@ def convert_lat_lon(lat_str, lon_str):
         print(f"Error converting coordinates {lat_str}, {lon_str}: {e}")
         return None, None
 
-import pandas as pd
-import folium
-from folium.plugins import HeatMap
-import os
 
-def convert_lat_lon(lat_str, lon_str):
-    """
-    Converts latitude and longitude strings to float.
-    Returns (None, None) if conversion fails.
-    """
-    try:
-        return float(lat_str), float(lon_str)
-    except (ValueError, TypeError):
-        return None, None
+
 
 def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, show_heatmap=True, show_vectors=True):
     """
@@ -159,7 +144,6 @@ def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, 
                     'time': time,
                     'stca_id': row.get('stca_id', 'Unknown'),
                     "number_of_callsign": row.get("number_of_callsign"),
-                    # Include vectors data if available
                     'vi_tr1_lat': row.get('vi_tr1_lat', None),
                     'vi_tr1_lon': row.get('vi_tr1_lon', None),
                     'end_tr1_lat': row.get('end_tr1_lat', None),
@@ -275,12 +259,6 @@ def index():
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
 
-
-
-
-
-
-
 @login_manager.user_loader
 def load_user(user_id):
     return db.session.get(User, int(user_id))
@@ -309,10 +287,6 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('login'))
-
-
-
-
 
 @app.route('/upload', methods=['GET', 'POST'])
 @login_required

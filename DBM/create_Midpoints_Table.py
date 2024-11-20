@@ -5,7 +5,6 @@ import re
 import logging
 from settings import connection_parmeters
 
-
 # Configure logging
 logging.basicConfig(
     filename='../Logs/Midpoints_table.log',  # Log file name
@@ -33,7 +32,6 @@ def dms_to_decimal(dms):
         logging.error(f"Error in dms_to_decimal: {e} with value: {dms}")
         return None
 
-
 def calculate_midpoint(coords):
     """Calculate the geographic midpoint of coordinates."""
     try:
@@ -51,7 +49,6 @@ def calculate_midpoint(coords):
         print(f"Error in calculate_midpoint: {e}")
         logging.error(f"Error in calculate_midpoint: {e}")
         return None, None
-
 
 def extract_coordinates(df):
     """Extract coordinates based on STCA-ID, DATE, and N."""
@@ -99,11 +96,18 @@ def extract_coordinates(df):
                         'Midpoint Latitude': midpoint[0],
                         'Midpoint Longitude': midpoint[1],
                         'Status': str(row.get("Status")),
-                        'number_of_callsign': row['number_of_callsign']
+                        'number_of_callsign': row['number_of_callsign'],
+                        'VI TR1 Latitude': vi_coords[0][0],
+                        'VI TR1 Longitude': vi_coords[0][1],
+                        'END TR1 Latitude': end_coords[0][0],
+                        'END TR1 Longitude': end_coords[0][1],
+                        'VI TR2 Latitude': vi_coords[1][0],
+                        'VI TR2 Longitude': vi_coords[1][1],
+                        'END TR2 Latitude': end_coords[1][0],
+                        'END TR2 Longitude': end_coords[1][1],
                     })
 
     return results
-
 
 # Load the Excel file
 file_path = 'sourse_file.xlsx'  # Update with your file path
@@ -144,7 +148,6 @@ def connect_to_database():
         logging.error(f"Error while connecting to MySQL: {e}")
         return None
 
-
 def save_results_to_database(results):
     """Save the processed results to the MySQL database."""
     connection = connect_to_database()
@@ -174,6 +177,14 @@ def save_results_to_database(results):
             callsign_2 VARCHAR(255) NOT NULL,
             Sector_Tr2 VARCHAR(255) NOT NULL,
             Altitude_Tr2 VARCHAR(255) NOT NULL,
+            vi_tr1_lat FLOAT NOT NULL,
+            vi_tr1_lon FLOAT NOT NULL,
+            end_tr1_lat FLOAT NOT NULL,
+            end_tr1_lon FLOAT NOT NULL,
+            vi_tr2_lat FLOAT NOT NULL,
+            vi_tr2_lon FLOAT NOT NULL,
+            end_tr2_lat FLOAT NOT NULL,
+            end_tr2_lon FLOAT NOT NULL,
             midpoint_latitude FLOAT NOT NULL,
             midpoint_longitude FLOAT NOT NULL,
             Status VARCHAR(255) NOT NULL,
@@ -184,8 +195,10 @@ def save_results_to_database(results):
 
         if results:
             insert_query = """
-            INSERT INTO midpoints (date, time, stca_id, callsign_1, Sector_Tr1, Altitude_Tr1, callsign_2, Sector_Tr2, Altitude_Tr2, midpoint_latitude, midpoint_longitude, Status, number_of_callsign)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            INSERT INTO midpoints (date, time, stca_id, callsign_1, Sector_Tr1, Altitude_Tr1, callsign_2, Sector_Tr2, Altitude_Tr2,
+                                   vi_tr1_lat, vi_tr1_lon, end_tr1_lat, end_tr1_lon, vi_tr2_lat, vi_tr2_lon, end_tr2_lat, end_tr2_lon,
+                                   midpoint_latitude, midpoint_longitude, Status, number_of_callsign)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """
             for result in results:
                 cursor.execute(insert_query, (
@@ -198,6 +211,14 @@ def save_results_to_database(results):
                     str(result['Callsign/SSR_Tr2']),
                     str(result['Sector_Tr2']),
                     str(result['Altitude_Tr2']),
+                    result['VI TR1 Latitude'],
+                    result['VI TR1 Longitude'],
+                    result['END TR1 Latitude'],
+                    result['END TR1 Longitude'],
+                    result['VI TR2 Latitude'],
+                    result['VI TR2 Longitude'],
+                    result['END TR2 Latitude'],
+                    result['END TR2 Longitude'],
                     result['Midpoint Latitude'],
                     result['Midpoint Longitude'],
                     str(result['Status']),
@@ -218,8 +239,5 @@ def save_results_to_database(results):
             cursor.close()
             connection.close()
 
-
 # Save the results to the database
 save_results_to_database(vi_results)
-
-

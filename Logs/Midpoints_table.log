@@ -168,3 +168,7 @@
 2024-11-16 12:46:56,636 - INFO - Excel file loaded successfully.
 2024-11-16 12:46:57,103 - INFO - Filtered results, found 757 with Status 'VI'.
 2024-11-16 12:46:58,903 - INFO - Map created and saved as 'midpoint_vectors_map.html'.
+2024-11-20 13:45:35,683 - INFO - Excel file loaded successfully.
+2024-11-20 13:45:36,241 - INFO - Filtered results, found 757 with Status 'VI'.
+2024-11-20 13:45:36,253 - INFO - Connected to the database successfully.
+2024-11-20 13:45:37,128 - INFO - Results have been saved to the Midpoints database.

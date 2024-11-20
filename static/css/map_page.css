@@ -33,7 +33,6 @@ body {
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
-    
 }
 
 /* Styling for the Set Date Range form */
@@ -59,6 +58,7 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    height: 50px;
 }
 
 button {
@@ -71,6 +71,27 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* STCA-ID Filter Section */
+#stca_id_filter {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#stca_id_filter label {
+    font-size: 14px;
+    color: #333;
+}
+
+#stca_id_filter select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
 /* Styling for the Percentage info */
 .percentage-info {
     display: flex;
@@ -80,7 +101,7 @@ button:hover {
     align-items: center;
 }
 
-.left-iner p {
+.left-inner p {
     font-size: 16px;
 }
 
@@ -151,6 +172,7 @@ iframe {
     margin-bottom: 10px;
     font-size: 14px;
     width: 100%;
+
 }
 
 .upload button {
@@ -166,35 +188,27 @@ iframe {
     background-color: #27ae60;
 }
 
-.label{
-margin-left:10px;
-
+.flash-messages {
+    margin-top: 15px;
 }
 
-.flash-messages {
-        margin-top: 15px;
-    }
-
-    .alert-file-upload {
-        background-color: #2ecc71;
-        color: #721c24;
-        padding: 10px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        font-size: 16px;
-        margin-top: 10px;
-    }
+.alert-file-upload {
+    background-color: #2ecc71;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
 
 /* Optional: Change the background color for success messages */
 .alert-file-upload.success {
-        background-color: #d4edda;
-        color: #155724;
+    background-color: #d4edda;
+    color: #155724;
+}
 
-    }
-
-
-/*  Percentage Info Section */
-
+/* Percentage Info Section */
 .left-inner {
     margin: 20px;
     padding: 10px;
@@ -219,4 +233,19 @@ margin-left:10px;
     font-size: 18px;
     color: #666;
     margin: 0; /* Remove any default margin */
+}
+
+
+.callsign_filter{
+    width:120px;
+    text-align: center;
+
+
+}
+
+.stca-id{
+    height:50px;
+    display: flex;
+    gap:10px;
+
 }

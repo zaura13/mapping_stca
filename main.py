@@ -94,7 +94,7 @@ def convert_lat_lon(lat_str, lon_str):
     except (ValueError, TypeError):
         return None, None
 
-def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, show_vectors=True):
+def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, show_heatmap=True, show_vectors=True):
     """
     Creates a Folium map with optional heatmaps and vector lines based on filtered data.
 
@@ -102,6 +102,7 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
         start_date (datetime): Start date for filtering the data.
         end_date (datetime): End date for filtering the data.
         callsign_filter (str): Filter for callsign type ("Real", "Suspicious", or None).
+        stca_id_filter (str): Filter for specific STCA-ID (optional).
         show_heatmap (bool): Whether to include a heatmap layer on the map.
         show_vectors (bool): Whether to include vector lines on the map.
 
@@ -122,6 +123,10 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
         elif callsign_filter == "Suspicious":
             filtered_df = filtered_df[filtered_df['number_of_callsign'] == "Suspicious"]
 
+        # Apply the stca_id filter if provided
+        if stca_id_filter:
+            filtered_df = filtered_df[filtered_df['stca_id'] == stca_id_filter]
+
         # Count occurrences
         total_count = len(filtered_df)
         real_count = len(filtered_df[filtered_df['number_of_callsign'] == "Real"])
@@ -130,9 +135,9 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
         real_percentage = (real_count / total_count * 100) if total_count > 0 else 0
         suspicious_percentage = (suspicious_count / total_count * 100) if total_count > 0 else 0
 
+        # Process the filtered data to create markers and heatmap
         data_list = []
         marker_data = []
-
         for _, row in filtered_df.iterrows():
             lat_str = row['midpoint_latitude']
             lon_str = row['midpoint_longitude']
@@ -154,6 +159,7 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
                     'time': time,
                     'stca_id': row.get('stca_id', 'Unknown'),
                     "number_of_callsign": row.get("number_of_callsign"),
+                    # Include vectors data if available
                     'vi_tr1_lat': row.get('vi_tr1_lat', None),
                     'vi_tr1_lon': row.get('vi_tr1_lon', None),
                     'end_tr1_lat': row.get('end_tr1_lat', None),
@@ -167,17 +173,16 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
         map_df = pd.DataFrame(marker_data)
 
         if not map_df.empty:
-            # Initialize the Folium map centered around the average location
+            # Create and save the map
             m = folium.Map(location=[map_df['latitude'].mean(), map_df['longitude'].mean()], zoom_start=7)
 
-            # Optional Heatmap layer
             if show_heatmap and data_list:
                 heatmap = HeatMap(data_list, radius=10)
                 heatmap_layer = folium.FeatureGroup(name='Heatmap')
                 heatmap_layer.add_child(heatmap)
                 heatmap_layer.add_to(m)
 
-            # Marker layer
+            # Add markers and vector lines to the map
             marker_layer = folium.FeatureGroup(name='Markers')
             for _, row in map_df.iterrows():
                 icon = folium.Icon(color='gray')  # Default icon color
@@ -205,16 +210,18 @@ def create_map(start_date, end_date, callsign_filter=None, show_heatmap=True, sh
             if show_vectors:
                 vector_layer = folium.FeatureGroup(name='Vectors', show=False)
                 for _, row in map_df.iterrows():
+                    # For Vector 1 (Blue)
                     if row['vi_tr1_lat'] and row['vi_tr1_lon'] and row['end_tr1_lat'] and row['end_tr1_lon']:
                         folium.PolyLine(
                             [[row['vi_tr1_lat'], row['vi_tr1_lon']], [row['end_tr1_lat'], row['end_tr1_lon']]],
                             color="blue", weight=2.5, opacity=1
                         ).add_to(vector_layer)
 
+                    # For Vector 2 (Green)
                     if row['vi_tr2_lat'] and row['vi_tr2_lon'] and row['end_tr2_lat'] and row['end_tr2_lon']:
                         folium.PolyLine(
                             [[row['vi_tr2_lat'], row['vi_tr2_lon']], [row['end_tr2_lat'], row['end_tr2_lon']]],
-                            color="blue", weight=2.5, opacity=1
+                            color="green", weight=2.5, opacity=1
                         ).add_to(vector_layer)
 
                 vector_layer.add_to(m)
@@ -250,7 +257,12 @@ def index():
         start_date = request.form['start_date']
         end_date = request.form['end_date']
         callsign_filter = request.form.get('callsign_filter', 'both')
-        real_percentage, suspicious_percentage, warning_message = create_map(start_date, end_date, callsign_filter)
+        stca_id_filter = request.form.get('stca_id_filter', None)  # Capture stca_id_filter from form
+
+        # Call create_map with stca_id_filter
+        real_percentage, suspicious_percentage, warning_message = create_map(
+            start_date, end_date, callsign_filter, stca_id_filter
+        )
 
         # Reset map_file if there's a warning message
         if warning_message:
@@ -262,6 +274,7 @@ def index():
                            real_percentage=real_percentage,
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
+
 
 
 

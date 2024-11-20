@@ -24,14 +24,19 @@
                 <input type="date" name="end_date" value="{{ request.form.end_date }}" required>
 
                 <label for="callsign_filter">Select Status:</label>
-                <select name="callsign_filter">
+                <select class="callsign_filter" name="callsign_filter">
                     <option value="both" {% if request.form.callsign_filter == 'both' %}selected{% endif %}>Both</option>
                     <option value="Real" {% if request.form.callsign_filter == 'Real' %}selected{% endif %}>Real</option>
                     <option value="Suspicious" {% if request.form.callsign_filter == 'Suspicious' %}selected{% endif %}>Suspicious</option>
                 </select>
+               <!-- Add the stca_id filter -->
+                <div class="stca-id" >
+                    <label  for="stca_id_filter">STCA ID</label>
+                    <input type="text" name="stca_id_filter" placeholder="  Enter STCA-ID">
+                </div>
 
                 <button type="submit">Generate Map</button>
-                <div class="loading" id="loadingMessage">Generating map, please wait...</div>
+
             </form>
         </div>
 
@@ -53,7 +58,7 @@
         <!-- Logout Section -->
         <div class="logout-container">
             <div class="user-info">
-                <span>Welcome, {{ current_user.username }}!</span>
+                <span> {{ current_user.username }}!</span>
                 <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
             </div>
         </div>

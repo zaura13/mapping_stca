@@ -8,10 +8,10 @@ import sys
 from flask import Flask, render_template, request, send_from_directory
 from DBM.Connect_to_DBM import fetch_data_from_db
 import pandas as pd
-import folium
 from folium.plugins import HeatMap
 import os
-
+import folium
+from folium.features import DivIcon
 
 # Configure logging
 logging.basicConfig(
@@ -38,8 +38,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-
-
 # User Model
 
 class User(UserMixin, db.Model):
@@ -48,6 +46,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)  # Store passwords as plain text
     is_admin = db.Column(db.Boolean, default=False)
+
 
 # User Loader for Flask-Login
 
@@ -77,23 +76,7 @@ def convert_lat_lon(lat_str, lon_str):
         return None, None
 
 
-
-
 def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_heatmap=True, show_vectors=True):
-    """
-    Creates a Folium map with optional heatmaps and vector lines based on filtered data.
-
-    Parameters:
-        start_date (datetime): Start date for filtering the data.
-        end_date (datetime): End date for filtering the data.
-        callsign_filter (str): Filter for callsign type ("Real", "Suspicious", or None).
-        stca_id_filter (str): Filter for specific STCA-ID (optional).
-        show_heatmap (bool): Whether to include a heatmap layer on the map.
-        show_vectors (bool): Whether to include vector lines on the map.
-
-    Returns:
-        tuple: Real percentage, suspicious percentage, and a warning message (if any).
-    """
     df = fetch_data_from_db()
     warning_message = None  # Initialize warning message
 
@@ -120,7 +103,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
         real_percentage = (real_count / total_count * 100) if total_count > 0 else 0
         suspicious_percentage = (suspicious_count / total_count * 100) if total_count > 0 else 0
 
-        # Process the filtered data to create markers and heatmap
+        # Process the filtered data
         data_list = []
         marker_data = []
         for _, row in filtered_df.iterrows():
@@ -153,13 +136,11 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     'vi_tr2_lon': row.get('vi_tr2_lon', None),
                     'end_tr2_lat': row.get('end_tr2_lat', None),
                     'end_tr2_lon': row.get('end_tr2_lon', None),
-
                 })
 
         map_df = pd.DataFrame(marker_data)
 
         if not map_df.empty:
-            # Create and save the map
             m = folium.Map(location=[map_df['latitude'].mean(), map_df['longitude'].mean()], zoom_start=7)
 
             if show_heatmap and data_list:
@@ -168,7 +149,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                 heatmap_layer.add_child(heatmap)
                 heatmap_layer.add_to(m)
 
-            # Add markers and vector lines to the map
+            # Add markers to the map
             marker_layer = folium.FeatureGroup(name='Markers')
             for _, row in map_df.iterrows():
                 icon = folium.Icon(color='gray')  # Default icon color
@@ -194,22 +175,39 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
 
             marker_layer.add_to(m)
 
-            # Optional Vector lines as a toggleable layer, disabled by default
+            # Create a vector layer (only shows when "Vectors" is selected)
             if show_vectors:
-                vector_layer = folium.FeatureGroup(name='Vectors', show=False)
+                vector_layer = folium.FeatureGroup(name='Vectors', show=False)  # Start hidden
+
                 for _, row in map_df.iterrows():
                     # For Vector 1 (Blue)
                     if row['vi_tr1_lat'] and row['vi_tr1_lon'] and row['end_tr1_lat'] and row['end_tr1_lon']:
+                        # Create the polyline for the vector line
                         folium.PolyLine(
                             [[row['vi_tr1_lat'], row['vi_tr1_lon']], [row['end_tr1_lat'], row['end_tr1_lon']]],
                             color="blue", weight=2.5, opacity=1
                         ).add_to(vector_layer)
 
+                        # Add an arrow at the end of Vector 1
+                        folium.Marker(
+                            location=(row['vi_tr1_lat'], row['vi_tr1_lon']),
+                            icon=DivIcon(icon_size=(20, 20), icon_anchor=(10, 10),
+                                         html='<i style="font-size:24px; color:blue;">*</i>')
+                        ).add_to(vector_layer)
+
                     # For Vector 2 (Green)
                     if row['vi_tr2_lat'] and row['vi_tr2_lon'] and row['end_tr2_lat'] and row['end_tr2_lon']:
+                        # Create the polyline for the vector line
                         folium.PolyLine(
                             [[row['vi_tr2_lat'], row['vi_tr2_lon']], [row['end_tr2_lat'], row['end_tr2_lon']]],
                             color="green", weight=2.5, opacity=1
+                        ).add_to(vector_layer)
+
+                        # Add an arrow at the end of Vector 2
+                        folium.Marker(
+                            location=(row['vi_tr2_lat'], row['vi_tr2_lon']),
+                            icon=DivIcon(icon_size=(20, 20), icon_anchor=(10, 10),
+                                         html='<i style="font-size:24px; color:green;">*</i>')
                         ).add_to(vector_layer)
 
                 vector_layer.add_to(m)
@@ -227,6 +225,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
         warning_message = "No data available to process."
 
     return real_percentage, suspicious_percentage, warning_message  # Return the percentages and warning
+
 
 @app.route('/Results/<path:filename>')
 def send_map(filename):
@@ -263,9 +262,11 @@ def index():
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
 
+
 @login_manager.user_loader
 def load_user(user_id):
     return db.session.get(User, int(user_id))
+
 
 # Routes
 @app.route('/', methods=['GET', 'POST'])
@@ -286,11 +287,13 @@ def login():
 
     return render_template('login.html')
 
+
 @app.route('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
 
 @app.route('/upload', methods=['GET', 'POST'])
 @login_required
@@ -331,14 +334,16 @@ def upload_file():
         flash('Invalid file type. Please upload an Excel file.', 'warning')
         return redirect(request.url)
 
+
 # Shutdown handler
 def shutdown_handler(signal, frame):
     logging.info("Flask application is shutting down.")
     sys.exit(0)
+
 
 # Register the shutdown signal handler
 signal.signal(signal.SIGINT, shutdown_handler)
 signal.signal(signal.SIGTERM, shutdown_handler)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=80, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)

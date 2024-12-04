@@ -79,7 +79,7 @@ def convert_lat_lon(lat_str, lon_str):
 
 
 
-def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, show_heatmap=True, show_vectors=True):
+def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_heatmap=True, show_vectors=True):
     """
     Creates a Folium map with optional heatmaps and vector lines based on filtered data.
 
@@ -108,9 +108,9 @@ def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, 
         elif callsign_filter == "Suspicious":
             filtered_df = filtered_df[filtered_df['number_of_callsign'] == "Suspicious"]
 
-        # Apply the stca_id filter if provided
-        if stca_id_filter:
-            filtered_df = filtered_df[filtered_df['stca_id'] == stca_id_filter]
+        # Apply the id filter if provided
+        if id_filter:
+            filtered_df = filtered_df[filtered_df['id'].astype(str) == str(id_filter)]
 
         # Count occurrences
         total_count = len(filtered_df)
@@ -143,6 +143,7 @@ def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, 
                     'date': date,
                     'time': time,
                     'stca_id': row.get('stca_id', 'Unknown'),
+                    'id': row.get('id'),
                     "number_of_callsign": row.get("number_of_callsign"),
                     'vi_tr1_lat': row.get('vi_tr1_lat', None),
                     'vi_tr1_lon': row.get('vi_tr1_lon', None),
@@ -152,6 +153,7 @@ def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, 
                     'vi_tr2_lon': row.get('vi_tr2_lon', None),
                     'end_tr2_lat': row.get('end_tr2_lat', None),
                     'end_tr2_lon': row.get('end_tr2_lon', None),
+
                 })
 
         map_df = pd.DataFrame(marker_data)
@@ -182,7 +184,9 @@ def create_map(start_date, end_date, callsign_filter=None, stca_id_filter=None, 
                         f"<strong>Callsign:</strong> {row['callsign']}<br>"
                         f"<strong>Date:</strong> {row['date']}<br>"
                         f"<strong>Time:</strong> {row['time']}<br>"
-                        f"<strong>STCA-ID:</strong> {row['stca_id']}<br>",
+                        f"<strong>STCA-ID:</strong> {row['stca_id']}<br>"
+                        f"<strong>ID:</strong> {row['id']}<br>",
+
                         max_width=300
                     ),
                     icon=icon
@@ -241,11 +245,11 @@ def index():
         start_date = request.form['start_date']
         end_date = request.form['end_date']
         callsign_filter = request.form.get('callsign_filter', 'both')
-        stca_id_filter = request.form.get('stca_id_filter', None)  # Capture stca_id_filter from form
+        id_filter = request.form.get('id_filter', None)  # Capture id_filter from form
 
-        # Call create_map with stca_id_filter
+        # Call create_map with id_filter
         real_percentage, suspicious_percentage, warning_message = create_map(
-            start_date, end_date, callsign_filter, stca_id_filter
+            start_date, end_date, callsign_filter, id_filter
         )
 
         # Reset map_file if there's a warning message

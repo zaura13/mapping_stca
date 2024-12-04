@@ -249,3 +249,10 @@ iframe {
     gap:10px;
 
 }
+
+element.style {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+
+    }

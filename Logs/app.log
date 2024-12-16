@@ -1,59 +1,45 @@
-2024-11-20 18:43:38,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-12-16 13:29:22,739 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:80
  * Running on http://172.16.12.13:80
-2024-11-20 18:43:38,597 - INFO - [33mPress CTRL+C to quit[0m
-2024-11-20 18:43:38,600 - INFO -  * Restarting with stat
-2024-11-20 18:43:40,258 - WARNING -  * Debugger is active!
-2024-11-20 18:43:40,264 - INFO -  * Debugger PIN: 334-236-534
-2024-11-20 18:43:48,272 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:48] "GET / HTTP/1.1" 200 -
-2024-11-20 18:43:48,303 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:48] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:43:48,322 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:48] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2024-11-20 18:43:55,378 - INFO - User 'zura' logged in successfully.
-2024-11-20 18:43:55,379 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:55] "[32mPOST / HTTP/1.1[0m" 302 -
-2024-11-20 18:43:55,397 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:55] "GET /index HTTP/1.1" 200 -
-2024-11-20 18:43:55,434 - INFO - 127.0.0.1 - - [20/Nov/2024 18:43:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:44:07,255 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:07] "POST /index HTTP/1.1" 200 -
-2024-11-20 18:44:07,279 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:44:07,283 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:07] "GET /Results/map.html HTTP/1.1" 200 -
-2024-11-20 18:44:30,773 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:30] "POST /index HTTP/1.1" 200 -
-2024-11-20 18:44:30,806 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:30] "GET /Results/map.html HTTP/1.1" 200 -
-2024-11-20 18:44:30,807 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:30] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:44:40,768 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:40] "POST /index HTTP/1.1" 200 -
-2024-11-20 18:44:40,794 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:44:40,796 - INFO - 127.0.0.1 - - [20/Nov/2024 18:44:40] "GET /Results/map.html HTTP/1.1" 200 -
-2024-11-20 18:59:34,220 - INFO - 127.0.0.1 - - [20/Nov/2024 18:59:34] "POST /index HTTP/1.1" 200 -
-2024-11-20 18:59:34,254 - INFO - 127.0.0.1 - - [20/Nov/2024 18:59:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 18:59:34,255 - INFO - 127.0.0.1 - - [20/Nov/2024 18:59:34] "GET /Results/map.html HTTP/1.1" 200 -
-2024-11-20 18:59:57,759 - INFO - 127.0.0.1 - - [20/Nov/2024 18:59:57] "POST /index HTTP/1.1" 200 -
-2024-11-20 18:59:57,783 - INFO - 127.0.0.1 - - [20/Nov/2024 18:59:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:00:05,524 - INFO - 127.0.0.1 - - [20/Nov/2024 19:00:05] "POST /index HTTP/1.1" 200 -
-2024-11-20 19:00:05,549 - INFO - 127.0.0.1 - - [20/Nov/2024 19:00:05] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:00:05,555 - INFO - 127.0.0.1 - - [20/Nov/2024 19:00:05] "GET /Results/map.html HTTP/1.1" 200 -
-2024-11-20 19:22:28,057 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:28] "GET / HTTP/1.1" 200 -
-2024-11-20 19:22:28,093 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:28] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:22:28,102 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:28] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2024-11-20 19:22:36,758 - INFO - User 'zura' logged in successfully.
-2024-11-20 19:22:36,761 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:36] "[32mPOST / HTTP/1.1[0m" 302 -
-2024-11-20 19:22:36,768 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:36] "GET /index HTTP/1.1" 200 -
-2024-11-20 19:22:36,823 - INFO - 127.0.0.1 - - [20/Nov/2024 19:22:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:23:56,182 - INFO - 192.168.1.117 - - [20/Nov/2024 19:23:56] "GET / HTTP/1.1" 200 -
-2024-11-20 19:23:56,578 - INFO - 192.168.1.117 - - [20/Nov/2024 19:23:56] "GET /static/css/Login_page.css HTTP/1.1" 200 -
-2024-11-20 19:23:56,652 - INFO - 192.168.1.117 - - [20/Nov/2024 19:23:56] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2024-11-20 19:23:56,795 - INFO - 192.168.1.117 - - [20/Nov/2024 19:23:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2024-11-20 19:24:07,913 - INFO - User 'Zura' logged in successfully.
-2024-11-20 19:24:07,915 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:07] "[32mPOST / HTTP/1.1[0m" 302 -
-2024-11-20 19:24:07,951 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:07] "GET /index HTTP/1.1" 200 -
-2024-11-20 19:24:08,060 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:08] "GET /static/css/map_page.css HTTP/1.1" 200 -
-2024-11-20 19:24:08,372 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:08] "GET /static/favicon.ico HTTP/1.1" 200 -
-2024-11-20 19:24:34,962 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:34] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-11-20 19:24:34,978 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:34] "GET / HTTP/1.1" 200 -
-2024-11-20 19:24:35,044 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:24:35,072 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:35] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2024-11-20 19:24:49,098 - INFO - User 'Zura' logged in successfully.
-2024-11-20 19:24:49,100 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:49] "[32mPOST / HTTP/1.1[0m" 302 -
-2024-11-20 19:24:49,175 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:49] "GET /index HTTP/1.1" 200 -
-2024-11-20 19:24:49,554 - INFO - 192.168.1.117 - - [20/Nov/2024 19:24:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:25:02,275 - INFO - 192.168.1.117 - - [20/Nov/2024 19:25:02] "POST /index HTTP/1.1" 200 -
-2024-11-20 19:25:02,392 - INFO - 192.168.1.117 - - [20/Nov/2024 19:25:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2024-11-20 19:25:02,397 - INFO - 192.168.1.117 - - [20/Nov/2024 19:25:02] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-16 13:29:22,739 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-16 13:29:28,310 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:28] "GET / HTTP/1.1" 200 -
+2024-12-16 13:29:28,336 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:28] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:29:28,405 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:28] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-16 13:29:33,075 - INFO - User 'zura' logged in successfully.
+2024-12-16 13:29:33,094 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-16 13:29:33,116 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:33] "GET /index HTTP/1.1" 200 -
+2024-12-16 13:29:33,144 - INFO - 127.0.0.1 - - [16/Dec/2024 13:29:33] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:30:04,170 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:04] "GET /index HTTP/1.1" 200 -
+2024-12-16 13:30:04,199 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:04] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:30:04,290 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:04] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-16 13:30:08,103 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-16 13:30:08,109 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:08] "GET / HTTP/1.1" 200 -
+2024-12-16 13:30:08,132 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:08] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:30:08,200 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:08] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-16 13:30:12,498 - INFO - User 'zura' logged in successfully.
+2024-12-16 13:30:12,499 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-16 13:30:12,508 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:12] "GET /index HTTP/1.1" 200 -
+2024-12-16 13:30:12,532 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:30:47,006 - INFO - Script executed successfully:
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2024-12-16 13:30:47,568 - INFO - File 'sourse_file.xlsx' uploaded successfully.
+2024-12-16 13:30:47,569 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:47] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-12-16 13:30:47,580 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:47] "GET /index HTTP/1.1" 200 -
+2024-12-16 13:30:47,608 - INFO - 127.0.0.1 - - [16/Dec/2024 13:30:47] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:31:11,133 - INFO - Flask application is shutting down.
+2024-12-16 13:31:16,173 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-16 13:31:16,173 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-16 13:31:19,317 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:19] "GET / HTTP/1.1" 200 -
+2024-12-16 13:31:19,338 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:19] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-16 13:31:19,410 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:19] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-16 13:31:23,946 - INFO - User 'zura' logged in successfully.
+2024-12-16 13:31:23,948 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:23] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-16 13:31:23,968 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:23] "GET /index HTTP/1.1" 200 -
+2024-12-16 13:31:24,000 - INFO - 127.0.0.1 - - [16/Dec/2024 13:31:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -

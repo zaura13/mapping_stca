@@ -1,17 +1,20 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+
+from Insert_to_DBM import run_script
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, make_response, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import pymysql
 import logging
 import signal
 import sys
-from flask import Flask, render_template, request, send_from_directory
-from DBM.Connect_to_DBM import fetch_data_from_db
-import pandas as pd
-from folium.plugins import HeatMap
 import os
+import pandas as pd
 import folium
+from folium.plugins import HeatMap
 from folium.features import DivIcon
+from DBM.Connect_to_DBM import fetch_data_from_db
+
+
 
 # Configure logging
 logging.basicConfig(
@@ -39,7 +42,6 @@ login_manager.init_app(app)
 
 
 # User Model
-
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
@@ -47,6 +49,11 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(150), nullable=False)  # Store passwords as plain text
     is_admin = db.Column(db.Boolean, default=False)
 
+
+# User Loader for Flask-Login
+@login_manager.user_loader
+def load_user(user_id):
+    return db.session.get(User, int(user_id))
 
 # User Loader for Flask-Login
 
@@ -93,7 +100,11 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
 
         # Apply the id filter if provided
         if id_filter:
-            filtered_df = filtered_df[filtered_df['id'].astype(str) == str(id_filter)]
+            # Apply the filter on either callsign_1 or callsign_2, ignoring trailing spaces
+            filtered_df = filtered_df[
+                (filtered_df['callsign_1'].str.strip() == str(id_filter)) |
+                (filtered_df['callsign_2'].str.strip() == str(id_filter))
+                ]
 
         # Count occurrences
         total_count = len(filtered_df)
@@ -111,7 +122,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
             lon_str = row['midpoint_longitude']
             Callsign1 = row.get('callsign_1', '').strip()
             Callsign2 = row.get('callsign_2', '').strip()
-            concatenated_callsign = f"{Callsign1} / {Callsign2}" if Callsign1 and Callsign2 else Callsign1 or Callsign2 or 'N/A'
+            concatenated_callsign = f"{Callsign1}/{Callsign2}" if Callsign1 and Callsign2 else Callsign1 or Callsign2 or 'N/A'
 
             lat, lon = convert_lat_lon(lat_str, lon_str)
             if lat is not None and lon is not None:
@@ -165,8 +176,8 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                         f"<strong>Callsign:</strong> {row['callsign']}<br>"
                         f"<strong>Date:</strong> {row['date']}<br>"
                         f"<strong>Time:</strong> {row['time']}<br>"
-                        f"<strong>STCA-ID:</strong> {row['stca_id']}<br>"
-                        f"<strong>ID:</strong> {row['id']}<br>",
+                        f"<strong>STCA-ID:</strong> {row['stca_id']}<br>",
+                        #f"<strong>ID:</strong> {row['id']}<br>",
 
                         max_width=300
                     ),
@@ -191,8 +202,8 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                         # Add an arrow at the end of Vector 1
                         folium.Marker(
                             location=(row['vi_tr1_lat'], row['vi_tr1_lon']),
-                            icon=DivIcon(icon_size=(20, 20), icon_anchor=(10, 10),
-                                         html='<i style="font-size:24px; color:blue;">*</i>')
+                            icon=DivIcon(icon_size=(50, 50), icon_anchor=(10, 20),
+                                         html='<i style="font-size:40px; color:blue;">*</i>')
                         ).add_to(vector_layer)
 
                     # For Vector 2 (Green)
@@ -206,8 +217,8 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                         # Add an arrow at the end of Vector 2
                         folium.Marker(
                             location=(row['vi_tr2_lat'], row['vi_tr2_lon']),
-                            icon=DivIcon(icon_size=(20, 20), icon_anchor=(10, 10),
-                                         html='<i style="font-size:24px; color:green;">*</i>')
+                            icon=DivIcon(icon_size=(50, 50), icon_anchor=(10, 20),
+                                         html='<i style="font-size:40px; color:green;">*</i>')
                         ).add_to(vector_layer)
 
                 vector_layer.add_to(m)
@@ -227,9 +238,11 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
     return real_percentage, suspicious_percentage, warning_message  # Return the percentages and warning
 
 
+# Route for the map creation
 @app.route('/Results/<path:filename>')
 def send_map(filename):
     return send_from_directory('Results', filename)
+
 
 
 @app.route('/index', methods=['GET', 'POST'])
@@ -262,7 +275,6 @@ def index():
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
 
-
 @login_manager.user_loader
 def load_user(user_id):
     return db.session.get(User, int(user_id))
@@ -279,8 +291,13 @@ def login():
         # Check if the user exists and the password matches (plain text comparison)
         if user and user.password == password:
             login_user(user)
+            session['username'] = username  # Store the username in the session (session cookie)
+
+            resp = make_response(redirect(url_for('index')))
+            resp.set_cookie('username', username,
+                            max_age=60 * 60 * 24 )  # Manually set cookie for username (expires in 1 days)
             logging.info(f"User '{username}' logged in successfully.")
-            return redirect(url_for('index'))
+            return resp
         else:
             flash('Invalid username or password.')
             logging.warning(f"Failed login attempt for username: '{username}'.")
@@ -292,7 +309,11 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    session.pop('username', None)  # Remove from session
+    resp = make_response(redirect(url_for('login')))
+    resp.delete_cookie('username')  # Delete the 'username' cookie
+    return resp
+
 
 
 @app.route('/upload', methods=['GET', 'POST'])
@@ -319,6 +340,9 @@ def upload_file():
                 file_path = os.path.join('DBM', file.filename)
                 file.save(file_path)
 
+                # Call the run_script function after the file upload
+                run_script()  # This will run the external script
+
                 # Process the Excel file using pandas (just an example)
                 data = pd.read_excel(file_path)
 
@@ -335,6 +359,7 @@ def upload_file():
         return redirect(request.url)
 
 
+
 # Shutdown handler
 def shutdown_handler(signal, frame):
     logging.info("Flask application is shutting down.")
@@ -346,4 +371,4 @@ signal.signal(signal.SIGINT, shutdown_handler)
 signal.signal(signal.SIGTERM, shutdown_handler)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=False)

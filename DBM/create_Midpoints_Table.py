@@ -2,15 +2,36 @@ import pandas as pd
 import mysql.connector
 from mysql.connector import Error
 import re
-import logging
 from settings import connection_parmeters
+import logging
+import os
 
-# Configure logging
+
+# Get the current script's directory
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Get absolute path of the current script
+# Navigate one level up (parent directory)
+parent_dir = os.path.dirname(current_dir)  # This moves one level up from the current directory
+# Now, let's assume you want to go to the 'Logs' folder inside the parent directory
+log_dir = os.path.join(parent_dir, 'Logs')  # Combine parent directory with 'Logs'
+# Define the log filename
+log_filename = 'Midpoints_table.log'
+# Ensure the directory exists, create it if it doesn't
+os.makedirs(log_dir, exist_ok=True)
+# Combine the log directory with the log filename to get the full path to the log file
+log_file_path = os.path.join(log_dir, log_filename)
+
+
+
+
+# Setting up the logging configuration
 logging.basicConfig(
-    filename='../Logs/Midpoints_table.log',  # Log file name
-    level=logging.DEBUG,          # Minimum log level
+    filename=log_file_path,  # Log file path, platform independent
+    level=logging.DEBUG,      # Minimum log level
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+# Example log message to test
+logging.info('Logging setup is complete.')
 
 def dms_to_decimal(dms):
     """Convert DMS (Degrees, Minutes, Seconds) to Decimal Degrees."""
@@ -110,7 +131,7 @@ def extract_coordinates(df):
     return results
 
 # Load the Excel file
-file_path = 'sourse_file.xlsx'  # Update with your file path
+file_path = r'E:\ZURA KOPADZE\mapping_stca\DBM\sourse_file.xlsx' # Update with your file path
 df = pd.read_excel(file_path)
 print("Excel file loaded successfully.")
 logging.info("Excel file loaded successfully.")

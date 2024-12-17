@@ -1,6 +1,12 @@
-
-2024-12-16 13:30:44,898 - INFO - Logging setup is complete.
-2024-12-16 13:30:45,631 - INFO - Excel file loaded successfully.
-2024-12-16 13:30:46,245 - INFO - Filtered results, found 961 with Status 'VI'.
-2024-12-16 13:30:46,259 - INFO - Connected to the database successfully.
-2024-12-16 13:30:46,922 - INFO - Results have been saved to the Midpoints database.
+2024-12-16 21:29:27,349 - INFO - create_Midpoints_Table.py - Excel file loaded successfully.
+2024-12-16 21:29:27,986 - INFO - create_Midpoints_Table.py - Filtered results, found 961 with Status 'VI'.
+2024-12-16 21:29:28,000 - INFO - create_Midpoints_Table.py - Connected to the database successfully.
+2024-12-16 21:29:28,510 - INFO - create_Midpoints_Table.py - Results have been saved to the Midpoints database.
+2024-12-16 23:51:37,731 - INFO - create_Midpoints_Table.py - Excel file loaded successfully.
+2024-12-16 23:51:38,417 - INFO - create_Midpoints_Table.py - Filtered results, found 961 with Status 'VI'.
+2024-12-16 23:51:38,432 - INFO - create_Midpoints_Table.py - Connected to the database successfully.
+2024-12-16 23:51:40,271 - INFO - create_Midpoints_Table.py - Results have been saved to the Midpoints database.
+2024-12-17 00:14:13,195 - INFO - create_Midpoints_Table.py - Excel file loaded successfully.
+2024-12-17 00:14:13,982 - INFO - create_Midpoints_Table.py - Filtered results, found 961 with Status 'VI'.
+2024-12-17 00:14:13,995 - INFO - create_Midpoints_Table.py - Connected to the database successfully.
+2024-12-17 00:14:15,251 - INFO - create_Midpoints_Table.py - Results have been saved to the Midpoints database.

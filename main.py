@@ -1,5 +1,5 @@
 
-from Insert_to_DBM import run_script
+from DBM.Insert_to_DBM import run_script
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, make_response, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
@@ -15,13 +15,29 @@ from folium.features import DivIcon
 from DBM.Connect_to_DBM import fetch_data_from_db
 
 
+#Get the current script's directory
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Get absolute path of the current script
+# Navigate one level up (parent directory)
 
-# Configure logging
+# Now, let's assume you want to go to the 'Logs' folder inside the parent directory
+log_dir = os.path.join(current_dir, 'Logs')  # Combine parent directory with 'Logs'
+# Define the log filename
+log_filename = 'app.log'
+# Ensure the directory exists, create it if it doesn't
+os.makedirs(log_dir, exist_ok=True)
+# Combine the log directory with the log filename to get the full path to the log file
+log_file_path = os.path.join(log_dir, log_filename)
+
+
+
+
+# Setting up the logging configuration
 logging.basicConfig(
-    filename='Logs/app.log',  # Log file location
-    level=logging.INFO,  # Log level
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    filename=log_file_path,  # Log file path, platform independent
+    level=logging.INFO,      # Minimum log level
+    format='%(asctime)s - %(levelname)s - %(filename)s - %(message)s'
 )
+
 
 app = Flask(__name__)
 
@@ -80,6 +96,7 @@ def convert_lat_lon(lat_str, lon_str):
         return lat, lon
     except Exception as e:
         print(f"Error converting coordinates {lat_str}, {lon_str}: {e}")
+        logging.error(f"Error converting coordinates {lat_str}, {lon_str}: {e}")
         return None, None
 
 
@@ -120,9 +137,9 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
         for _, row in filtered_df.iterrows():
             lat_str = row['midpoint_latitude']
             lon_str = row['midpoint_longitude']
-            Callsign1 = row.get('callsign_1', '').strip()
-            Callsign2 = row.get('callsign_2', '').strip()
-            concatenated_callsign = f"{Callsign1}/{Callsign2}" if Callsign1 and Callsign2 else Callsign1 or Callsign2 or 'N/A'
+            #Callsign1 = row.get('callsign_1', '').strip()
+            #Callsign2 = row.get('callsign_2', '').strip()
+            #concatenated_callsign = f"{Callsign1}/{Callsign2}" if Callsign1 and Callsign2 else Callsign1 or Callsign2 or 'N/A'
 
             lat, lon = convert_lat_lon(lat_str, lon_str)
             if lat is not None and lon is not None:
@@ -131,7 +148,8 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                 time = row.get('time', 'N/A')
 
                 marker_data.append({
-                    'callsign': concatenated_callsign,
+
+                    #'callsign': concatenated_callsign,
                     'latitude': lat,
                     'longitude': lon,
                     'date': date,
@@ -147,6 +165,9 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     'vi_tr2_lon': row.get('vi_tr2_lon', None),
                     'end_tr2_lat': row.get('end_tr2_lat', None),
                     'end_tr2_lon': row.get('end_tr2_lon', None),
+                    'callsign_1': row.get('callsign_1', None),
+                    'callsign_2': row.get('callsign_2', None),
+
                 })
 
         map_df = pd.DataFrame(marker_data)
@@ -173,7 +194,8 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     location=[row['latitude'], row['longitude']],
                     popup=folium.Popup(
                         f"<div style='font-size: 18px;'>"
-                        f"<strong>Callsign:</strong> {row['callsign']}<br>"
+                        f"<strong>Callsign1:</strong> <span style='color:blue;'>{row['callsign_1']}</span><br>"
+                        f"<strong>Callsign2:</strong> <span style='color:green;'>{row['callsign_2']}</span><br>"
                         f"<strong>Date:</strong> {row['date']}<br>"
                         f"<strong>Time:</strong> {row['time']}<br>"
                         f"<strong>STCA-ID:</strong> {row['stca_id']}<br>",
@@ -308,10 +330,13 @@ def login():
 @app.route('/logout')
 @login_required
 def logout():
+    username = session.get('username')
     logout_user()
     session.pop('username', None)  # Remove from session
+    logging.info(f"User '{username}' logged out successfully.")  # Log logout event
     resp = make_response(redirect(url_for('login')))
     resp.delete_cookie('username')  # Delete the 'username' cookie
+
     return resp
 
 

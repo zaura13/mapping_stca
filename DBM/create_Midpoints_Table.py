@@ -6,8 +6,7 @@ from settings import connection_parmeters
 import logging
 import os
 
-
-# Get the current script's directory
+#Get the current script's directory
 current_dir = os.path.dirname(os.path.abspath(__file__))  # Get absolute path of the current script
 # Navigate one level up (parent directory)
 parent_dir = os.path.dirname(current_dir)  # This moves one level up from the current directory
@@ -26,12 +25,12 @@ log_file_path = os.path.join(log_dir, log_filename)
 # Setting up the logging configuration
 logging.basicConfig(
     filename=log_file_path,  # Log file path, platform independent
-    level=logging.DEBUG,      # Minimum log level
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    level=logging.INFO,      # Minimum log level
+    format='%(asctime)s - %(levelname)s - %(filename)s - %(message)s'
 )
 
-# Example log message to test
-logging.info('Logging setup is complete.')
+
+
 
 def dms_to_decimal(dms):
     """Convert DMS (Degrees, Minutes, Seconds) to Decimal Degrees."""
@@ -130,8 +129,11 @@ def extract_coordinates(df):
 
     return results
 
+
 # Load the Excel file
-file_path = r'E:\ZURA KOPADZE\mapping_stca\DBM\sourse_file.xlsx' # Update with your file path
+current_dir_xlsx = os.path.dirname(os.path.abspath(__file__))
+xlsx_file="sourse_file.xlsx"
+file_path = os.path.join(current_dir_xlsx, xlsx_file)
 df = pd.read_excel(file_path)
 print("Excel file loaded successfully.")
 logging.info("Excel file loaded successfully.")

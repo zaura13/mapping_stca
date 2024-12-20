@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <title>Map Visualization</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='international-travel_14098668.png') }}">
+    <title>mapping_stca</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/map_page.css') }}">
 </head>
@@ -18,12 +18,12 @@
         <div class="date-range">
             <h2>Set Date Range</h2>
             <form method="post" onsubmit="showLoading()">
-                <label for="start_date">Start Date:</label>
+                <label id="start_date">Start Date:</label>
                 <input type="date" name="start_date" value="{{ request.form.start_date }}" required>
-                <label for="end_date">End Date:</label>
+                <label id="end_date">End Date:</label>
                 <input type="date" name="end_date" value="{{ request.form.end_date }}" required>
 
-                <label for="callsign_filter">Select Status:</label>
+                <label id="callsign_filter">Select Status:</label>
                 <select class="callsign_filter" name="callsign_filter">
                     <option value="both" {% if request.form.callsign_filter == 'both' %}selected{% endif %}>Both</option>
                     <option value="Real" {% if request.form.callsign_filter == 'Real' %}selected{% endif %}>Real</option>
@@ -31,7 +31,7 @@
                 </select>
                <!-- Add the stca_id filter -->
                 <div class="stca-id" >
-                    <label style="margin: auto;" for="id_filter">ID </label>
+                    <label style="margin: auto;" id="id_filter">ID </label>
                     <input type="text" name="id_filter" placeholder="  Enter ID">
                 </div>
 

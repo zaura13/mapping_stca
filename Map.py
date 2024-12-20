@@ -114,7 +114,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
 
             if show_heatmap and data_list:
                 heatmap = HeatMap(data_list, radius=10)
-                heatmap_layer = folium.FeatureGroup(name='Heatmap')
+                heatmap_layer = folium.FeatureGroup(name='Heatmap',show=False)
                 heatmap_layer.add_child(heatmap)
                 heatmap_layer.add_to(m)
 

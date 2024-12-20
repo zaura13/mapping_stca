@@ -503,3 +503,453 @@ NameError: name 'create_map' is not defined
 2024-12-20 11:00:23,026 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "GET / HTTP/1.1" 200 -
 2024-12-20 11:00:23,043 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
 2024-12-20 11:00:23,294 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 11:20:52,852 - INFO - main.py - Flask application is shutting down.
+2024-12-20 11:21:07,667 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 11:21:07,668 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 11:21:08,111 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:08] "GET / HTTP/1.1" 200 -
+2024-12-20 11:21:08,141 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:08] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:08,161 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:08] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 11:21:14,894 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2024-12-20 11:21:14,896 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:14] "POST / HTTP/1.1" 200 -
+2024-12-20 11:21:14,911 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:14] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:14,927 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:14] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 11:21:20,577 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2024-12-20 11:21:20,578 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:20] "POST / HTTP/1.1" 200 -
+2024-12-20 11:21:20,594 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:20] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:33,087 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2024-12-20 11:21:33,088 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:33] "POST / HTTP/1.1" 200 -
+2024-12-20 11:21:33,104 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:33] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:40,631 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2024-12-20 11:21:40,633 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:40] "POST / HTTP/1.1" 200 -
+2024-12-20 11:21:40,647 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:40] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:49,524 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 11:21:49,525 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:49] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 11:21:49,543 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:49] "GET /index HTTP/1.1" 200 -
+2024-12-20 11:21:49,564 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:56,610 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:56] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:21:56,627 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:21:56,651 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:21:56] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:22:57,741 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:22:57] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:22:57,758 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:22:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:22:57,813 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:22:57] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:02,626 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:02] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:02,647 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:02,692 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:02] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:14,906 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:14] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:14,923 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:14] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:14,985 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:14] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:19,494 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:19] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:19,516 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:19] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:19,662 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:19] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:29,741 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:29] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:29,759 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:29,777 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:29] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:34,751 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:34] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:34,775 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:34,794 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:34] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:45,023 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:45] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:45,042 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:45] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:45,071 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:45] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:23:56,183 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:56] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:23:56,209 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:23:56,359 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:23:56] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:24:34,733 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:34] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:24:34,757 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:24:34,789 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:34] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:24:43,623 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:43] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:24:43,647 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:24:43,686 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:43] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:24:52,495 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:52] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:24:52,512 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:24:52,554 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:52] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:24:59,036 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:59] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:24:59,061 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:59] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:24:59,130 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:24:59] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:25:05,058 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:05] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:25:05,080 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:05] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:25:05,094 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:05] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:25:15,294 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:15] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:25:15,319 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:15] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:25:15,374 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:15] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:25:21,130 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:21] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:25:21,149 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:25:21,187 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:21] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:25:34,173 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:34] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:25:34,195 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:25:34,312 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:34] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:25:47,834 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:47] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:25:47,856 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:47] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:25:47,869 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:25:47] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:26:16,786 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:26:16] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:26:16,808 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:26:16] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:26:16,822 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:26:16] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:27:36,897 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:36] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:27:36,930 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:27:37,033 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:37] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:27:50,450 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:50] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:27:54,779 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:54] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:27:54,796 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:54] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:27:54,889 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:27:54] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:28:21,119 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:21] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:28:21,145 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:28:21,182 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:21] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:28:37,929 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:37] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:28:37,948 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:28:37,972 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:37] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:28:50,998 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:50] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:28:51,015 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:28:51,058 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:28:51] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:32:22,011 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2024-12-20 11:32:22,011 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2024-12-20 11:32:25,576 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2024-12-20 11:32:26,214 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2024-12-20 11:32:26,216 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:26] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-12-20 11:32:26,224 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:26] "GET /index HTTP/1.1" 200 -
+2024-12-20 11:32:26,248 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:26] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:32:39,104 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:39] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:32:39,126 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:39] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:32:39,141 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:32:39] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:34:31,167 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:31] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:34:31,197 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:34:31,325 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:31] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:34:46,300 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:46] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:34:46,321 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:34:46,443 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:34:46] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:35:10,830 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:35:10] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:35:10,863 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:35:10] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:35:23,903 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:35:23] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:35:23,923 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:35:23] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:35:23,940 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:35:23] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:38:07,432 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:07] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:38:07,452 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:38:07,496 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:07] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:38:17,767 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:17] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:38:17,788 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:38:17,818 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:17] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:38:34,171 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:34] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:38:34,189 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:38:34,245 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:34] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:38:59,829 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:59] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:38:59,846 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:59] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:38:59,888 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:38:59] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:39:21,333 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:21] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:39:21,355 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:39:21,396 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:21] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:39:29,580 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:29] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:39:29,599 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:39:29,626 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:39:29] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:40:07,380 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:40:07] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:40:07,399 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:40:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:40:07,457 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:40:07] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:41:56,279 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:41:56] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:41:56,299 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:41:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:41:56,336 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:41:56] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:42:16,848 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:42:16] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:42:16,871 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:42:16] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:42:16,926 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:42:16] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:44:38,614 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:44:38] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:44:38,634 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:44:38] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:44:38,689 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:44:38] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:00:36,422 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:00:36] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:00:36,440 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:00:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:00:36,475 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:00:36] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:01:09,089 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:01:09] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:01:09,112 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:01:09] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:01:09,152 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:01:09] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:02:26,698 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:02:26] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:02:26,718 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:02:26] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:02:26,752 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:02:26] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:06:08,269 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:06:08] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:06:08,289 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:06:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:06:08,339 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:06:08] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:20:43,730 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:20:43] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:20:43,753 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:20:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:20:43,787 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:20:43] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:21:14,472 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:21:14] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:21:14,494 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:21:14] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:21:14,580 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:21:14] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:30:50,480 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:30:50] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:30:50,499 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:30:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:30:50,535 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:30:50] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:31:36,947 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:36] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:31:36,970 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:31:37,002 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:37] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:31:44,817 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:44] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:31:44,841 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:44] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:31:58,695 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:58] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:31:58,719 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:31:58,775 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:31:58] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:33:11,725 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:33:11] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:34:32,433 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 12:34:32,435 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 12:34:32,442 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:32] "GET / HTTP/1.1" 200 -
+2024-12-20 12:34:32,464 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:32] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:34:32,503 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:32] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 12:34:39,893 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 12:34:39,895 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:39] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 12:34:39,903 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:39] "GET /index HTTP/1.1" 200 -
+2024-12-20 12:34:39,926 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:34:39] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:08,832 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 12:38:08,833 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 12:38:08,840 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:08] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:08,856 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:08] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:08,875 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:08] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 12:38:10,106 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:10,123 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:10,634 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:10,653 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:10,833 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:10,852 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:10] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:11,029 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:11,049 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:11,633 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:11,653 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:11,841 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:11,856 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:11] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:34,137 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:34] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:34,157 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:34] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:34,777 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:34] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:34,793 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:34] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:35,179 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:35,195 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:35,365 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:35,384 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:35,801 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:35,821 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:36,270 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:36,289 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:36,473 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:36,491 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:36,706 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:36,725 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:36,917 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:36,935 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:37,105 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:37,125 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:37,330 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:37,345 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:37,802 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:37,822 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:37] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:38,314 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:38,331 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:38,522 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:38,540 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:38,905 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:38,927 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:38] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:38:39,194 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:39] "GET / HTTP/1.1" 200 -
+2024-12-20 12:38:39,210 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:38:39] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:43:40,988 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 12:43:40,990 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 12:43:40,999 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:40] "GET /index HTTP/1.1" 200 -
+2024-12-20 12:43:41,017 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:41] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:43:52,077 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:52] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:43:52,095 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:43:52,117 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:43:52] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:44:30,442 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:44:30] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:44:30,464 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:44:30] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:44:30,487 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:44:30] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:44:30,893 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:44:30] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 12:46:42,234 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:42] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:46:42,253 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:42] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:46:42,279 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:42] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:46:51,201 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:51] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:46:51,223 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:46:51,237 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:46:51] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:54:34,252 - INFO - main.py - Flask application is shutting down.
+2024-12-20 12:54:42,505 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 12:54:42,505 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 12:54:42,726 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:42] "GET / HTTP/1.1" 200 -
+2024-12-20 12:54:42,769 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:42] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:54:42,810 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:42] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 12:54:48,312 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 12:54:48,313 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:48] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 12:54:48,332 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:48] "GET /index HTTP/1.1" 200 -
+2024-12-20 12:54:48,350 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:54:48] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:55:00,147 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:00] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:55:00,172 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:00] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:55:00,186 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:00] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:55:49,452 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:49] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:55:49,479 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:55:49,516 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:49] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:55:49,922 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:49] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 12:55:58,259 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:58] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:55:58,288 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:55:58,307 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:55:58] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:56:00,508 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:00] "GET /index HTTP/1.1" 200 -
+2024-12-20 12:56:06,678 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:06] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:56:06,697 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:06] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:56:06,727 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:06] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:56:13,698 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:13] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:56:13,724 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:13] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:56:13,850 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:13] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:56:18,304 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:18] "POST /index HTTP/1.1" 200 -
+2024-12-20 12:56:18,323 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:18] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:56:18,484 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:56:18] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 12:59:48,452 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:59:48] "GET /index HTTP/1.1" 200 -
+2024-12-20 12:59:50,224 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 12:59:50,225 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:59:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 12:59:50,232 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:59:50] "GET / HTTP/1.1" 200 -
+2024-12-20 12:59:50,253 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:59:50] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 12:59:50,268 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 12:59:50] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:00:01,789 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:00:01,790 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:00:01,799 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:01] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:01,818 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:04,821 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:04] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:50,354 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:50] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:50,386 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:50,476 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:50] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,077 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:51,104 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,184 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,555 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:51,586 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,659 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,836 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:51,863 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:51,951 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:51] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:52,083 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:52,109 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:52,193 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:52,460 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:52,486 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:52,569 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:52,968 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:52,994 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:53,071 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:53,442 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:53,472 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:53,555 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:00:53,958 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:00:53,987 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:00:54,073 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:00:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2024-12-20 13:01:31,613 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:01:39,645 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:01:39,645 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:01:39,736 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:39] "GET / HTTP/1.1" 200 -
+2024-12-20 13:01:39,770 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:39] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:01:39,830 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:39] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:01:53,459 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:01:53,461 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:53] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:01:53,479 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:53] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:01:53,502 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:01:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:03:06,069 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:03:13,794 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:03:13,795 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:03:13,922 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:13] "GET / HTTP/1.1" 200 -
+2024-12-20 13:03:13,957 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:13] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:03:13,978 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:13] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:03:14,029 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:14] "GET /static/android-chrome-192x192.png HTTP/1.1" 200 -
+2024-12-20 13:03:22,353 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:03:22,354 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:22] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:03:22,373 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:22] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:03:22,395 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:22] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:03:22,486 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:03:22] "GET /static/android-chrome-512x512.png HTTP/1.1" 200 -
+2024-12-20 13:04:42,536 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:04:50,588 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:04:50,588 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:04:50,648 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:04:50] "GET / HTTP/1.1" 200 -
+2024-12-20 13:04:50,681 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:04:50] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:04:50,711 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:04:50] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:04:50,753 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:04:50] "GET /static/apple-touch-icon.png HTTP/1.1" 200 -
+2024-12-20 13:05:19,420 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:05:27,324 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:05:27,324 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:06:06,891 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:06:06] "GET / HTTP/1.1" 200 -
+2024-12-20 13:06:06,913 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:06:06] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:06:06,932 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:06:06] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:06:06,946 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:06:06] "[36mGET /static/android-chrome-192x192.png HTTP/1.1[0m" 304 -
+2024-12-20 13:11:08,265 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:11:16,814 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:11:16,814 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:11:17,121 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:17] "GET / HTTP/1.1" 200 -
+2024-12-20 13:11:17,144 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:17] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:11:17,161 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:17] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:11:17,170 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:17] "GET /static/icons8-plane-100.png HTTP/1.1" 200 -
+2024-12-20 13:11:39,163 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:11:39,165 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:39] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:11:39,183 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:39] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:11:39,205 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:11:39] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:17:32,580 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:17:40,321 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:17:40,321 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:17:41,136 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:17:41] "GET / HTTP/1.1" 200 -
+2024-12-20 13:17:41,175 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:17:41] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:17:41,216 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:17:41] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:17:41,231 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:17:41] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2024-12-20 13:18:06,754 - INFO - main.py - Flask application is shutting down.
+2024-12-20 13:18:14,776 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 13:18:14,776 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 13:18:15,068 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:15] "GET / HTTP/1.1" 200 -
+2024-12-20 13:18:15,100 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:15] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:18:15,121 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:15] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:18:15,131 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:15] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2024-12-20 13:18:20,999 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:18:21,001 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:18:21,019 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:21] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:18:21,052 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:18:21,361 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:21] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2024-12-20 13:18:52,196 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 13:18:52,197 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 13:18:52,203 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:52] "GET / HTTP/1.1" 200 -
+2024-12-20 13:18:52,229 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:52] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:18:52,240 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:52] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:18:59,486 - INFO - main.py - User 'gio' logged in successfully.
+2024-12-20 13:18:59,487 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:18:59,496 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:59] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:18:59,521 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:18:59] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:19:12,546 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:12] "POST /index HTTP/1.1" 200 -
+2024-12-20 13:19:12,562 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:19:12,601 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:12] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 13:19:37,482 - INFO - main.py - User 'gio' logged out successfully.
+2024-12-20 13:19:37,483 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 13:19:37,489 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:37] "GET / HTTP/1.1" 200 -
+2024-12-20 13:19:37,524 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:37] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:19:37,819 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:37] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:19:43,342 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:19:43,343 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:19:43,352 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:43] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:19:43,385 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:19:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:20:01,831 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:01] "POST /index HTTP/1.1" 200 -
+2024-12-20 13:20:01,854 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:20:01,867 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:01] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 13:20:36,969 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 13:20:36,970 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 13:20:36,976 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:36] "GET / HTTP/1.1" 200 -
+2024-12-20 13:20:36,997 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 13:20:37,045 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:20:37] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 13:24:32,998 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 13:24:32,999 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:24:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 13:24:33,009 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:24:33] "GET /index HTTP/1.1" 200 -
+2024-12-20 13:24:33,039 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 13:24:33] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -

@@ -10,3 +10,7 @@
 2024-12-17 00:14:13,982 - INFO - create_Midpoints_Table.py - Filtered results, found 961 with Status 'VI'.
 2024-12-17 00:14:13,995 - INFO - create_Midpoints_Table.py - Connected to the database successfully.
 2024-12-17 00:14:15,251 - INFO - create_Midpoints_Table.py - Results have been saved to the Midpoints database.
+2024-12-20 11:32:24,028 - INFO - create_Midpoints_Table.py - Excel file loaded successfully.
+2024-12-20 11:32:24,773 - INFO - create_Midpoints_Table.py - Filtered results, found 960 with Status 'VI'.
+2024-12-20 11:32:24,787 - INFO - create_Midpoints_Table.py - Connected to the database successfully.
+2024-12-20 11:32:25,515 - INFO - create_Midpoints_Table.py - Results have been saved to the Midpoints database.

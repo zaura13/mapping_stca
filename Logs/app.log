@@ -350,3 +350,156 @@ Results have been saved to the Midpoints database.
 2024-12-17 08:52:09,178 - INFO - _internal.py - 127.0.0.1 - - [17/Dec/2024 08:52:09] "POST /index HTTP/1.1" 200 -
 2024-12-17 08:52:09,206 - INFO - _internal.py - 127.0.0.1 - - [17/Dec/2024 08:52:09] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
 2024-12-17 08:52:09,216 - INFO - _internal.py - 127.0.0.1 - - [17/Dec/2024 08:52:09] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-17 09:11:24,918 - INFO - main.py - Flask application is shutting down.
+2024-12-20 09:38:07,374 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 09:38:07,374 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 09:38:18,561 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:18] "GET / HTTP/1.1" 200 -
+2024-12-20 09:38:18,624 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:18] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2024-12-20 09:38:18,629 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-20 09:38:18,635 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:18] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:38:31,054 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 09:38:31,055 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 09:38:31,101 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:31] "GET /index HTTP/1.1" 200 -
+2024-12-20 09:38:31,173 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:31] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2024-12-20 09:38:31,323 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+2024-12-20 09:38:58,415 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:58] "POST /index HTTP/1.1" 200 -
+2024-12-20 09:38:58,445 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:58] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2024-12-20 09:38:58,445 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:38:58] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 09:42:27,940 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:27] "GET / HTTP/1.1" 200 -
+2024-12-20 09:42:27,957 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:27] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:42:28,023 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:28] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:42:28,037 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-20 09:42:33,497 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 09:42:33,499 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 09:42:33,507 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:33] "GET /index HTTP/1.1" 200 -
+2024-12-20 09:42:33,545 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:33] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:42:40,476 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:40] "POST /index HTTP/1.1" 200 -
+2024-12-20 09:42:40,497 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:42:40,504 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:42:40] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 09:54:11,836 - INFO - main.py - Flask application is shutting down.
+2024-12-20 09:54:20,785 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 09:54:20,785 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 09:54:22,666 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:22] "GET / HTTP/1.1" 200 -
+2024-12-20 09:54:22,688 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:22] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:54:22,699 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:22] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:54:27,288 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 09:54:27,289 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 09:54:27,308 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:27] "GET /index HTTP/1.1" 200 -
+2024-12-20 09:54:27,337 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:27] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:54:34,968 - ERROR - app.py - Exception on /index [POST]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "E:\ZURA KOPADZE\mapping_stca\main.py", line 100, in index
+    real_percentage, suspicious_percentage, warning_message = create_map(
+NameError: name 'create_map' is not defined
+2024-12-20 09:54:35,040 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:54:35] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+2024-12-20 09:55:13,092 - INFO - main.py - Flask application is shutting down.
+2024-12-20 09:56:00,130 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 09:56:00,130 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 09:56:02,617 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:02] "GET / HTTP/1.1" 200 -
+2024-12-20 09:56:02,642 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:02] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:56:02,658 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:02] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:56:07,604 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2024-12-20 09:56:07,606 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:07] "POST / HTTP/1.1" 200 -
+2024-12-20 09:56:07,628 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:07] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:56:07,641 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:07] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:56:12,519 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 09:56:12,520 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 09:56:12,538 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:12] "GET /index HTTP/1.1" 200 -
+2024-12-20 09:56:12,559 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:56:18,350 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:18] "POST /index HTTP/1.1" 200 -
+2024-12-20 09:56:18,370 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:18] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:56:18,379 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:56:18] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 09:57:16,975 - INFO - main.py - Flask application is shutting down.
+2024-12-20 09:58:35,593 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 09:58:35,593 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 09:58:37,103 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:37] "GET / HTTP/1.1" 200 -
+2024-12-20 09:58:37,125 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:37] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:58:37,139 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:37] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 09:58:43,488 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 09:58:43,489 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 09:58:43,508 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:43] "GET /index HTTP/1.1" 200 -
+2024-12-20 09:58:43,538 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:58:55,827 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:55] "POST /index HTTP/1.1" 200 -
+2024-12-20 09:58:55,852 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:58:55,857 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:58:55] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 09:59:08,963 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:59:08] "POST /index HTTP/1.1" 200 -
+2024-12-20 09:59:08,988 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:59:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 09:59:08,996 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 09:59:08] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 10:04:45,662 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 10:04:45,663 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:04:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 10:04:45,668 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:04:45] "GET / HTTP/1.1" 200 -
+2024-12-20 10:04:45,688 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:04:45] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:04:45,699 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:04:45] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 10:31:20,949 - INFO - main.py - Flask application is shutting down.
+2024-12-20 10:31:29,169 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 10:31:29,169 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 10:31:29,238 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:29] "GET / HTTP/1.1" 200 -
+2024-12-20 10:31:29,255 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:29] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:31:29,263 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:29] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 10:31:34,225 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 10:31:34,226 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 10:31:34,244 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:34] "GET /index HTTP/1.1" 200 -
+2024-12-20 10:31:34,275 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:31:37,462 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:31:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:32:59,044 - INFO - main.py - Flask application is shutting down.
+2024-12-20 10:59:21,644 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://172.16.12.13:80
+2024-12-20 10:59:21,671 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2024-12-20 10:59:32,970 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:32] "GET / HTTP/1.1" 200 -
+2024-12-20 10:59:33,025 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:33] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:59:33,105 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:33] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-20 10:59:33,158 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-20 10:59:38,340 - INFO - main.py - User 'zura' logged in successfully.
+2024-12-20 10:59:38,370 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:38] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-20 10:59:38,449 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:38] "GET /index HTTP/1.1" 200 -
+2024-12-20 10:59:38,537 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:38] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:59:49,721 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:49] "POST /index HTTP/1.1" 200 -
+2024-12-20 10:59:49,739 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:59:49,801 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:49] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 10:59:55,098 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:55] "POST /index HTTP/1.1" 200 -
+2024-12-20 10:59:55,119 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:59:55,310 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:55] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 10:59:59,449 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:59] "POST /index HTTP/1.1" 200 -
+2024-12-20 10:59:59,472 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:59] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 10:59:59,670 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 10:59:59] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:00:06,235 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:06] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:00:06,252 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:06] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:00:06,273 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:06] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:00:09,761 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:09] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:00:09,781 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:09] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:00:09,812 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:09] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:00:16,806 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:16] "POST /index HTTP/1.1" 200 -
+2024-12-20 11:00:16,826 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:16] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:00:17,015 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:17] "GET /Results/map.html HTTP/1.1" 200 -
+2024-12-20 11:00:23,020 - INFO - main.py - User 'zura' logged out successfully.
+2024-12-20 11:00:23,021 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-20 11:00:23,026 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "GET / HTTP/1.1" 200 -
+2024-12-20 11:00:23,043 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2024-12-20 11:00:23,294 - INFO - _internal.py - 127.0.0.1 - - [20/Dec/2024 11:00:23] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -

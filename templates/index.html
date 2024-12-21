@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ url_for('static', filename='international-travel_14098668.png') }}">
     <title>mapping_stca</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/map_page.css') }}">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9LZP6DDYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z9LZP6DDYF');
+    </script>
+
 </head>
 <body>
 <div class="header">
@@ -33,7 +45,7 @@
                <!-- Add the stca_id filter -->
                 <div class="stca-id" >
                     <label style="margin: auto;" id="id_filter">ID </label>
-                    <input type="text" name="id_filter" placeholder="  Enter ID">
+                    <input type="text" name="id_filter" placeholder="  Enter Callsign">
                 </div>
 
                 <button type="submit">Generate Map</button>

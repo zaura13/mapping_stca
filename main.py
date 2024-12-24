@@ -43,9 +43,9 @@ pymysql.install_as_MySQLdb()
 
 
 app.secret_key = os.urandom(24)  # Random secret key for sessions
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/stca'  # Update with your DB credentials
-#mysql_data = f'mysql://{DB_USER}:{DB_PASSWORD}@localhost/stca'
-#app.config['SQLALCHEMY_DATABASE_URI'] = mysql_data  # Update with your DB credentials
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/stca'  # Update with your DB credentials
+mysql_data = f'mysql://{DB_USER}:{DB_PASSWORD}@localhost/stca'
+app.config['SQLALCHEMY_DATABASE_URI'] = mysql_data  # Update with your DB credentials
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 

@@ -758,3 +758,4 @@ jinja2.exceptions.TemplateNotFound: map.html
 2024-12-29 09:07:16,383 - INFO - _internal.py - 127.0.0.1 - - [29/Dec/2024 09:07:16] "GET / HTTP/1.1" 200 -
 2024-12-29 09:07:16,417 - INFO - _internal.py - 127.0.0.1 - - [29/Dec/2024 09:07:16] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
 2024-12-29 09:07:16,532 - INFO - _internal.py - 127.0.0.1 - - [29/Dec/2024 09:07:16] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2024-12-29 09:10:13,730 - INFO - main.py - Flask application is shutting down.

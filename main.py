@@ -106,9 +106,9 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/map', methods=['GET', 'POST'])
 @login_required
-def index():
+def map():
     map_file = None
     real_percentage = 0
     suspicious_percentage = 0
@@ -168,7 +168,7 @@ def upload_file():
     # Only allow admin users to access the upload page
     if not current_user.is_admin:
         flash("You don't have permission to access this page.", 'danger')
-        return redirect(url_for('index'))
+        return redirect(url_for('map'))
 
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -193,7 +193,7 @@ def upload_file():
                 data = pd.read_excel(file_path)
 
                 # Setting a cookie indicating the successful upload and file name
-                resp = make_response(redirect(url_for('index')))
+                resp = make_response(redirect(url_for('map')))
                 logging.info(f"File '{file.filename}' uploaded successfully.")
                 #flash('File uploaded successfully!', 'success')
 

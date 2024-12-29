@@ -92,7 +92,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     'date': date,
                     'time': time,
                     'stca_id': row.get('stca_id', 'Unknown'),
-                    'id': row.get('id'),
+                    #'id': row.get('id'),
                     "number_of_callsign": row.get("number_of_callsign"),
                     'vi_tr1_lat': row.get('vi_tr1_lat', None),
                     'vi_tr1_lon': row.get('vi_tr1_lon', None),
@@ -104,13 +104,15 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     'end_tr2_lon': row.get('end_tr2_lon', None),
                     'callsign_1': row.get('callsign_1', None),
                     'callsign_2': row.get('callsign_2', None),
+                    'Altitude_Tr1': row.get('Altitude_Tr1', None),
+                    'Altitude_Tr2': row.get('Altitude_Tr2', None),
 
                 })
 
         map_df = pd.DataFrame(marker_data)
 
         if not map_df.empty:
-            m = folium.Map(location=[map_df['latitude'].mean(), map_df['longitude'].mean()], zoom_start=7)
+            m = folium.Map(location=[map_df['latitude'].mean(), map_df['longitude'].mean()], zoom_start=6)
 
             if show_heatmap and data_list:
                 heatmap = HeatMap(data_list, radius=10)
@@ -132,7 +134,10 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                     popup=folium.Popup(
                         f"<div style='font-size: 18px;'>"
                         f"<strong>Callsign1:</strong> <span style='color:blue;'>{row['callsign_1']}</span><br>"
+                        #f"<strong>Altitude_1:</strong> <span style='color:blue;'>{row['Altitude_Tr1']}</span><br>"
                         f"<strong>Callsign2:</strong> <span style='color:green;'>{row['callsign_2']}</span><br>"
+                        #f"<strong>Altitude_2:</strong> <span style='color:green;'>{row['Altitude_Tr2']}</span><br>"
+                        #f"<br>"
                         f"<strong>Date:</strong> {row['date']}<br>"
                         f"<strong>Time:</strong> {row['time']}<br>"
                         f"<strong>STCA-ID:</strong> {row['stca_id']}<br>",
@@ -195,4 +200,3 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
         warning_message = "No data available to process."
 
     return real_percentage, suspicious_percentage, warning_message  # Return the percentages and warning
-

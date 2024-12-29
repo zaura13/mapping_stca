@@ -94,7 +94,7 @@ def login():
             login_user(user)
             session['username'] = username  # Store the username in the session (session cookie)
 
-            resp = make_response(redirect(url_for('index')))
+            resp = make_response(redirect(url_for('map')))
             resp.set_cookie('username', username,
                             max_age=60 * 60 * 24 )  # Manually set cookie for username (expires in 1 days)
             logging.info(f"User '{username}' logged in successfully.")

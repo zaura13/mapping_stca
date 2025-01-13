@@ -42,7 +42,7 @@ pymysql.install_as_MySQLdb()
 
 
 
-app.secret_key = "plane" # secret key for sessions
+app.secret_key = "fad900280ce54a04da3b698f1a7783717b466fedd3ded41fe5fc5a3686f1b180" # secret key for sessions
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:zura@localhost/stca'  # Update with your DB credentials
 mysql_data = f'mysql://{DB_USER}:{DB_PASSWORD}@localhost/stca'
 app.config['SQLALCHEMY_DATABASE_URI'] = mysql_data  # Update with your DB credentials

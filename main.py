@@ -147,20 +147,6 @@ def send_map(filename):
 
 
 
-
-@app.route('/logout')
-@login_required
-def logout():
-    username = session.get('username')
-    logout_user()
-    session.pop('username', None)  # Remove from session
-    logging.info(f"User '{username}' logged out successfully.")  # Log logout event
-    resp = make_response(redirect(url_for('login')))
-    resp.delete_cookie('username')  # Delete the 'username' cookie
-
-    return resp
-
-
 @app.route('/upload', methods=['GET', 'POST'])
 @login_required
 def upload_file():
@@ -207,6 +193,33 @@ def upload_file():
 
         flash('Invalid file type. Please upload an Excel file.', 'warning')
         return redirect(request.url)
+
+
+
+@app.route('/logout')
+def logout():
+    # Check if the map HTML file path is stored in the session
+    if 'map_html_path' in session:
+        map_html_path = session['map_html_path']
+
+        # Delete the temporary file
+        try:
+            os.remove(map_html_path)
+            print(f"Deleted temporary map file: {map_html_path}")
+            logging.info(f"Deleted temporary map file: {map_html_path}")
+        except Exception as e:
+            print(f"Error deleting temporary file: {e}")
+            logging.info(f"Error deleting temporary file: {e}")
+
+        # Remove the map file path from the session
+        session.pop('map_html_path', None)
+
+    # Log out the user
+    logout_user()  # Assuming you're using Flask-Login for user management
+
+    return redirect(url_for('login'))  # Redirect to the login page or wherever you want
+
+
 
 
 # Shutdown handler

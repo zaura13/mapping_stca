@@ -105,37 +105,27 @@ def map_index():
     warning_message = None  # Initialize warning message
 
     if request.method == 'POST':
-        # Get the input values from the form
         start_date = request.form['start_date']
         end_date = request.form['end_date']
         callsign_filter = request.form.get('callsign_filter', 'both')
-        id_filter = request.form.get('id_filter', None)  # Capture id_filter from form
+        id_filter = request.form.get('id_filter', None)
 
-        # Log the POST request with the received filters
-        logging.info(
-            f"User '{current_user.username}' submitted filter data: start_date={start_date}, end_date={end_date}, callsign_filter={callsign_filter}, id_filter={id_filter}."
-        )
-
-        # Call create_map with the provided filters
-        real_percentage, suspicious_percentage, warning_message, map_file = create_map(
-            start_date, end_date, callsign_filter, id_filter
-        )
-
-        # If there's a warning message, ensure no map is shown
-        if warning_message:
+        try:
+            real_percentage, suspicious_percentage, warning_message, map_file = create_map(
+                start_date, end_date, callsign_filter, id_filter
+            )
+        except Exception as e:
+            logging.error(f"Error generating map: {e}")
+            warning_message = "Invalid date range or data selection. Please check and try again."
             map_file = None
+            real_percentage = 0
+            suspicious_percentage = 0
 
-        # Save the map file path in the session to be accessed later
-        if map_file:
-            session['map_file'] = map_file
-
-    # Return the map and statistics to the HTML template
     return render_template('map.html',
                            map_file=map_file,
                            real_percentage=real_percentage,
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
-
 
 @app.route('/Results/<path:filename>')
 def send_map(filename):
@@ -145,6 +135,20 @@ def send_map(filename):
 
 
 
+
+
+
+@app.route('/logout')
+@login_required
+def logout():
+    username = session.get('username')
+    logout_user()
+    session.pop('username', None)  # Remove from session
+    logging.info(f"User '{username}' logged out successfully.")  # Log logout event
+    resp = make_response(redirect(url_for('login')))
+    resp.delete_cookie('username')  # Delete the 'username' cookie
+
+    return resp
 
 
 @app.route('/upload', methods=['GET', 'POST'])
@@ -195,33 +199,6 @@ def upload_file():
         return redirect(request.url)
 
 
-
-@app.route('/logout')
-def logout():
-    # Check if the map HTML file path is stored in the session
-    if 'map_html_path' in session:
-        map_html_path = session['map_html_path']
-
-        # Delete the temporary file
-        try:
-            os.remove(map_html_path)
-            print(f"Deleted temporary map file: {map_html_path}")
-            logging.info(f"Deleted temporary map file: {map_html_path}")
-        except Exception as e:
-            print(f"Error deleting temporary file: {e}")
-            logging.info(f"Error deleting temporary file: {e}")
-
-        # Remove the map file path from the session
-        session.pop('map_html_path', None)
-
-    # Log out the user
-    logout_user()  # Assuming you're using Flask-Login for user management
-
-    return redirect(url_for('login'))  # Redirect to the login page or wherever you want
-
-
-
-
 # Shutdown handler
 def shutdown_handler(signals, frame):
     logging.info("Flask application is shutting down.")
@@ -234,4 +211,4 @@ signal.signal(signal.SIGINT, shutdown_handler)
 signal.signal(signal.SIGTERM, shutdown_handler)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=False)
+    app.run(host="0.0.0.0", port=5000, debug=False)

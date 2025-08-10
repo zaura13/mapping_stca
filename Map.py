@@ -174,4 +174,3 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
 
             # Return the map HTML file path and percentages
             return real_percentage, suspicious_percentage, warning_message, map_html_path
-

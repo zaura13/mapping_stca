@@ -1,542 +1,1026 @@
-2025-08-10 23:04:32,100 - INFO - main.py - Flask application is shutting down.
-2025-08-10 23:04:32,100 - INFO - main.py - signal: 2, frame <frame at 0x000002173FC9E618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-10 23:04:46,137 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.16.12.13:5000
-2025-08-10 23:04:46,137 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-10 23:04:56,686 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:04:56] "GET / HTTP/1.1" 200 -
-2025-08-10 23:04:56,918 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:04:56] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:04:57,011 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:04:57] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-10 23:04:57,053 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:04:57] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
-2025-08-10 23:05:02,129 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-10 23:05:02,130 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:02] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-10 23:05:02,229 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:02] "GET /map HTTP/1.1" 200 -
-2025-08-10 23:05:02,247 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:07,360 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-10 23:05:07,360 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-10 23:05:12,383 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:43:34,692 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-18 13:43:34,692 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:43:36,420 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
 Excel file loaded successfully.
 Connected to the database successfully.
 Results have been saved to the Midpoints database.
 
-2025-08-10 23:05:12,383 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
-2025-08-10 23:05:12,384 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:12] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-10 23:05:12,404 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:12] "GET /map HTTP/1.1" 200 -
-2025-08-10 23:05:12,429 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:19,157 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-10 23:05:19,158 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:19] "POST /map HTTP/1.1" 200 -
-2025-08-10 23:05:19,178 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:19] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:28,400 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:28] "POST /map HTTP/1.1" 200 -
-2025-08-10 23:05:28,417 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:28] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:28,428 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:28] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmpvnub2bb3.html HTTP/1.1" 200 -
-2025-08-10 23:05:35,581 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:35] "POST /map HTTP/1.1" 200 -
-2025-08-10 23:05:35,608 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:35] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:35,610 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:35] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmpdn214joa.html HTTP/1.1" 200 -
-2025-08-10 23:05:55,099 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:55] "POST /map HTTP/1.1" 200 -
-2025-08-10 23:05:55,125 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-10 23:05:55,149 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:05:55] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmp18s7r1jb.html HTTP/1.1" 200 -
-2025-08-10 23:06:08,537 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:06:08] "POST /map HTTP/1.1" 200 -
-2025-08-10 23:06:08,567 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:06:08] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmp57h42jkn.html HTTP/1.1" 200 -
-2025-08-10 23:06:08,568 - INFO - _internal.py - 127.0.0.1 - - [10/Aug/2025 23:06:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:19:11,079 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:4040
- * Running on http://172.16.12.13:4040
-2025-08-11 08:19:11,079 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-11 08:19:16,228 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:16] "GET / HTTP/1.1" 200 -
-2025-08-11 08:19:16,607 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:16] "GET /static/css/Login_page.css HTTP/1.1" 200 -
-2025-08-11 08:19:16,693 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:16] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-11 08:19:17,074 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:17] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
-2025-08-11 08:19:22,116 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-11 08:19:22,118 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:22] "POST / HTTP/1.1" 200 -
-2025-08-11 08:19:22,142 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:22] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:19:39,263 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-11 08:19:39,264 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:39] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-11 08:19:39,361 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:39] "GET /map HTTP/1.1" 200 -
-2025-08-11 08:19:39,697 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:39] "GET /static/css/map_page.css HTTP/1.1" 200 -
-2025-08-11 08:19:47,363 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-11 08:19:47,363 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-11 08:19:55,011 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:43:36,421 - INFO - main.py - File 'sourse_file2.xlsx' uploaded successfully.
+2025-08-18 13:43:36,421 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-18 13:43:36,429 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:36] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:43:36,448 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:43:53,195 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-18 13:43:53,195 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:43:54,973 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
 Excel file loaded successfully.
 Connected to the database successfully.
 Results have been saved to the Midpoints database.
 
-2025-08-11 08:19:55,011 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
-2025-08-11 08:19:55,012 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:55] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-11 08:19:55,070 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:55] "GET /map HTTP/1.1" 200 -
-2025-08-11 08:19:55,086 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:19:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:20:02,481 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:02] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:20:02,498 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:20:02,506 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:02] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmp6o1rgzox.html HTTP/1.1" 200 -
-2025-08-11 08:20:16,477 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-11 08:20:16,478 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:16] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:20:16,504 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:16] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:20:27,100 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-11 08:20:27,101 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:27] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:20:27,120 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:27] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:20:28,321 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-11 08:20:28,322 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:28] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:20:28,345 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:20:28] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:32:28,698 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-11 08:32:28,699 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-11 08:32:32,367 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:43:54,973 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-08-18 13:43:54,974 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:54] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-18 13:43:54,982 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:54] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:43:54,997 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:43:54] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:44:07,060 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-18 13:44:07,060 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:44:08,892 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
 Excel file loaded successfully.
 Connected to the database successfully.
 Results have been saved to the Midpoints database.
 
-2025-08-11 08:32:32,367 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
-2025-08-11 08:32:32,368 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:32] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-11 08:32:32,375 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:32] "GET /map HTTP/1.1" 200 -
-2025-08-11 08:32:32,397 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:32:40,223 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-11 08:32:40,224 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:40] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:32:40,247 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:32:49,231 - ERROR - main.py - Error generating map: cannot unpack non-iterable NoneType object
-2025-08-11 08:32:49,232 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:49] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:32:49,254 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:32:53,296 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:53] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:32:53,316 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:32:53,325 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:32:53] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmpzzlbbpk5.html HTTP/1.1" 200 -
-2025-08-11 08:33:00,450 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:00] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:33:00,468 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:00] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:33:00,490 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:00] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmpzul6ln7g.html HTTP/1.1" 200 -
-2025-08-11 08:33:07,430 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:07] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:33:07,456 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:33:07,459 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:07] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmpm3at99cf.html HTTP/1.1" 200 -
-2025-08-11 08:33:24,393 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:24] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:33:24,418 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:33:24,421 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:24] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmp93h63_k9.html HTTP/1.1" 200 -
-2025-08-11 08:33:36,167 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:36] "POST /map HTTP/1.1" 200 -
-2025-08-11 08:33:36,195 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:36] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-11 08:33:36,197 - INFO - _internal.py - 127.0.0.1 - - [11/Aug/2025 08:33:36] "GET /Results/C:%5CUsers%5CAMSADM~1%5CAppData%5CLocal%5CTemp%5Ctmp_zpsj1xg.html HTTP/1.1" 200 -
-2025-08-11 08:34:51,757 - INFO - main.py - Flask application is shutting down.
-2025-08-11 08:34:51,757 - INFO - main.py - signal: 2, frame <frame at 0x000002AA08B1E618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 11:08:21,544 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:4040
- * Running on http://172.16.12.13:4040
-2025-08-14 11:08:21,544 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 11:08:46,111 - INFO - main.py - Flask application is shutting down.
-2025-08-14 11:08:46,111 - INFO - main.py - signal: 2, frame <frame at 0x000001C17632C618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 11:08:49,375 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 11:08:49,375 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 11:08:52,483 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:52] "GET / HTTP/1.1" 200 -
-2025-08-14 11:08:52,540 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:52] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:08:52,815 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:52] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 11:08:52,879 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:52] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 11:08:57,781 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 11:08:57,782 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:57] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 11:08:57,866 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:57] "GET /map HTTP/1.1" 200 -
-2025-08-14 11:08:57,938 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:08:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:09:07,466 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:07] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:09:07,486 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:09:07,796 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:07] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:09:21,383 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:21] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:09:21,402 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:09:21,755 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:21] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:09:24,610 - INFO - main.py - User 'zura' logged out successfully.
-2025-08-14 11:09:24,611 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:24] "[32mGET /logout HTTP/1.1[0m" 302 -
-2025-08-14 11:09:24,635 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:24] "GET / HTTP/1.1" 200 -
-2025-08-14 11:09:24,654 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:24] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:09:25,029 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:09:25] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 11:18:03,117 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 11:18:03,118 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:03] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 11:18:03,126 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:03] "GET /map HTTP/1.1" 200 -
-2025-08-14 11:18:03,152 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:03] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:18:11,172 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:11] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:18:11,190 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:11] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:18:11,486 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:18:11] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:19:13,622 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:13] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:19:13,645 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:13] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:19:17,971 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:17] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:19:18,175 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:18] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:19:18,283 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:18] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:19:31,894 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:31] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:19:31,917 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:19:40,843 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:40] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:19:40,858 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:19:41,217 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:41] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:19:52,303 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:52] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:19:52,326 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:19:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:22:23,529 - INFO - main.py - Flask application is shutting down.
-2025-08-14 11:22:23,529 - INFO - main.py - signal: 2, frame <frame at 0x000002982A789238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 11:24:14,891 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 11:24:14,892 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 11:24:17,328 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:17] "GET / HTTP/1.1" 200 -
-2025-08-14 11:24:17,430 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:17] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:24:17,648 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:17] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 11:24:17,751 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:17] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 11:24:22,618 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 11:24:22,620 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:22] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 11:24:22,675 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:22] "GET /map HTTP/1.1" 200 -
-2025-08-14 11:24:22,801 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:22] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:24:32,070 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:32] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:24:32,086 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:24:32,462 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 11:24:42,543 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:42] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:24:42,762 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:24:42] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:29:43,580 - INFO - main.py - Flask application is shutting down.
-2025-08-14 11:29:43,580 - INFO - main.py - signal: 2, frame <frame at 0x000001FCB71DB618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 11:29:54,763 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 11:29:54,763 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 11:29:59,683 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:29:59] "GET / HTTP/1.1" 200 -
-2025-08-14 11:29:59,936 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:29:59] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:30:00,270 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:00] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 11:30:04,725 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 11:30:04,727 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:04] "POST / HTTP/1.1" 200 -
-2025-08-14 11:30:04,747 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:04] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:30:12,260 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 11:30:12,261 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:12] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 11:30:12,431 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:12] "GET /map HTTP/1.1" 200 -
-2025-08-14 11:30:12,557 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:30:19,413 - ERROR - main.py - Error generating map: name 'fetch_data_from_db' is not defined
-2025-08-14 11:30:19,415 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:19] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:30:19,434 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:30:19] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:50:19,108 - INFO - main.py - Flask application is shutting down.
-2025-08-14 11:50:19,108 - INFO - main.py - signal: 2, frame <frame at 0x000001A99D4C7808, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 11:50:28,062 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 11:50:28,062 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 11:50:34,718 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:34] "GET / HTTP/1.1" 200 -
-2025-08-14 11:50:34,769 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:34] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:50:35,022 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:35] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 11:50:42,933 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 11:50:42,935 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:42] "POST / HTTP/1.1" 200 -
-2025-08-14 11:50:42,952 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:42] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:50:50,700 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 11:50:50,701 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:50] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 11:50:50,748 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:50] "GET /map HTTP/1.1" 200 -
-2025-08-14 11:50:50,804 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:50:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:51:02,249 - ERROR - Map.py - Error generating map: local variable 'filtered_df' referenced before assignment
+2025-08-18 13:44:08,893 - INFO - main.py - File 'sourse_file2.xlsx' uploaded successfully.
+2025-08-18 13:44:08,894 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:08] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-18 13:44:08,901 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:08] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:44:08,924 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:44:55,603 - INFO - main.py - User 'zura' logged out successfully.
+2025-08-18 13:44:55,605 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:55] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-08-18 13:44:55,609 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:55] "GET / HTTP/1.1" 200 -
+2025-08-18 13:44:55,674 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:55] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:44:55,893 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:44:55] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-08-18 13:45:01,479 - INFO - main.py - User 'zura' logged in successfully.
+2025-08-18 13:45:01,481 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-08-18 13:45:01,488 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:01] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:45:01,511 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:45:05,483 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-18 13:45:05,483 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:45:07,271 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-08-18 13:45:07,271 - INFO - main.py - File 'sourse_file-2024.xlsx' uploaded successfully.
+2025-08-18 13:45:07,272 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:07] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-18 13:45:07,280 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:07] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:45:07,299 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:45:28,651 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-18 13:45:28,651 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-18 13:45:32,260 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-08-18 13:45:32,261 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-08-18 13:45:32,262 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:32] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-18 13:45:32,269 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:32] "GET /map HTTP/1.1" 200 -
+2025-08-18 13:45:32,290 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:45:48,777 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-21, end_date=2025-08-31, callsign_filter=both, id_filter=.
+2025-08-18 13:45:49,046 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:49] "POST /map HTTP/1.1" 200 -
+2025-08-18 13:45:49,062 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-18 13:45:49,349 - INFO - _internal.py - 127.0.0.1 - - [18/Aug/2025 13:45:49] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-08-18 13:46:25,889 - INFO - main.py - Flask application is shutting down.
+2025-08-18 13:46:25,889 - INFO - main.py - signal: 2, frame <frame at 0x0000024EAFF3D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-08-26 11:02:39,945 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-08-26 11:02:39,966 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-08-26 11:02:47,831 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:02:47] "GET / HTTP/1.1" 200 -
+2025-08-26 11:02:48,019 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:02:48] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-08-26 11:02:48,184 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:02:48] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-08-26 11:02:49,403 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:02:49] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-08-26 11:07:02,148 - INFO - main.py - User 'zura' logged in successfully.
+2025-08-26 11:07:02,163 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:02] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-08-26 11:07:02,253 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:02] "GET /map HTTP/1.1" 200 -
+2025-08-26 11:07:02,383 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:02] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-08-26 11:07:29,801 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-08-26 11:07:29,801 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-08-26 11:07:35,912 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-08-26 11:07:35,912 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-08-26 11:07:35,913 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:35] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-08-26 11:07:35,921 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:35] "GET /map HTTP/1.1" 200 -
+2025-08-26 11:07:35,940 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:35] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-26 11:07:45,424 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-08-01, end_date=2025-08-03, callsign_filter=both, id_filter=.
+2025-08-26 11:07:45,662 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:45] "POST /map HTTP/1.1" 200 -
+2025-08-26 11:07:45,686 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:45] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-26 11:07:45,975 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:07:45] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-08-26 11:58:57,755 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-08-01, end_date=2025-08-29, callsign_filter=both, id_filter=.
+2025-08-26 11:58:58,350 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:58:58] "POST /map HTTP/1.1" 200 -
+2025-08-26 11:58:58,378 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:58:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-26 11:58:58,676 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:58:58] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-08-26 11:59:14,585 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-08-01, end_date=2025-08-29, callsign_filter=both, id_filter=THY5SF.
+2025-08-26 11:59:14,718 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:59:14] "POST /map HTTP/1.1" 200 -
+2025-08-26 11:59:14,738 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:59:14] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-08-26 11:59:15,071 - INFO - _internal.py - 127.0.0.1 - - [26/Aug/2025 11:59:15] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 10:16:38,018 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-11 10:16:38,045 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-11 10:17:12,888 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:12] "GET / HTTP/1.1" 200 -
+2025-09-11 10:17:12,960 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:12] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-09-11 10:17:12,965 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:12] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-11 10:17:13,210 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:13] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-09-11 10:17:18,717 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-11 10:17:18,719 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:18] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-11 10:17:18,788 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:18] "GET /map HTTP/1.1" 200 -
+2025-09-11 10:17:18,883 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:17:18] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-09-11 10:18:13,427 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-09-11 10:18:13,427 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-09-11 10:18:19,494 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-09-11 10:18:19,494 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-09-11 10:18:19,495 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:19] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-09-11 10:18:19,502 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:19] "GET /map HTTP/1.1" 200 -
+2025-09-11 10:18:19,543 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:19] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:18:30,495 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-08-21, end_date=2025-09-11, callsign_filter=both, id_filter=.
+2025-09-11 10:18:31,090 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:31] "POST /map HTTP/1.1" 200 -
+2025-09-11 10:18:31,129 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:18:31,130 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:18:31] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 10:19:06,928 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-08-21, end_date=2025-09-11, callsign_filter=both, id_filter=IGT2103.
+2025-09-11 10:19:06,980 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:19:06] "POST /map HTTP/1.1" 200 -
+2025-09-11 10:19:07,013 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:19:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:19:07,025 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:19:07] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 10:37:03,651 - INFO - main.py - Flask application is shutting down.
+2025-09-11 10:37:03,651 - INFO - main.py - signal: 2, frame <frame at 0x00000239622AD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-11 10:37:06,986 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-11 10:37:06,986 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-11 10:37:10,389 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:10] "GET /map HTTP/1.1" 200 -
+2025-09-11 10:37:10,417 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:10] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:37:18,117 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-17, end_date=2025-10-04, callsign_filter=both, id_filter=.
+2025-09-11 10:37:18,158 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:18] "POST /map HTTP/1.1" 200 -
+2025-09-11 10:37:18,190 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:18] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:37:23,158 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-17, end_date=2025-10-16, callsign_filter=both, id_filter=.
+2025-09-11 10:37:23,192 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:23] "POST /map HTTP/1.1" 200 -
+2025-09-11 10:37:23,223 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:23] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:37:31,670 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-02, end_date=2025-09-11, callsign_filter=both, id_filter=.
+2025-09-11 10:37:31,870 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:31] "POST /map HTTP/1.1" 200 -
+2025-09-11 10:37:31,898 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 10:37:31,906 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 10:37:31] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:39:11,086 - INFO - main.py - Flask application is shutting down.
+2025-09-11 12:39:11,086 - INFO - main.py - signal: 2, frame <frame at 0x00000224452FE428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-11 12:39:15,288 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-11 12:39:15,288 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-11 12:39:23,794 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:23] "GET / HTTP/1.1" 200 -
+2025-09-11 12:39:23,826 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:23] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:39:23,837 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:23] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-11 12:39:28,235 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-11 12:39:28,236 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-11 12:39:28,253 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:28] "GET /map HTTP/1.1" 200 -
+2025-09-11 12:39:28,286 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:28] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:39:35,466 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-06-11, end_date=2025-09-27, callsign_filter=both, id_filter=.
+2025-09-11 12:39:37,054 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:37] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:39:37,094 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:39:37,094 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:39:37] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:41:32,781 - INFO - main.py - Flask application is shutting down.
+2025-09-11 12:41:32,781 - INFO - main.py - signal: 2, frame <frame at 0x0000019AA03BE428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-11 12:41:35,647 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-11 12:41:35,647 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-11 12:41:42,500 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:42] "GET / HTTP/1.1" 200 -
+2025-09-11 12:41:42,529 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:42] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:41:42,543 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:42] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-11 12:41:47,243 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-11 12:41:47,245 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-11 12:41:47,262 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:47] "GET /map HTTP/1.1" 200 -
+2025-09-11 12:41:47,294 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:47] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:41:56,498 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-01, end_date=2025-09-19, callsign_filter=both, id_filter=.
+2025-09-11 12:41:56,734 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:56] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:41:56,771 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:41:56,772 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:41:56] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:43:07,861 - INFO - main.py - Flask application is shutting down.
+2025-09-11 12:43:07,861 - INFO - main.py - signal: 2, frame <frame at 0x000001D77E4DE428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-11 12:43:10,719 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-11 12:43:10,719 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-11 12:43:14,065 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:14] "GET / HTTP/1.1" 200 -
+2025-09-11 12:43:14,098 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:14] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:43:14,105 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:14] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-11 12:43:19,304 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-09-11 12:43:19,306 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:19] "POST / HTTP/1.1" 200 -
+2025-09-11 12:43:19,339 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:19] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:43:24,190 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-09-11 12:43:24,192 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:24] "POST / HTTP/1.1" 200 -
+2025-09-11 12:43:24,222 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:24] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:43:31,066 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-11 12:43:31,067 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:31] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-11 12:43:31,084 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:31] "GET /map HTTP/1.1" 200 -
+2025-09-11 12:43:31,118 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:43:38,280 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-03-13, end_date=2025-09-19, callsign_filter=both, id_filter=.
+2025-09-11 12:43:40,045 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:40] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:43:40,076 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:43:40,082 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:43:40] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:44:30,283 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-03-29, end_date=2025-09-19, callsign_filter=both, id_filter=.
+2025-09-11 12:44:31,825 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:31] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:44:31,857 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:44:31,873 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:31] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:44:44,660 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-07-10, callsign_filter=both, id_filter=.
+2025-09-11 12:44:44,692 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:44] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:44:44,725 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:44] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:44:49,391 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-02, end_date=2025-07-10, callsign_filter=both, id_filter=.
+2025-09-11 12:44:49,496 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:49] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:44:49,533 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:49] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:44:49,534 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:44:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:46:05,416 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-02, end_date=2025-07-10, callsign_filter=both, id_filter=THY71.
+2025-09-11 12:46:05,465 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:05] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:46:05,495 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:05] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:46:05,510 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:05] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:46:32,379 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-02, end_date=2025-07-10, callsign_filter=both, id_filter=AAL293.
+2025-09-11 12:46:32,429 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:32] "POST /map HTTP/1.1" 200 -
+2025-09-11 12:46:32,467 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:46:32,468 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-11 12:46:49,247 - INFO - main.py - User 'zura' logged out successfully.
+2025-09-11 12:46:49,249 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-09-11 12:46:49,255 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:49] "GET / HTTP/1.1" 200 -
+2025-09-11 12:46:49,291 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:49] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-11 12:46:49,302 - INFO - _internal.py - 127.0.0.1 - - [11/Sep/2025 12:46:49] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 10:34:20,915 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5008
+2025-09-23 10:34:20,916 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 10:34:43,279 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:43] "GET / HTTP/1.1" 200 -
+2025-09-23 10:34:43,341 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:43] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-09-23 10:34:43,348 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:43] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 10:34:43,416 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:43] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-09-23 10:34:56,128 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 10:34:56,130 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 10:34:56,176 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:56] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:34:56,256 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:34:56] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-09-23 10:35:05,498 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-05-06, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:35:07,356 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:07] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:35:07,385 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:35:07,387 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:07] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:35:29,903 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:29] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:35:29,938 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:35:39,392 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:35:40,863 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:40] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:35:40,899 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:35:40,901 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:35:40] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:36:29,536 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:36:31,066 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:36:31] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:36:32,299 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:36:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:36:32,301 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:36:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:02,820 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:37:04,249 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:04] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:37:04,276 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:04] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:04,287 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:04] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:11,859 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-09-10, callsign_filter=both, id_filter=.
+2025-09-23 10:37:13,347 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:13] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:37:13,372 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:13] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:13,384 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:13] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:24,955 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:24] "GET / HTTP/1.1" 200 -
+2025-09-23 10:37:24,981 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:24] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:25,004 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:25] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 10:37:29,538 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 10:37:29,539 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 10:37:29,547 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:29] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:37:29,593 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:36,296 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-09-25, callsign_filter=both, id_filter=.
+2025-09-23 10:37:37,750 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:37] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:37:37,775 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:37,783 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:37] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:45,554 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-09-25, callsign_filter=Real, id_filter=.
+2025-09-23 10:37:46,072 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:46] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:37:46,100 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:46,105 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:46] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:52,343 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-09-25, callsign_filter=Real, id_filter=.
+2025-09-23 10:37:52,959 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:52] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:37:52,985 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:37:52,987 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:52] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:37:53,085 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:37:53] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2025-09-23 10:37:56,587 - INFO - main.py - Flask application is shutting down.
+2025-09-23 10:37:56,587 - INFO - main.py - signal: 2, frame <frame at 0x0000025D6084D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-23 10:38:05,221 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-23 10:38:05,221 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 10:38:11,489 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:11] "GET / HTTP/1.1" 200 -
+2025-09-23 10:38:11,520 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:11] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-09-23 10:38:11,530 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:11] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 10:38:11,542 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:11] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-09-23 10:38:18,252 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 10:38:18,253 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:18] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 10:38:18,270 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:18] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:38:18,300 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:18] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-09-23 10:38:32,736 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:38:34,241 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:34] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:38:34,270 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:38:34,275 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:38:34] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:39:21,320 - INFO - main.py - Flask application is shutting down.
+2025-09-23 10:39:21,320 - INFO - main.py - signal: 2, frame <frame at 0x00000194B0C3D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-23 10:39:24,523 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-23 10:39:24,523 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 10:39:32,642 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:32] "GET / HTTP/1.1" 200 -
+2025-09-23 10:39:32,662 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:32] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:39:32,690 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:32] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 10:39:38,500 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 10:39:38,501 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:38] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 10:39:38,518 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:38] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:39:38,550 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:38] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:39:46,131 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-03, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:39:46,326 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:46] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:39:46,358 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:39:46,359 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:39:46] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:40:31,821 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-03, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:40:32,010 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:40:32] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:40:32,032 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:40:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:40:32,060 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:40:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:42:45,253 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:45] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:42:45,262 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-23 10:42:49,478 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-03, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:42:49,703 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:49] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:42:49,737 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:42:49,741 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-23 10:42:49,819 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:49] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:42:50,045 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:42:50] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2025-09-23 10:53:22,214 - INFO - main.py - Flask application is shutting down.
+2025-09-23 10:53:22,214 - INFO - main.py - signal: 2, frame <frame at 0x000002AF65DBD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-23 10:53:25,884 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-23 10:53:25,884 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 10:54:24,083 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:24] "GET /map HTTP/1.1" 200 -
+2025-09-23 10:54:24,115 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:54:30,348 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-03, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:54:30,549 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:30] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:54:30,578 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:30] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:54:30,584 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:30] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:54:37,756 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-06-18, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:54:39,258 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:39] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:54:39,290 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:39] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:54:39,293 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:39] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:54:52,089 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-08, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:54:54,932 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:54] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:54:54,955 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:54] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:54:54,969 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:54:54] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:55:05,149 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-08, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:55:07,980 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:07] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:55:08,018 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:55:08,019 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:08] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:55:14,524 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-11-22, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:55:14,555 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:14] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:55:14,590 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:14] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:55:16,952 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-11-22, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 10:55:16,984 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:16] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:55:17,014 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:55:20,035 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-11-22, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:55:20,067 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:20] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:55:20,092 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:20] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:55:24,592 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-07, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 10:55:27,504 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:27] "POST /map HTTP/1.1" 200 -
+2025-09-23 10:55:27,540 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:27] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 10:55:27,541 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 10:55:27] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 10:55:35,056 - INFO - main.py - Flask application is shutting down.
+2025-09-23 10:55:35,056 - INFO - main.py - signal: 2, frame <frame at 0x000001A16519D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-23 11:06:14,025 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-23 11:06:14,051 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 11:06:18,883 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:18] "GET / HTTP/1.1" 200 -
+2025-09-23 11:06:18,962 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:18] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-09-23 11:06:19,002 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:19] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 11:06:19,095 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:19] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-09-23 11:06:28,382 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 11:06:28,441 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:28] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 11:06:28,740 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:28] "GET /map HTTP/1.1" 200 -
+2025-09-23 11:06:29,211 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:06:29] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-09-23 11:07:00,400 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 11:07:00,401 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:00] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 11:07:00,409 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:00] "GET /map HTTP/1.1" 200 -
+2025-09-23 11:07:00,441 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:00] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 11:07:07,531 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-11, end_date=2025-09-23, callsign_filter=both, id_filter=.
+2025-09-23 11:07:10,035 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:10] "POST /map HTTP/1.1" 200 -
+2025-09-23 11:07:10,064 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:10] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 11:07:10,065 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:07:10] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 11:09:47,927 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:09:47] "GET /map HTTP/1.1" 200 -
+2025-09-23 11:09:48,455 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 11:09:48] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:19:40,605 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:40] "GET /map HTTP/1.1" 200 -
+2025-09-23 12:19:40,654 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:19:43,855 - INFO - main.py - User 'zura' logged out successfully.
+2025-09-23 12:19:43,856 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-09-23 12:19:43,869 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:43] "GET / HTTP/1.1" 200 -
+2025-09-23 12:19:43,978 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:43] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:19:44,108 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:44] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 12:19:48,144 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:48] "GET / HTTP/1.1" 200 -
+2025-09-23 12:19:48,169 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:48] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:19:48,207 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:48] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2025-09-23 12:19:48,983 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:48] "GET / HTTP/1.1" 200 -
+2025-09-23 12:19:49,009 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:49] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:19:49,022 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:49] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2025-09-23 12:19:56,013 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 12:19:56,014 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 12:19:56,022 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:56] "GET /map HTTP/1.1" 200 -
+2025-09-23 12:19:56,067 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:19:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:20:04,956 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-16, end_date=2025-09-11, callsign_filter=both, id_filter=.
+2025-09-23 12:20:07,655 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:07] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:20:07,686 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:20:07,695 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:07] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:20:55,279 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-18, end_date=2025-09-26, callsign_filter=both, id_filter=.
+2025-09-23 12:20:56,590 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:56] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:20:56,626 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:20:56,645 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:20:56] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:21:23,372 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-18, end_date=2025-09-26, callsign_filter=both, id_filter=STW040.
+2025-09-23 12:21:23,426 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:21:23] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:21:23,460 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:21:23] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:21:23,478 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:21:23] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:28:20,366 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:20] "GET / HTTP/1.1" 200 -
+2025-09-23 12:28:20,387 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:20] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:28:20,419 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:20] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 12:28:24,897 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 12:28:24,899 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:24] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 12:28:24,906 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:24] "GET /map HTTP/1.1" 200 -
+2025-09-23 12:28:24,954 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:28:33,773 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-09, end_date=2025-02-13, callsign_filter=both, id_filter=.
+2025-09-23 12:28:34,426 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:34] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:28:34,458 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:28:34,460 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:28:34] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:29:34,334 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-09, end_date=2025-02-13, callsign_filter=both, id_filter=ISR892.
+2025-09-23 12:29:34,387 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:34] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:29:34,419 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:29:34,434 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:34] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:29:53,366 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:29:53,383 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-23 12:29:57,748 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:29:57,845 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:29:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-23 12:30:24,905 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-01-09, end_date=2025-02-13, callsign_filter=both, id_filter=.
+2025-09-23 12:30:25,469 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:30:25] "POST /map HTTP/1.1" 200 -
+2025-09-23 12:30:25,512 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:30:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-23 12:30:25,516 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:30:25] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 12:30:25,553 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:30:25] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 12:30:25,848 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 12:30:25] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
+2025-09-23 21:57:43,490 - INFO - main.py - Flask application is shutting down.
+2025-09-23 21:57:43,490 - INFO - main.py - signal: 2, frame <frame at 0x0000018885A1D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-23 22:00:43,956 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-23 22:00:43,956 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-23 22:00:58,834 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:00:58] "GET / HTTP/1.1" 200 -
+2025-09-23 22:00:58,862 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:00:58] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-09-23 22:00:58,885 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:00:58] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-23 22:01:04,198 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-23 22:01:04,199 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:04] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-23 22:01:04,216 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:04] "GET /map HTTP/1.1" 200 -
+2025-09-23 22:01:04,263 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:04] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 22:01:10,427 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-09-23 22:01:10,427 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-09-23 22:01:14,975 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-09-23 22:01:14,975 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-09-23 22:01:14,975 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:14] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-09-23 22:01:14,984 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:14] "GET /map HTTP/1.1" 200 -
+2025-09-23 22:01:15,022 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:15] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 22:01:29,053 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-11, end_date=2025-09-22, callsign_filter=both, id_filter=.
+2025-09-23 22:01:29,250 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:29] "POST /map HTTP/1.1" 200 -
+2025-09-23 22:01:29,287 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:29] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 22:01:29,287 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:01:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 22:02:09,042 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-11, end_date=2025-09-22, callsign_filter=both, id_filter=EVA087.
+2025-09-23 22:02:09,092 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:02:09] "POST /map HTTP/1.1" 200 -
+2025-09-23 22:02:09,128 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:02:09] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 22:02:09,138 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 22:02:09] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-23 23:11:01,638 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-11, end_date=2025-09-22, callsign_filter=both, id_filter=.
+2025-09-23 23:11:01,829 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 23:11:01] "POST /map HTTP/1.1" 200 -
+2025-09-23 23:11:01,866 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 23:11:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-23 23:11:01,875 - INFO - _internal.py - 127.0.0.1 - - [23/Sep/2025 23:11:01] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-24 07:53:48,600 - INFO - main.py - Flask application is shutting down.
+2025-09-24 07:53:48,600 - INFO - main.py - signal: 2, frame <frame at 0x000002051580D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-27 23:05:37,894 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5010
+2025-09-27 23:05:37,894 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-27 23:05:54,410 - INFO - main.py - Flask application is shutting down.
+2025-09-27 23:05:54,410 - INFO - main.py - signal: 2, frame <frame at 0x000002075FB1D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-09-27 23:05:57,178 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-09-27 23:05:57,178 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-09-27 23:06:07,865 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:07] "GET / HTTP/1.1" 200 -
+2025-09-27 23:06:07,888 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:07] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-09-27 23:06:08,185 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:08] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-09-27 23:06:08,234 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:08] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-09-27 23:06:14,421 - INFO - main.py - User 'zura' logged in successfully.
+2025-09-27 23:06:14,423 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:14] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-27 23:06:14,440 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:14] "GET /map HTTP/1.1" 200 -
+2025-09-27 23:06:14,479 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:14] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-09-27 23:06:36,846 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-09-27 23:06:36,846 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-09-27 23:06:40,713 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-09-27 23:06:40,713 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-09-27 23:06:40,714 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:40] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-09-27 23:06:40,721 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:40] "GET /map HTTP/1.1" 200 -
+2025-09-27 23:06:40,760 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-27 23:06:52,943 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-22, end_date=2025-09-27, callsign_filter=both, id_filter=.
+2025-09-27 23:06:53,049 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:53] "POST /map HTTP/1.1" 200 -
+2025-09-27 23:06:53,076 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-27 23:06:53,379 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:06:53] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-27 23:07:37,949 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-11, end_date=2025-09-27, callsign_filter=both, id_filter=.
+2025-09-27 23:07:38,183 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:38] "POST /map HTTP/1.1" 200 -
+2025-09-27 23:07:38,212 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:38] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-27 23:07:38,512 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:38] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-27 23:07:44,398 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-11, end_date=2025-09-27, callsign_filter=Real, id_filter=.
+2025-09-27 23:07:44,519 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:44] "POST /map HTTP/1.1" 200 -
+2025-09-27 23:07:44,543 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:44] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-09-27 23:07:44,896 - INFO - _internal.py - 127.0.0.1 - - [27/Sep/2025 23:07:44] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-09-28 09:21:07,057 - INFO - main.py - Flask application is shutting down.
+2025-09-28 09:21:07,057 - INFO - main.py - signal: 2, frame <frame at 0x0000023B7AD5D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-14 17:59:26,204 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-10-14 17:59:26,238 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-14 17:59:35,283 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:35] "GET / HTTP/1.1" 200 -
+2025-10-14 17:59:35,339 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:35] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-14 17:59:35,356 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:35] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-14 17:59:35,407 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:35] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-14 17:59:40,617 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-14 17:59:40,620 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-14 17:59:40,669 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:40] "GET /map HTTP/1.1" 200 -
+2025-10-14 17:59:40,788 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 17:59:40] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-14 18:00:13,104 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-14 18:00:13,104 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-14 18:00:17,661 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
+
+2025-10-14 18:00:17,661 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-10-14 18:00:17,662 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-14 18:00:17,669 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:17] "GET /map HTTP/1.1" 200 -
+2025-10-14 18:00:17,693 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:00:57,335 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-27, end_date=2025-10-14, callsign_filter=both, id_filter=.
+2025-10-14 18:00:57,640 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:57] "POST /map HTTP/1.1" 200 -
+2025-10-14 18:00:57,660 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:00:57,667 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:00:57] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-14 18:01:29,916 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-27, end_date=2025-10-14, callsign_filter=both, id_filter=AFR264.
+2025-10-14 18:01:29,967 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:01:29] "POST /map HTTP/1.1" 200 -
+2025-10-14 18:01:29,991 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:01:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:01:30,013 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:01:30] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-14 18:02:00,575 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-27, end_date=2025-10-14, callsign_filter=both, id_filter=.
+2025-10-14 18:02:00,906 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:00] "POST /map HTTP/1.1" 200 -
+2025-10-14 18:02:00,932 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:00] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:02:00,951 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:00] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-14 18:02:34,466 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-09-27, end_date=2025-10-14, callsign_filter=both, id_filter=PBD835.
+2025-10-14 18:02:34,518 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:34] "POST /map HTTP/1.1" 200 -
+2025-10-14 18:02:34,544 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:34] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:02:34,547 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:34] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-14 18:02:59,934 - INFO - main.py - User 'zura' logged out successfully.
+2025-10-14 18:02:59,936 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-14 18:02:59,943 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:59] "GET / HTTP/1.1" 200 -
+2025-10-14 18:02:59,973 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:59] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-14 18:02:59,979 - INFO - _internal.py - 127.0.0.1 - - [14/Oct/2025 18:02:59] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 15:58:52,874 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-10-21 15:58:52,876 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 15:58:56,721 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:58:56] "GET / HTTP/1.1" 200 -
+2025-10-21 15:58:56,750 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:58:56] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-21 15:58:57,040 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:58:57] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 15:59:01,882 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 15:59:01,883 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 15:59:01,891 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:01] "GET /map HTTP/1.1" 200 -
+2025-10-21 15:59:01,934 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:01] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-21 15:59:25,467 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-21 15:59:25,467 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 15:59:25,467 - ERROR - main.py - Error processing file 'sourse_file.xlsx': [Errno 22] Invalid argument
+2025-10-21 15:59:25,468 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:25] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-21 15:59:25,475 - ERROR - app.py - Exception on /upload [GET]
 Traceback (most recent call last):
-  File "E:\ZURA KOPADZE\mapping_stca\Map.py", line 60, in create_map
-    total_count = len(filtered_df)
-UnboundLocalError: local variable 'filtered_df' referenced before assignment
-2025-08-14 11:51:02,254 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:51:02] "POST /map HTTP/1.1" 200 -
-2025-08-14 11:51:02,283 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 11:51:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 11:55:44,574 - INFO - main.py - Flask application is shutting down.
-2025-08-14 11:55:44,574 - INFO - main.py - signal: 2, frame <frame at 0x000001BC7B63B618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:01:42,364 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:01:42,364 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:05:53,106 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:05:53,106 - INFO - main.py - signal: 2, frame <frame at 0x0000027A2C819428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:06:07,557 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:06:07,557 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:06:10,221 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:10] "GET / HTTP/1.1" 200 -
-2025-08-14 12:06:10,291 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:10] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:06:10,542 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:10] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:06:10,668 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:10] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:06:14,567 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 12:06:14,568 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:14] "POST / HTTP/1.1" 200 -
-2025-08-14 12:06:14,588 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:14] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:06:22,612 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:06:22,614 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:22] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:06:22,701 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:22] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:06:22,740 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:22] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:06:35,469 - ERROR - main.py - Error generating map: name 'fetch_data_from_db' is not defined
-2025-08-14 12:06:35,471 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:35] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:06:35,490 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:35] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:06:43,485 - ERROR - main.py - Error generating map: name 'fetch_data_from_db' is not defined
-2025-08-14 12:06:43,486 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:43] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:06:43,509 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:06:46,676 - ERROR - main.py - Error generating map: name 'fetch_data_from_db' is not defined
-2025-08-14 12:06:46,678 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:46] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:06:46,700 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:06:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:07:13,240 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:07:13,240 - INFO - main.py - signal: 2, frame <frame at 0x000001C7B88DA238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:07:17,985 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:07:17,985 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:07:24,070 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:24] "GET / HTTP/1.1" 200 -
-2025-08-14 12:07:24,089 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:24] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:07:24,348 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:24] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:07:31,526 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:07:31,527 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:31] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:07:31,543 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:31] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:07:31,566 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:07:40,247 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:40] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:07:40,268 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:07:40,598 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:40] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:07:48,074 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:48] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:07:48,097 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:07:48] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:12:50,466 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:12:50,466 - INFO - main.py - signal: 2, frame <frame at 0x0000022157279428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:13:11,612 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:13:11,613 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:13:14,185 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:14] "GET / HTTP/1.1" 200 -
-2025-08-14 12:13:14,222 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:14] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:14,505 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:14] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:13:14,595 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:14] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:13:18,903 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 12:13:18,903 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:18] "POST / HTTP/1.1" 200 -
-2025-08-14 12:13:18,925 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:18] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:29,605 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:13:29,606 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:29] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:13:29,664 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:29] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:13:29,687 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:37,211 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:37] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:13:37,230 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:37,540 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:37] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:13:46,787 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:46] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:13:46,805 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:47,077 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:47] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:13:53,926 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:53] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:13:53,946 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:13:54,223 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:13:54] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:14:28,845 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:14:28,845 - INFO - main.py - signal: 2, frame <frame at 0x0000018F8DCF9428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:14:42,913 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:14:42,913 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:14:46,585 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:46] "GET / HTTP/1.1" 200 -
-2025-08-14 12:14:46,636 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:46] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:14:46,918 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:46] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:14:46,966 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:46] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:14:50,816 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:14:50,817 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:50] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:14:50,834 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:50] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:14:50,860 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:14:56,141 - ERROR - Map.py - Error generating map: local variable 'filtered_df' referenced before assignment
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'upload_file' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-21 15:59:25,498 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:25] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2025-10-21 15:59:25,875 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 15:59:42,430 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:42] "GET / HTTP/1.1" 200 -
+2025-10-21 15:59:42,460 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:42] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 15:59:42,740 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:42] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 15:59:48,771 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 15:59:48,772 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:48] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 15:59:48,779 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:48] "GET /map HTTP/1.1" 200 -
+2025-10-21 15:59:48,811 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 15:59:48] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 16:00:24,291 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-21 16:00:24,291 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 16:00:24,292 - ERROR - main.py - Error processing file 'sourse_file.xlsx': [Errno 22] Invalid argument
+2025-10-21 16:00:24,293 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:00:24] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-21 16:00:24,299 - ERROR - app.py - Exception on /upload [GET]
 Traceback (most recent call last):
-  File "E:\ZURA KOPADZE\mapping_stca\Map.py", line 60, in create_map
-    total_count = len(filtered_df)
-UnboundLocalError: local variable 'filtered_df' referenced before assignment
-2025-08-14 12:14:56,143 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:56] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:14:56,164 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:14:56] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:15:13,680 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:15:13,680 - INFO - main.py - signal: 2, frame <frame at 0x000001BABCD5B618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:15:16,696 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:15:16,697 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:15:20,300 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:20] "GET / HTTP/1.1" 200 -
-2025-08-14 12:15:20,321 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:20] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:15:20,585 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:20] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:15:24,942 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:15:24,943 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:24] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:15:24,960 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:24] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:15:24,987 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:15:32,265 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:32] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:15:32,288 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:15:32,593 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:15:41,512 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:41] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:15:41,534 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:41] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:15:41,879 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:15:41] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:16:59,073 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:16:59,073 - INFO - main.py - signal: 2, frame <frame at 0x000001FF28209428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:17:15,135 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:17:15,135 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:17:20,293 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:20] "GET / HTTP/1.1" 200 -
-2025-08-14 12:17:20,336 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:20] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:17:20,644 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:20] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:17:20,693 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:20] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:17:25,664 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:17:25,665 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:25] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:17:25,682 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:25] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:17:25,708 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:25] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:17:33,831 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:33] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:17:33,850 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:33] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:17:34,146 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:34] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:17:50,730 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:50] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:17:50,749 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:17:51,026 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:17:51] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:18:58,089 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:18:58,089 - INFO - main.py - signal: 2, frame <frame at 0x00000154E151B618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:19:11,749 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:19:11,749 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:19:12,503 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:12] "GET / HTTP/1.1" 200 -
-2025-08-14 12:19:12,582 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:12] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:19:12,876 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:12] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:19:12,925 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:12] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:19:17,778 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:19:17,779 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:17] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:19:17,798 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:17] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:19:17,823 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:19:24,656 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:24] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:19:24,674 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:19:24,977 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:19:24] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:21:30,643 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:21:30,643 - INFO - main.py - signal: 2, frame <frame at 0x0000021D11499428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:21:34,487 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:21:34,487 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:21:41,494 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:21:41,494 - INFO - main.py - signal: 2, frame <frame at 0x000001D5E5FAB618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:21:44,918 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:21:44,918 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:21:51,041 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:21:51] "GET / HTTP/1.1" 200 -
-2025-08-14 12:21:51,066 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:21:51] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:21:51,326 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:21:51] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:21:56,545 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 12:21:56,547 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:21:56] "POST / HTTP/1.1" 200 -
-2025-08-14 12:21:56,567 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:21:56] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:22:04,187 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:22:04,188 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:04] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:22:04,204 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:04] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:22:04,227 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:04] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:22:11,902 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:11] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:22:11,920 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:11] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:22:12,199 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:12] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:22:22,559 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:22] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:22:22,578 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:22] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:22:22,846 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:22:22] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:23:17,426 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:23:17,426 - INFO - main.py - signal: 2, frame <frame at 0x00000290E83B9428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:23:39,118 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:23:39,118 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:23:40,011 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:40] "GET / HTTP/1.1" 200 -
-2025-08-14 12:23:40,085 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:40] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:23:40,382 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:40] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:23:40,424 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:40] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:23:44,532 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 12:23:44,534 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:44] "POST / HTTP/1.1" 200 -
-2025-08-14 12:23:44,556 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:44] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:23:50,134 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:23:50,135 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:50] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:23:50,150 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:50] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:23:50,168 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:50] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:23:58,010 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:58] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:23:58,030 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:23:58,344 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:23:58] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:24:06,925 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:06] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:24:06,943 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:06] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:24:07,293 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:07] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:24:12,401 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:12] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:24:12,421 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:12] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:24:12,695 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:12] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:24:17,865 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:17] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:24:17,887 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:24:18,211 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:18] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:24:57,565 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-14 12:24:57,565 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-14 12:24:57,681 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'upload_file' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-21 16:00:24,301 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:00:24] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2025-10-21 16:00:44,991 - INFO - main.py - Flask application is shutting down.
+2025-10-21 16:00:44,991 - INFO - main.py - signal: 2, frame <frame at 0x000001F610A7D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 16:00:48,546 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-10-21 16:00:48,547 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 16:00:58,557 - INFO - main.py - Flask application is shutting down.
+2025-10-21 16:00:58,557 - INFO - main.py - signal: 2, frame <frame at 0x00000177842DD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 16:01:01,051 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8070
+2025-10-21 16:01:01,052 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 16:01:25,937 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:25] "GET / HTTP/1.1" 200 -
+2025-10-21 16:01:25,955 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:25] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-21 16:01:26,254 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:26] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 16:01:26,302 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:26] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-21 16:01:30,804 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 16:01:30,806 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 16:01:30,822 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:30] "GET /map HTTP/1.1" 200 -
+2025-10-21 16:01:30,858 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:30] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-21 16:01:37,604 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-21 16:01:37,604 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 16:01:41,786 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
 
-2025-08-14 12:24:57,681 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
-2025-08-14 12:24:57,682 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:57] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-14 12:24:57,689 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:57] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:24:57,709 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:24:57] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:26:11,057 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-14 12:26:11,057 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-14 12:26:11,158 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 16:01:41,786 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-10-21 16:01:41,787 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:41] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-21 16:01:41,794 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:41] "GET /map HTTP/1.1" 200 -
+2025-10-21 16:01:41,830 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:41] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 16:01:53,171 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-21, callsign_filter=both, id_filter=.
+2025-10-21 16:01:53,310 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:53] "POST /map HTTP/1.1" 200 -
+2025-10-21 16:01:53,335 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 16:01:53,653 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 16:01:53] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:06:31,798 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:06:31,798 - INFO - main.py - signal: 2, frame <frame at 0x00000239CA6CD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:08:21,171 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-10-21 17:08:21,171 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:08:32,273 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:32] "GET / HTTP/1.1" 200 -
+2025-10-21 17:08:32,358 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:32] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:08:32,653 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:32] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:08:37,758 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:08:37,759 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:37] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:08:37,769 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:37] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:08:37,802 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:37] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:08:42,789 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-21 17:08:42,789 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 17:08:42,789 - ERROR - main.py - Error processing file 'sourse_file.xlsx': [Errno 22] Invalid argument
+2025-10-21 17:08:42,791 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-21 17:08:42,799 - ERROR - app.py - Exception on /upload [GET]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'upload_file' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-21 17:08:42,800 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:42] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2025-10-21 17:08:43,161 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:08:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 17:09:16,728 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:09:16,728 - INFO - main.py - signal: 2, frame <frame at 0x000001FE1598D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:09:19,244 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8090
+2025-10-21 17:09:19,245 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:09:21,079 - ERROR - app.py - Exception on /upload [GET]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'upload_file' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-21 17:09:21,080 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:21] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+2025-10-21 17:09:24,592 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:24] "GET / HTTP/1.1" 200 -
+2025-10-21 17:09:24,622 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:24] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:09:24,920 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:24] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:09:29,319 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:29] "GET / HTTP/1.1" 200 -
+2025-10-21 17:09:29,350 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:29] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-21 17:09:29,661 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:29] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:09:29,710 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:29] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-21 17:09:34,457 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:09:34,459 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:09:34,475 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:34] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:09:34,507 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:34] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-21 17:09:38,783 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
+2025-10-21 17:09:38,784 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+2025-10-21 17:09:42,583 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
+Excel file loaded successfully.
+Connected to the database successfully.
+Results have been saved to the Midpoints database.
 
-2025-08-14 12:26:11,158 - INFO - main.py - File 'sourse_file1.xlsx' uploaded successfully.
-2025-08-14 12:26:11,159 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:26:11] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-14 12:26:11,166 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:26:11] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:26:11,181 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:26:11] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:27:07,849 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-14 12:27:07,849 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-14 12:27:07,949 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-
-2025-08-14 12:27:07,949 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
-2025-08-14 12:27:07,950 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:07] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-14 12:27:07,957 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:07] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:27:07,980 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:27:29,742 - INFO - Insert_to_DBM.py - Using Python interpreter: E:\ZURA KOPADZE\mapping_stca\venv\Scripts\python.exe
-2025-08-14 12:27:29,742 - INFO - Insert_to_DBM.py - Script path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-2025-08-14 12:27:29,844 - INFO - Insert_to_DBM.py - Script executed successfully from path: E:\ZURA KOPADZE\mapping_stca\DBM\create_Midpoints_Table.py
-
-2025-08-14 12:27:29,845 - INFO - main.py - File 'FD20250221.xlsx' uploaded successfully.
-2025-08-14 12:27:29,845 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:29] "[32mPOST /upload HTTP/1.1[0m" 302 -
-2025-08-14 12:27:29,852 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:29] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:27:29,868 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:27:29] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:29:35,983 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:29:35,983 - INFO - main.py - signal: 2, frame <frame at 0x000001C888D4B618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:43:58,371 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:43:58,371 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:44:09,089 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:09] "GET / HTTP/1.1" 200 -
-2025-08-14 12:44:09,116 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:09] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:44:09,418 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:09] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:44:14,208 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:44:14,209 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:14] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:44:14,225 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:14] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:44:14,254 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:14] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:44:21,806 - ERROR - main.py - Error generating map: not enough values to unpack (expected 4, got 3)
-2025-08-14 12:44:21,807 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:21] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:44:21,825 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:21] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:44:52,757 - ERROR - main.py - Error generating map: not enough values to unpack (expected 4, got 3)
-2025-08-14 12:44:52,759 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:52] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:44:52,780 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:44:52] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:45:27,330 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:45:27,330 - INFO - main.py - signal: 2, frame <frame at 0x00000209B04EC618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:45:48,451 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:45:48,451 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:45:50,676 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:50] "GET / HTTP/1.1" 200 -
-2025-08-14 12:45:50,696 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:50] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:45:50,988 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:50] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:45:51,030 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:51] "[36mGET /static/international-travel_14098668.png HTTP/1.1[0m" 304 -
-2025-08-14 12:45:55,695 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:45:55,696 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:55] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:45:55,713 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:55] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:45:55,740 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:45:55] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:46:03,684 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:46:03] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:46:03,702 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:46:03] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:46:04,003 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:46:04] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:52:15,394 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:52:15,394 - INFO - main.py - signal: 2, frame <frame at 0x0000021A9CB3B618, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:52:19,041 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:52:19,041 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:52:28,462 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:28] "GET / HTTP/1.1" 200 -
-2025-08-14 12:52:28,489 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:28] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:52:28,767 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:28] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
-2025-08-14 12:52:34,126 - WARNING - main.py - Failed login attempt for username: 'zura'.
-2025-08-14 12:52:34,128 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:34] "POST / HTTP/1.1" 200 -
-2025-08-14 12:52:34,144 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:34] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:52:47,741 - INFO - main.py - User 'zura' logged in successfully.
-2025-08-14 12:52:47,742 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:47] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-08-14 12:52:47,758 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:47] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:52:47,781 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:47] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:52:53,755 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:53] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:52:53,773 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:52:54,079 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:52:54] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:53:17,581 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:53:17] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:53:17,600 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:53:17] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:53:17,875 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:53:17] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:56:28,097 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:56:28,097 - INFO - main.py - signal: 2, frame <frame at 0x00000129F640D428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:56:34,919 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:56:34,919 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:56:40,355 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:56:40] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:56:40,378 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:56:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:56:47,486 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:56:47] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:56:47,508 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:56:47] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:56:47,792 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:56:47] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:57:43,831 - INFO - main.py - Flask application is shutting down.
-2025-08-14 12:57:43,831 - INFO - main.py - signal: 2, frame <frame at 0x000001B0DF829428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 12:58:05,179 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 12:58:05,179 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 12:58:07,800 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:07] "GET /map HTTP/1.1" 200 -
-2025-08-14 12:58:07,825 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:07] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:58:15,083 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:15] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:58:15,097 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:15] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:58:15,384 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:15] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:58:30,134 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:30] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:58:30,203 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:30] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:58:30,549 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:30] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 12:58:48,860 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:48] "POST /map HTTP/1.1" 200 -
-2025-08-14 12:58:48,882 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:48] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 12:58:49,153 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 12:58:49] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
-2025-08-14 13:01:45,330 - INFO - main.py - Flask application is shutting down.
-2025-08-14 13:01:45,330 - INFO - main.py - signal: 2, frame <frame at 0x0000022F4DC59428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
-2025-08-14 13:01:50,898 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-14 13:01:50,898 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
-2025-08-14 13:01:53,773 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 13:01:53] "GET /map HTTP/1.1" 200 -
-2025-08-14 13:01:53,798 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 13:01:53] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 13:02:01,852 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 13:02:01] "POST /map HTTP/1.1" 200 -
-2025-08-14 13:02:01,873 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 13:02:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
-2025-08-14 13:02:02,177 - INFO - _internal.py - 127.0.0.1 - - [14/Aug/2025 13:02:02] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:09:42,583 - INFO - main.py - File 'sourse_file.xlsx' uploaded successfully.
+2025-10-21 17:09:42,584 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-10-21 17:09:42,591 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:42] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:09:42,614 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:42] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:09:50,736 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-01, end_date=2025-10-31, callsign_filter=both, id_filter=.
+2025-10-21 17:09:51,089 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:51] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:09:51,119 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:51] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:09:51,459 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:09:51] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:13:40,293 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:13:40,293 - INFO - main.py - signal: 2, frame <frame at 0x000001C494BCD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:13:43,358 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8090
+2025-10-21 17:13:43,358 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:13:49,164 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:13:49] "GET / HTTP/1.1" 200 -
+2025-10-21 17:13:49,192 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:13:49] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:13:49,489 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:13:49] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:13:54,569 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-21 17:13:54,571 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:13:54] "POST / HTTP/1.1" 200 -
+2025-10-21 17:13:54,596 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:13:54] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:14:05,607 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:14:05,609 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:05] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:14:05,629 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:05] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:14:05,664 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:05] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:14:12,392 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-02-12, end_date=2025-10-09, callsign_filter=both, id_filter=.
+2025-10-21 17:14:15,190 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:15] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:14:15,214 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:15] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:14:15,557 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:14:15] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:20:02,008 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:20:02,008 - INFO - main.py - signal: 2, frame <frame at 0x0000024BBC48E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:20:05,064 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8090
+2025-10-21 17:20:05,064 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:20:12,289 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:12] "GET / HTTP/1.1" 200 -
+2025-10-21 17:20:12,322 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:12] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:20:12,610 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:12] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:20:17,022 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-21 17:20:17,024 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:17] "POST / HTTP/1.1" 200 -
+2025-10-21 17:20:17,053 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:17] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:20:24,596 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:20:24,597 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:24] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:20:24,615 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:24] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:20:24,647 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:24] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:20:34,952 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:20:35,095 - ERROR - app.py - Exception on /map [POST]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "E:\ZURA KOPADZE\mapping_stca\main.py", line 121, in map_index
+    start_date, end_date, callsign_filter, id_filter
+ValueError: too many values to unpack (expected 4)
+2025-10-21 17:20:35,122 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:35] "[35m[1mPOST /map HTTP/1.1[0m" 500 -
+2025-10-21 17:20:35,462 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:20:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 17:20:46,975 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:20:46,975 - INFO - main.py - signal: 2, frame <frame at 0x0000025E8C62E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:21:02,696 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:21:02,696 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:21:08,542 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:08] "GET / HTTP/1.1" 200 -
+2025-10-21 17:21:08,569 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:08] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-21 17:21:08,845 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:08] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:21:08,886 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:08] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-21 17:21:13,290 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:21:13,291 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:13] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:21:13,307 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:13] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:21:13,339 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:13] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-21 17:21:28,312 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:21:28,455 - ERROR - app.py - Exception on /map [POST]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "E:\ZURA KOPADZE\mapping_stca\main.py", line 121, in map_index
+    start_date, end_date, callsign_filter, id_filter
+ValueError: too many values to unpack (expected 4)
+2025-10-21 17:21:28,457 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:28] "[35m[1mPOST /map HTTP/1.1[0m" 500 -
+2025-10-21 17:21:28,820 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:21:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 17:21:57,852 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:21:57,852 - INFO - main.py - signal: 2, frame <frame at 0x0000017DDA1CD238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:22:00,127 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:22:00,127 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:22:03,709 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:03] "GET / HTTP/1.1" 200 -
+2025-10-21 17:22:03,740 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:03] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:22:04,022 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:04] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:22:08,558 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:22:08,559 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:08] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:22:08,576 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:08] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:22:08,609 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:08] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:22:15,208 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:22:15,353 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:15] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:22:15,386 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:15] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:22:15,681 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:22:15] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:22:30,203 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:22:30,203 - INFO - main.py - signal: 2, frame <frame at 0x000002192426E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:22:32,685 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:22:32,685 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:23:36,599 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:36] "GET / HTTP/1.1" 200 -
+2025-10-21 17:23:36,633 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:36] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:23:36,900 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:36] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:23:41,489 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:23:41,490 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:23:41,506 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:41] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:23:41,535 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:41] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:23:51,256 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:23:51,398 - ERROR - app.py - Exception on /map [POST]
+Traceback (most recent call last):
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\ZURA KOPADZE\mapping_stca\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "E:\ZURA KOPADZE\mapping_stca\main.py", line 121, in map_index
+    start_date, end_date, callsign_filter, id_filter
+ValueError: too many values to unpack (expected 4)
+2025-10-21 17:23:51,401 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:23:51] "[35m[1mPOST /map HTTP/1.1[0m" 500 -
+2025-10-21 17:28:44,672 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:28:44,672 - INFO - main.py - signal: 2, frame <frame at 0x0000017E2E13E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:28:47,652 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:28:47,652 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:29:00,114 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:00] "GET / HTTP/1.1" 200 -
+2025-10-21 17:29:00,148 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:00] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:29:00,439 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:00] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:29:04,645 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-21 17:29:04,647 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:04] "POST / HTTP/1.1" 200 -
+2025-10-21 17:29:04,679 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:04] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:29:12,968 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:29:12,969 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:29:12,985 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:12] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:29:13,014 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:13] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:29:21,292 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-10-30, callsign_filter=both, id_filter=.
+2025-10-21 17:29:23,297 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:23] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:29:23,331 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:23] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:29:23,626 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:29:23] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:30:02,764 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:30:02] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:30:02,794 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:30:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-21 17:32:30,293 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:32:32,228 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:32:32] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:32:32,264 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:32:32] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:32:32,588 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:32:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:33:18,893 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:33:20,795 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:20] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:33:20,827 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:20] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:33:21,111 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:21] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:33:31,102 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:33:31,118 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-21 17:33:41,628 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:33:41,628 - INFO - main.py - signal: 2, frame <frame at 0x000001C691C0E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:33:44,631 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:33:44,631 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:33:50,132 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:50] "GET / HTTP/1.1" 200 -
+2025-10-21 17:33:50,174 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:50] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:33:50,182 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-21 17:33:50,686 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:50] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:33:58,854 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:33:58,856 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:58] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:33:58,873 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:58] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:33:58,916 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-21 17:33:58,917 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:33:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:34:09,605 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:34:09,751 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:34:09] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:34:09,783 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:34:09] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-21 17:34:09,787 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:34:09] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:34:10,130 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:34:10] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:36:42,000 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:36:42,133 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:42] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:36:42,172 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:42] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:36:42,477 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:42] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:36:43,528 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-20, callsign_filter=both, id_filter=.
+2025-10-21 17:36:43,660 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:43] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:36:43,690 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:43] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:36:44,011 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:36:44] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:36:57,522 - INFO - main.py - Flask application is shutting down.
+2025-10-21 17:36:57,522 - INFO - main.py - signal: 2, frame <frame at 0x0000021AD8E5D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-21 17:37:00,390 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8020
+2025-10-21 17:37:00,390 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-21 17:37:04,590 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:04] "GET / HTTP/1.1" 200 -
+2025-10-21 17:37:04,624 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:04] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:37:04,976 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:04] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-21 17:37:10,558 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-21 17:37:10,559 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-21 17:37:10,576 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:10] "GET /map HTTP/1.1" 200 -
+2025-10-21 17:37:10,596 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:10] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:37:18,705 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-14, end_date=2025-10-21, callsign_filter=both, id_filter=.
+2025-10-21 17:37:18,843 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:18] "POST /map HTTP/1.1" 200 -
+2025-10-21 17:37:18,877 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:18] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:37:19,157 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:37:19] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-21 17:39:27,004 - INFO - main.py - User 'zura' logged out successfully.
+2025-10-21 17:39:27,005 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:39:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-21 17:39:27,011 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:39:27] "GET / HTTP/1.1" 200 -
+2025-10-21 17:39:27,052 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:39:27] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-21 17:39:27,327 - INFO - _internal.py - 127.0.0.1 - - [21/Oct/2025 17:39:27] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 09:35:40,006 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-10-29 09:35:40,007 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-29 09:35:42,941 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:42] "GET / HTTP/1.1" 200 -
+2025-10-29 09:35:42,959 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:42] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:35:43,425 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:43] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 09:35:43,543 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:43] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-29 09:35:46,483 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-29 09:35:46,486 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:46] "POST / HTTP/1.1" 200 -
+2025-10-29 09:35:46,548 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:46] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:35:51,475 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-29 09:35:51,476 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:51] "POST / HTTP/1.1" 200 -
+2025-10-29 09:35:51,504 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:35:51] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:36:01,134 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-29 09:36:01,136 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-29 09:36:01,172 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:01] "GET /map HTTP/1.1" 200 -
+2025-10-29 09:36:01,204 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:01] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:36:24,069 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-07-10, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:36:28,913 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:28] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:36:28,937 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:28] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:36:29,221 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:36:29] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:37:02,086 - INFO - main.py - Flask application is shutting down.
+2025-10-29 09:37:02,086 - INFO - main.py - signal: 2, frame <frame at 0x000001DEC95ED238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-29 09:37:11,637 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8060
+2025-10-29 09:37:11,637 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-29 09:37:17,812 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:17] "GET / HTTP/1.1" 200 -
+2025-10-29 09:37:17,835 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:17] "GET /static/css/Login_page.css HTTP/1.1" 200 -
+2025-10-29 09:37:18,130 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:18] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 09:37:18,180 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:18] "GET /static/international-travel_14098668.png HTTP/1.1" 200 -
+2025-10-29 09:37:22,284 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-29 09:37:22,286 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:22] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-29 09:37:22,304 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:22] "GET /map HTTP/1.1" 200 -
+2025-10-29 09:37:22,337 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:22] "GET /static/css/map_page.css HTTP/1.1" 200 -
+2025-10-29 09:37:31,659 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-09, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:37:31,934 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:31] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:37:31,957 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:31] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:37:32,264 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:37:32] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:41:42,565 - INFO - main.py - Flask application is shutting down.
+2025-10-29 09:41:42,565 - INFO - main.py - signal: 2, frame <frame at 0x000001DF0533D238, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-29 09:42:19,342 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8060
+2025-10-29 09:42:19,342 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-29 09:48:29,790 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:29] "GET / HTTP/1.1" 200 -
+2025-10-29 09:48:29,822 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:29] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:48:30,121 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:30] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 09:48:35,680 - WARNING - main.py - Failed login attempt for username: 'zura'.
+2025-10-29 09:48:35,681 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:35] "POST / HTTP/1.1" 200 -
+2025-10-29 09:48:35,709 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:48:46,923 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-29 09:48:46,924 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-29 09:48:46,941 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:46] "GET /map HTTP/1.1" 200 -
+2025-10-29 09:48:46,970 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:46] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:48:57,868 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-08, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:48:58,154 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:58] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:48:58,182 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:58] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:48:58,504 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:48:58] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:49:28,536 - INFO - main.py - Flask application is shutting down.
+2025-10-29 09:49:28,536 - INFO - main.py - signal: 2, frame <frame at 0x0000012DF209E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-29 09:49:31,210 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8060
+2025-10-29 09:49:31,210 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-29 09:49:35,788 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:35] "GET / HTTP/1.1" 200 -
+2025-10-29 09:49:35,811 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:35] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:49:36,097 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:36] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 09:49:40,917 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-29 09:49:40,918 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-29 09:49:40,934 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:40] "GET /map HTTP/1.1" 200 -
+2025-10-29 09:49:40,966 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:49:49,548 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-17, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:49:49,668 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:49] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:49:49,696 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:49] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:49:49,991 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:49:49] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:51:19,915 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-01, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:51:20,278 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:51:20] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:51:20,308 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:51:20] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:51:20,586 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:51:20] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:52:19,669 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-01, end_date=2025-10-29, callsign_filter=both, id_filter=THA940.
+2025-10-29 09:52:19,730 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:19] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:52:19,760 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:19] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:52:20,062 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:20] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 09:52:35,532 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-01, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 09:52:35,928 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:35] "POST /map HTTP/1.1" 200 -
+2025-10-29 09:52:35,957 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:35] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 09:52:36,255 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 09:52:36] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 10:41:19,883 - INFO - main.py - Flask application is shutting down.
+2025-10-29 10:41:19,883 - INFO - main.py - signal: 2, frame <frame at 0x000001CE4A48E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>
+2025-10-29 10:41:22,594 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8060
+2025-10-29 10:41:22,595 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-10-29 10:41:25,934 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:25] "GET / HTTP/1.1" 200 -
+2025-10-29 10:41:25,958 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:25] "[36mGET /static/css/Login_page.css HTTP/1.1[0m" 304 -
+2025-10-29 10:41:26,273 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:26] "[33mGET /static/images/background.jpg HTTP/1.1[0m" 404 -
+2025-10-29 10:41:30,557 - INFO - main.py - User 'zura' logged in successfully.
+2025-10-29 10:41:30,559 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:30] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-10-29 10:41:30,575 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:30] "GET /map HTTP/1.1" 200 -
+2025-10-29 10:41:30,609 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:30] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 10:41:40,692 - INFO - main.py - User 'zura' submitted filter data: start_date=2025-10-09, end_date=2025-10-29, callsign_filter=both, id_filter=.
+2025-10-29 10:41:40,952 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:40] "POST /map HTTP/1.1" 200 -
+2025-10-29 10:41:40,981 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:40] "[36mGET /static/css/map_page.css HTTP/1.1[0m" 304 -
+2025-10-29 10:41:41,292 - INFO - _internal.py - 127.0.0.1 - - [29/Oct/2025 10:41:41] "GET /Results/Results%5Cmap.html HTTP/1.1" 200 -
+2025-10-29 10:58:34,873 - INFO - main.py - Flask application is shutting down.
+2025-10-29 10:58:34,873 - INFO - main.py - signal: 2, frame <frame at 0x0000017BC281E428, file 'C:\\Users\\amsadministrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py', line 314, code _select>

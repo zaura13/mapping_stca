@@ -47,18 +47,20 @@
 
         <!-- Percentage Info Section -->
         <div class="percentage-info">
-    {% if map_file %}
-        <div class="left-inner">
-            <div class="Percentage-Title">
-                <h2>Percentage</h2>
-            </div>
-            <div class="peresnts">
-                <p>Real: {{ real_percentage | round(2) }}%</p>
-                <p>Suspicious: {{ suspicious_percentage | round(2) }}%</p>
-            </div>
-        </div>
-    {% endif %}
+  {% if map_file %}
+    <div class="left-inner">
+      <div class="Percentage-Title">
+
+      </div>
+      <div class="peresnts">
+        <p>Total: {{ total_count }}</p>
+        <p>Real: {{ real_percentage | round(2) }}%</p>
+        <p>Suspicious: {{ suspicious_percentage | round(2) }}%</p>
+      </div>
+    </div>
+  {% endif %}
 </div>
+
 
         <!-- Logout Section -->
         <div class="logout-container">

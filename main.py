@@ -100,32 +100,44 @@ from Map import create_map
 @login_required
 def map_index():
     map_file = None
+    total_count= 0
     real_percentage = 0
     suspicious_percentage = 0
     warning_message = None  # Initialize warning message
 
     if request.method == 'POST':
+        # Get the input values from the form
         start_date = request.form['start_date']
         end_date = request.form['end_date']
         callsign_filter = request.form.get('callsign_filter', 'both')
-        id_filter = request.form.get('id_filter', None)
+        id_filter = request.form.get('id_filter', None)  # Capture id_filter from form
 
-        try:
-            real_percentage, suspicious_percentage, warning_message, map_file = create_map(
-                start_date, end_date, callsign_filter, id_filter
-            )
-        except Exception as e:
-            logging.error(f"Error generating map: {e}")
-            warning_message = "Invalid date range or data selection. Please check and try again."
+        # Log the POST request with the received filters
+        logging.info(
+            f"User '{current_user.username}' submitted filter data: start_date={start_date}, end_date={end_date}, callsign_filter={callsign_filter}, id_filter={id_filter}."
+        )
+
+        # Call create_map with the provided filters
+        total_count,real_percentage, suspicious_percentage, warning_message, map_file = create_map(
+            start_date, end_date, callsign_filter, id_filter
+        )
+
+        # If there's a warning message, ensure no map is shown
+        if warning_message:
             map_file = None
-            real_percentage = 0
-            suspicious_percentage = 0
 
+        # Save the map file path in the session to be accessed later
+        if map_file:
+            session['map_file'] = map_file
+
+    # Return the map and statistics to the HTML template
     return render_template('map.html',
                            map_file=map_file,
+                           total_count=total_count,
                            real_percentage=real_percentage,
                            suspicious_percentage=suspicious_percentage,
                            warning_message=warning_message)
+
 
 @app.route('/Results/<path:filename>')
 def send_map(filename):
@@ -211,4 +223,4 @@ signal.signal(signal.SIGINT, shutdown_handler)
 signal.signal(signal.SIGTERM, shutdown_handler)
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    app.run(host="127.0.0.1", port=8060, debug=False)

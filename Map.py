@@ -88,11 +88,12 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
                 time_str = "N/A"
 
             popup_html = (
-                f"<strong>Callsign1:</strong> {row['callsign_1']}<br>"
-                f"<strong>Callsign2:</strong> {row['callsign_2']}<br>"
+                f"<strong>Callsign1:</strong> <span style='color:blue;'>{row['callsign_1']}</span><br>"
+                f"<strong>Altitude1:</strong> <span style='color:blue;'>FL{row['Altitude_Tr1']}</span><br>"
+                f"<strong>Callsign2:</strong> <span style='color:green;'>{row['callsign_2']}</span><br>"
+                f"<strong>Altitude2:</strong> <span style='color:green;'>FL{row['Altitude_Tr2']} </span><br>"
                 f"<strong>Date:</strong> {row['date'].strftime('%Y-%m-%d')}<br>"
                 f"<strong>Time:</strong> {time_str}<br>"
-
             )
 
             folium.Marker(
@@ -142,7 +143,7 @@ def create_map(start_date, end_date, callsign_filter=None, id_filter=None, show_
         map_file = os.path.join('Results', 'map.html')
         m.save(map_file)
 
-        return real_percentage, suspicious_percentage, None, map_file
+        return total_count,real_percentage, suspicious_percentage, None, map_file
 
     except Exception as e:
         logging.error(f"Error generating map: {e}", exc_info=True)
